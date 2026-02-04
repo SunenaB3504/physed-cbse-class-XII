@@ -35,7 +35,7 @@ export interface SQPQuestion {
   year: string;
   paperType: 'SQP' | 'Board' | 'Term-1';
   marks: number;
-  type: 'MCQ' | 'SA' | 'LA' | 'Case';
+  type: 'MCQ' | 'SA' | 'LA' | 'Case' | 'Assertion-Reason';
   question: string;
   answer?: string; // Standard Answer text
   markingScheme?: string;

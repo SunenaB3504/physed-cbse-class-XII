@@ -14,6 +14,10 @@ export const unit7: Chapter = {
         'Determining Strength: Muscle Cross-Sectional Area (Hypertrophy), Muscle Fiber Composition (Fast Twitch), Neural Impulse intensity.',
         'Determining Speed: Explosive Strength, Mobility of Nervous System (Reaction Time), Muscle Composition (White Fibers), Flexibility.',
         'Determining Endurance: Aerobic Capacity (VO2 Max), Lactate Threshold, Movement Economy, Muscle Composition (Red/Slow Twitch Fibers), Energy Reserves (Glycogen).',
+        'Energy Production Factors:',
+        '• ATP-CP System: Provides energy for < 10 seconds (High Intensity).',
+        '• Anaerobic System: Provides energy for < 2 minutes (e.g., 400m).',
+        '• Aerobic System: Provides energy for long duration (Marathon).',
         'Determining Flexibility: Joint Structure, Connective Tissue elasticity (Ligaments/Tendons), Muscle Stretchability, Age and Gender.'
       ],
       visualizations: [
@@ -36,11 +40,12 @@ export const unit7: Chapter = {
     {
       id: 'exercise-effects',
       title: 'Effects of Exercise on Body Systems',
-      description: 'Long-term physiological adaptations to regular training.',
+      description: 'Short-term responses and Long-term adaptations to regular training.',
       content: [
-        'Muscular System: Hypertrophy (Size increase), Shape improvement, increased capillarity, better coordination, delayed fatigue.',
-        'Cardio System: Cardiac Hypertrophy (Athlete\'s Heart), Stroke Volume increase, Bradycardia (Lower Resting HR), Increased Cardiac Output.',
-        'Respiratory System: Increased Tidal Volume, Vital Capacity, faster recovery rate, improved gas exchange efficiency.'
+        'Cardio-Respiratory (Short Term): Increased Heart Rate, Stroke Volume increase, Cardiac Output surge, Increased Tidal Volume & Respiratory Rate.',
+        'Cardio-Respiratory (Long Term): Cardiac Hypertrophy (Athlete\'s Heart), Bradycardia (Resting HR < 60), Increased Vital Capacity, Capillarization, Faster Recovery.',
+        'Muscular (Short Term): Increased blood supply, rise in muscle temperature, accumulation of lactate, micro-tears.',
+        'Muscular (Long Term): Hypertrophy (Size increase), increased mitochondria number/size, higher myoglobin stores, delayed fatigue (Lactate Tolerance).'
       ],
       visualizations: [
         {
@@ -72,6 +77,8 @@ export const unit7: Chapter = {
         '• Compound (Open): Bone breaks and tears through skin.',
         '• Greenstick: Bending/Partial break (common in children).',
         '• Comminuted: Bone shatters into 3+ pieces.',
+        '• Transverse: Fracture at a right angle to the bone\'s axis.',
+        '• Oblique: Fracture runs diagonally to the bone\'s axis.',
         '• Impacted: Broken ends drive into each other.',
         'Joint Injuries: Dislocation (separation of joint surfaces). Common in Shoulder, Jaw, Hip.'
       ],
@@ -159,7 +166,8 @@ export const unit7: Chapter = {
     { id: 'f34', category: 'Physiology', question: 'Does Vital Capacity increase with training?', answer: 'Yes, regular aerobic training increases vital capacity.' },
     { id: 'f35', category: 'Physiology', question: 'What is "Reaction Time"?', answer: 'The interval of time between the presentation of a stimulus and the initiation of a response.' },
     { id: 'f36', category: 'Physiology', question: 'Main fuel source for aerobic exercise?', answer: 'Glycogen and Fats.' },
-    { id: 'f37', category: 'Physiology', question: 'Main fuel source for anaerobic exercise?', answer: 'ATP-CP and Glucose (Glycolysis).' }
+    { id: 'f37', category: 'Physiology', question: 'Main fuel source for anaerobic exercise?', answer: 'ATP-CP and Glucose (Glycolysis).' },
+    { id: 'f38', category: 'Physiology', question: 'Normal vs Elite Cardiac Output?', answer: 'Rest: ~5 L/min (both). Max Effort: ~20-25 L/min (Untrained) vs up to 40 L/min (Elite).' }
   ],
   sqp: [
     {
