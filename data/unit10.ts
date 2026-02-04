@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const unit10: Chapter = {
@@ -8,93 +7,105 @@ export const unit10: Chapter = {
   description: 'Concepts of training, cycle types, and methods to develop Strength, Endurance, Speed, Flexibility, and Coordinative Abilities.',
   topics: [
     {
-      id: 'strength-development',
-      title: 'Developing Strength',
-      description: 'The ability of muscles to overcome resistance.',
+      id: 'training-intro',
+      title: 'Introduction to Sports Training',
+      description: 'The systematic process of preparing athletes for highest performance.',
       content: [
-        'Isometric Exercises: Static exercises where muscle length stays constant (e.g., pushing a wall). Developed by Hettinger and Muller.',
-        'Isotonic Exercises: Dynamic exercises involving movement (e.g., weightlifting). Developed by De Lorme.',
-        'Isokinetic Exercises: Performed on specialized machines at a constant speed (e.g., Cybex machines). Developed by J.J. Perrine.'
+        'Definition: A planned and controlled process in which, for achieving a goal, changes in complex motor coordination, physical performance, and behavior are made.',
+        'Principles: Continuity, Overload, Specificity, Progression, Individual Differences, Active Involvement, Variety.',
+        'Training Cycles:',
+        '1. Micro Cycle: Shortest duration (3-10 days, usually 1 week). Focus on immediate specific goals.',
+        '2. Meso Cycle: Medium duration (3-6 weeks). Focus on specific fitness components.',
+        '3. Macro Cycle: Longest duration (3-12 months). Focus on overall periodization (Prep, Competition, Transition).'
       ],
       visualizations: [
         {
           id: 'v1',
-          title: 'Strength Training Methods',
+          title: 'Periodization Cycles',
           type: 'table',
           data: {
-            headers: ['Method', 'Movement', 'Muscle Length', 'Founder'],
+            headers: ['Cycle', 'Duration', 'Purpose'],
             rows: [
-              ['Isometric', 'Static (No movement)', 'Remains Same', 'Hettinger & Muller'],
-              ['Isotonic', 'Dynamic (Movement)', 'Changes (Shortens/Lengthens)', 'De Lorme'],
-              ['Isokinetic', 'Dynamic (Constant speed)', 'Changes', 'J.J. Perrine']
+              ['Micro', '3 - 10 Days', 'Immediate acute training load.'],
+              ['Meso', '3 - 6 Weeks', 'Development of specific abilities.'],
+              ['Macro', '3 - 12 Months', 'Overall season planning.']
             ]
           }
         }
       ]
     },
     {
-      id: 'endurance-speed',
-      title: 'Endurance & Speed',
-      description: 'Ability to sustain activity and perform movements at maximum rate.',
+      id: 'strength-development',
+      title: 'Developing Strength',
+      description: 'The ability of muscles to overcome resistance.',
       content: [
-        'Endurance Methods: Continuous Method (low intensity, long duration), Interval Method (work with recovery periods), and Fartlek Method (speed play in natural terrain).',
-        'Speed Methods: Acceleration Runs (achieving max speed from stationary) and Pace Runs (maintaining max speed for duration).'
+        '1. Isometric Exercises (Hettinger & Muller, 1953): "Iso" (Same) + "Metric" (Length). Static contraction. No visible movement. Best for rehab and static strength.',
+        '2. Isotonic Exercises (De Lorme, 1945): "Iso" (Same) + "Tonic" (Tension). Dynamic contraction with movement. Concentric (Shortening) and Eccentric (Lengthening) phases. Best for hypertrophy.',
+        '3. Isokinetic Exercises (J.J. Perrine, 1968): "Iso" (Same) + "Kinetic" (Motion). Constant speed with variable resistance. Requires machines (Cybex). Best for sports power.'
       ],
       visualizations: [
         {
           id: 'v2',
-          title: 'Endurance Training Comparison',
-          type: 'table',
-          data: {
-            headers: ['Method', 'Intensity', 'Duration', 'Key Feature'],
-            rows: [
-              ['Continuous', 'Low (60-80%)', 'Very Long', 'No Rest periods.'],
-              ['Interval', 'High (80-90%)', 'Medium', 'Incomplete recovery.'],
-              ['Fartlek', 'Varying', 'Medium-Long', 'Speed play, natural terrain.']
-            ]
-          }
-        },
-        {
-          id: 'v3',
-          title: 'Speed Training Logic',
+          title: 'Strength Training Matrix',
           type: 'grid',
           data: [
-            { label: 'Acceleration', desc: '0 to Max Speed. Focus on power and technique.' },
-            { label: 'Pace Runs', desc: 'Max speed maintenance. Focus on efficiency.' }
+            { label: 'Isometric', desc: 'Static (Pushing Wall). Zero work done physically.' },
+            { label: 'Isotonic', desc: 'Dynamic (Dumbbell Curl). Development of work capacity.' },
+            { label: 'Isokinetic', desc: 'Machine (Cybex). Max resistance at all angles.' }
           ]
         }
       ]
     },
     {
-      id: 'flexibility-coord',
-      title: 'Flexibility & Coordinative Abilities',
-      description: 'Range of motion and the ability to synchronize body movements.',
+      id: 'endurance-development',
+      title: 'Developing Endurance',
+      description: 'Ability to resist fatigue for a long duration.',
       content: [
-        'Flexibility: Active (without help) and Passive (with external help). Methods include Ballistic, Static Stretching, and PNF (Proprioceptive Neuromuscular Facilitation).',
-        'Coordinative Abilities: Orientation, Coupling, Reaction, Balance, Rhythm, Adaptation, and Differentiation abilities.'
+        '1. Continuous Method: Exercise for long duration without break. Low Intensity (130-160 BPM). builds aerobic base/glycogen storage.',
+        '2. Interval Method (Bikila): Effort + Recovery phases. "Work-Rest-Work". High intensity (180 BPM) with partial recovery. Develops anaerobic capacity.',
+        '3. Fartlek Method (Gosta Holmer): "Speed Play". Variable pace in natural terrain. Heart rate fluctuates (140-180 BPM). Self-disciplined.'
+      ],
+      visualizations: [
+        {
+          id: 'v3',
+          title: 'Interval Training Logic',
+          type: 'flow',
+          data: [
+            'Sprint 400m',
+            'Jog/Walk (Recovery)',
+            'HR drops to 120',
+            'Sprint 400m again'
+          ]
+        }
+      ]
+    },
+    {
+      id: 'speed-flexibility',
+      title: 'Speed & Flexibility',
+      description: 'Methods to enhance quickness and range of motion.',
+      content: [
+        'Speed Development:',
+        '• Acceleration Runs: Sprinting from a stationary start to achieve top speed (Concept of explosive power).',
+        '• Pace Runs: Maintaining maximum speed for a set distance (Concept of speed endurance).',
+        'Flexibility Methods:',
+        '• Ballistic: Bouncing movements (Risky, old school).',
+        '• Static: Stretching and holding (Safe, cooling down).',
+        '• Dynamic: Controlled movement through range (Warm up).',
+        '• PNF (Proprioceptive Neuromuscular Facilitation): Contract-Relax method (Most effective).'
       ],
       visualizations: [
         {
           id: 'v4',
-          title: 'Types of Flexibility',
-          type: 'flow',
+          title: 'Coordinative Abilities',
+          type: 'list',
           data: [
-            'Active Flexibility (Static & Dynamic)',
-            'Passive Flexibility (Higher range)'
-          ]
-        },
-        {
-          id: 'v5',
-          title: '7 Coordinative Abilities',
-          type: 'grid',
-          data: [
-            { label: 'Orientation', desc: 'Determining position in space/time.' },
-            { label: 'Coupling', desc: 'Coordinating body part movements.' },
-            { label: 'Reaction', desc: 'Quick response to signals.' },
-            { label: 'Balance', desc: 'Maintaining equilibrium.' },
-            { label: 'Rhythm', desc: 'External/Internal flow of movement.' },
-            { label: 'Adaptation', desc: 'Changing movement based on situation.' },
-            { label: 'Differentiation', desc: 'High degree of accuracy and economy.' }
+            'Orientation (Position in space)',
+            'Coupling (Linking movements)',
+            'Reaction (Response speed)',
+            'Balance (Equilibrium)',
+            'Rhythm (Timing)',
+            'Adaptation (Adjusting to change)',
+            'Differentiation (Precision)'
           ]
         }
       ]
@@ -102,65 +113,156 @@ export const unit10: Chapter = {
     {
       id: 'circuit-training',
       title: 'Circuit Training',
-      description: 'A series of exercises performed in a sequence with minimal rest.',
+      description: 'A method combining strength and endurance.',
       content: [
-        'Developed by Morgan and Adamson in 1953.',
-        'Involves 5 to 10 stations where different muscle groups are worked alternately.',
-        'Advantages: Time-efficient, improves both strength and endurance, can be customized for any sport.'
+        'Design: 6-10 stations arranged in a circle.',
+        'Principle: Alternate muscle groups (Upper Body -> Lower Body -> Core) to allow local muscle recovery while keeping heart rate high.',
+        'Benefit: High density training, time efficient, develops general fitness.'
       ],
       visualizations: [
         {
-          id: 'v6',
-          title: 'Circuit Design Principles',
-          type: 'flow',
+          id: 'v5',
+          title: 'Sample Circuit',
+          type: 'grid',
           data: [
-            '1. Select Stations',
-            '2. Arrange Alternating Muscles',
-            '3. Determine Work Time',
-            '4. Set Recovery Time',
-            '5. Monitor Progress'
+            { label: 'Station 1', desc: 'Jumping Jacks (Cardio)' },
+            { label: 'Station 2', desc: 'Push Ups (Upper)' },
+            { label: 'Station 3', desc: 'Squats (Lower)' },
+            { label: 'Station 4', desc: 'Crunches (Core)' },
+            { label: 'Station 5', desc: 'Skipping (Cardio)' }
           ]
         }
       ]
     }
   ],
   flashcards: [
-    { id: 'f1', category: 'Technical', question: 'Who developed Isokinetic exercises?', answer: 'J.J. Perrine.' },
-    { id: 'f2', category: 'Technical', question: 'What is "Speed Play" also known as?', answer: 'Fartlek Training.' },
-    { id: 'f3', category: 'Technical', question: 'Define PNF stretching.', answer: 'Proprioceptive Neuromuscular Facilitation; advanced flexibility training using contraction/relaxation.' },
-    { id: 'f4', category: 'Technical', question: 'Founder of Circuit Training?', answer: 'Morgan and Adamson.' },
-    { id: 'f5', category: 'Technical', question: 'What is the duration of a Macrocycle?', answer: 'Several months to a year.' }
+    { id: 'f1', category: 'Strength', question: 'Who developed Isometric exercises?', answer: 'Hettinger and Muller (1953).' },
+    { id: 'f2', category: 'Strength', question: 'What characterizes Isokinetic exercises?', answer: 'Constant speed of movement with varying resistance.' },
+    { id: 'f3', category: 'Endurance', question: 'Meaning of "Fartlek"?', answer: 'Speed Play (Swedish).' },
+    { id: 'f4', category: 'Cycles', question: 'Duration of a Micro Cycle?', answer: '3 to 10 days (typically 1 week).' },
+    { id: 'f5', category: 'Endurance', question: 'Key feature of Interval Training?', answer: 'Incomplete recovery between work intervals.' },
+    { id: 'f6', category: 'Flexibility', question: 'What is PNF?', answer: 'Proprioceptive Neuromuscular Facilitation (Contract-Relax method).' },
+    { id: 'f7', category: 'Cycles', question: 'What is a Meso Cycle?', answer: 'A training cycle of medium duration (3 to 6 weeks).' },
+    { id: 'f8', category: 'Coordination', question: 'Ability to determine body position in space is?', answer: 'Orientation Ability.' },
+    { id: 'f9', category: 'Strength', question: 'Pushing against a wall is an example of?', answer: 'Isometric Exercise.' },
+    { id: 'f10', category: 'Strength', question: 'Lifting a dumbbell is?', answer: 'Isotonic Exercise.' },
+    { id: 'f11', category: 'Speed', question: 'Purpose of Pace Runs?', answer: 'To maintain maximum speed for a longer distance (Speed Endurance).' },
+    { id: 'f12', category: 'Coordination', question: 'Ability to combine movements of different body parts?', answer: 'Coupling Ability.' },
+    { id: 'f13', category: 'Endurance', question: 'Heart rate range in Continuous Method?', answer: '140-160 BPM (Aerobic zone).' },
+    { id: 'f14', category: 'Circuit', question: 'Main design principle of Circuit Training?', answer: 'Alternating muscle groups to delay local fatigue.' },
+    { id: 'f15', category: 'Strength', question: 'Who developed Isotonic exercises?', answer: 'De Lorme (1945).' },
+    { id: 'f16', category: 'Principles', question: 'Principle of "Overload"?', answer: 'Training load must exceed normal daily demand to cause adaptation.' },
+    { id: 'f17', category: 'Coordination', question: 'Simple vs Complex Reaction Time?', answer: 'Simple: 1 stimulus, 1 response. Complex: Multiple choices.' },
+    { id: 'f18', category: 'Flexibility', question: 'Why is Ballistic stretching risky?', answer: 'It uses momentum/bouncing which can trigger the stretch reflex and tear muscle.' },
+    { id: 'f19', category: 'Speed', question: 'Acceleration runs start from?', answer: 'A stationary or slow moving position.' },
+    { id: 'f20', category: 'Cycles', question: 'Longest training cycle?', answer: 'Macro Cycle (3-12 months).' },
+    { id: 'f21', category: 'Strength', question: 'Work done in Isometric exercise?', answer: 'Technically zero (Force x Distance, distance is 0).' },
+    { id: 'f22', category: 'Definition', question: 'Define Sports Training.', answer: 'Scientific process of preparing an athlete for high performance.' },
+    { id: 'f23', category: 'Endurance', question: 'Fartlek training improves?', answer: 'Both Aerobic and Anaerobic endurance.' },
+    { id: 'f24', category: 'Speed', question: 'Reaction ability depends on?', answer: 'Central Nervous System (CNS) processing speed.' },
+    { id: 'f25', category: 'Coordination', question: 'Rhythm Ability definition?', answer: 'Ability to perceive and reproduce movement rhythm (timing).' },
+    { id: 'f26', category: 'Strength', question: 'Concentric vs Eccentric?', answer: 'Concentric: Muscle shortens. Eccentric: Muscle lengthens.' },
+    { id: 'f27', category: 'Cycles', question: 'Goal of Transition Period?', answer: 'Recovery and rest (Active rest).' },
+    { id: 'f28', category: 'Circuit', question: 'Developed by?', answer: 'Morgan and Adamson (University of Leeds).' },
+    { id: 'f29', category: 'Coordination', question: 'Differentiation Ability indicates?', answer: 'High precision and economy of movement.' },
+    { id: 'f30', category: 'Endurance', question: 'Recovery heart rate in Interval Method?', answer: '120-140 BPM before starting next rep.' },
+    { id: 'f31', category: 'Principles', question: 'Principle of Specificity?', answer: 'Training must match the demands of the sport.' },
+    { id: 'f32', category: 'Flexibility', question: 'Active vs Passive Flexibility?', answer: 'Active: Self-movement. Passive: With external help (partner/gravity).' },
+    { id: 'f33', category: 'Strength', question: 'Best method for explosive power?', answer: 'Isokinetic (or Plyometrics).' },
+    { id: 'f34', category: 'Speed', question: 'Main factor limiting speed?', answer: 'Genetic (fast twitch fibers).' },
+    { id: 'f35', category: 'Endurance', question: 'Example of Fartlek?', answer: 'Jogging, then sprinting up a hill, then walking, in a park.' },
+    { id: 'f36', category: 'Coordination', question: 'Balance ability is crucial for?', answer: 'Gymnastics, Skating, Skiing.' }
   ],
   sqp: [
     {
       id: 'q1',
-      year: '2025-26',
-      paperType: 'SQP',
+      year: '2023-24',
+      paperType: 'Board',
       marks: 1,
       type: 'MCQ',
-      question: 'Which method of training is best for developing endurance in natural surroundings?',
-      answer: 'Fartlek Method',
-      aiExplanation: 'Fartlek involves varying speed in natural terrain like woods or hills.'
+      question: 'Which training method was developed by Gosta Holmer?',
+      answer: '(c) Fartlek Method',
+      aiExplanation: 'Fartlek means "Speed Play" in Swedish.'
     },
     {
       id: 'q2',
       year: '2024-25',
-      paperType: 'Board',
+      paperType: 'SQP',
       marks: 3,
       type: 'SA',
-      question: 'Explain the difference between Isometric and Isotonic exercises.',
-      answer: 'Isometric: No movement, constant length. Isotonic: Visible movement, changing length.',
-      aiExplanation: 'Both are vital for strength but differ in mechanical output and muscle contraction type.'
+      question: 'Differentiate between Meso Cycle and Macro Cycle.',
+      answer: 'Meso: Medium (3-6 weeks), specific focus. Macro: Long (3-12 months), overall season plan.',
+      aiExplanation: 'Mention duration and purpose for both.'
     },
     {
       id: 'q3',
+      year: '2022-23',
+      paperType: 'Board',
+      marks: 5,
+      type: 'LA',
+      question: 'Explain the Interval Training Method. How does it help in developing endurance?',
+      answer: 'Work-Rest principle. High intensity intervals with incomplete recovery. Adapts heart to recover quickly.',
+      aiExplanation: 'Key is "Incomplete Recovery" which forces the heart to work harder.'
+    },
+    {
+      id: 'q4',
       year: '2025-26',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Static contraction of muscle is seen in:',
+      answer: '(a) Isometric Exercise',
+      aiExplanation: 'In isometric, muscle length does not change visibly.'
+    },
+    {
+      id: 'q5',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      question: 'What are Coordinative Abilities? List any four.',
+      answer: 'Abilities of CNS to control motor actions. Orientation, Coupling, Reaction, Balance.',
+      aiExplanation: 'Focus on the brain-muscle connection aspect.'
+    },
+    {
+      id: 'q6',
+      year: '2021-22',
+      paperType: 'Term-1',
+      marks: 4,
+      type: 'Case',
+      question: 'A coach plans a training session with 8 stations. Athletes move from Station A (Pushups) to Station B (Squats) without rest. 1. Identify method. 2. Benefit?',
+      answer: '1. Circuit Training. 2. Improves strength and endurance simultaneously.',
+      aiExplanation: 'The rotation and alternating muscle groups are the signature of Circuit Training.'
+    },
+    {
+      id: 'q7',
+      year: '2024-25',
+      paperType: 'Board',
+      marks: 3,
+      type: 'SA',
+      question: 'Explain Isokinetic exercises with examples.',
+      answer: 'Machine-based Exercises. Constant speed, max resistance throughout range. Example: Cybex knee extension.',
+      aiExplanation: 'Must mention "specialized machines" as they are not possible with free weights.'
+    },
+    {
+      id: 'q8',
+      year: '2022-23',
       paperType: 'SQP',
       marks: 5,
       type: 'LA',
-      question: 'Define Flexibility. Discuss the various methods used to improve it.',
-      answer: 'Flexibility is range of motion. Methods: Ballistic, Static, Dynamic, and PNF stretching.',
-      aiExplanation: 'Improving flexibility reduces injury risk and enhances movement efficiency in sports.'
+      question: 'Define Flexibility. Explain PNF and Static Stretching methods.',
+      answer: 'Range of motion. PNF: Contract-Relax technique. Static: Holding a stretch for 10-30s.',
+      aiExplanation: 'PNF is the most advanced and effective method for increasing range of motion.'
+    },
+    {
+      id: 'q9',
+      year: '2025-26',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Acceleration runs are used to improve:',
+      answer: '(b) Speed',
+      aiExplanation: 'Specifically, the ability to reach top speed from zero.'
     }
   ],
   mindMap: {
@@ -169,24 +271,29 @@ export const unit10: Chapter = {
     children: [
       {
         id: 'm2',
-        label: 'Components',
-        children: [{ id: 'm3', label: 'Strength' }, { id: 'm4', label: 'Endurance' }, { id: 'm5', label: 'Speed' }, { id: 'm6', label: 'Flexibility' }]
+        label: 'Strength',
+        children: [{ id: 'm3', label: 'Iso-Metric/Tonic/Kinetic' }]
       },
       {
-        id: 'm7',
-        label: 'Training Methods',
-        children: [{ id: 'm8', label: 'Circuit Training' }, { id: 'm9', label: 'Cycle (Micro/Meso/Macro)' }]
+        id: 'm4',
+        label: 'Endurance',
+        children: [{ id: 'm5', label: 'Continuous/Interval/Fartlek' }]
+      },
+      {
+        id: 'm6',
+        label: 'Cycles',
+        children: [{ id: 'm7', label: 'Micro' }, { id: 'm8', label: 'Meso' }, { id: 'm9', label: 'Macro' }]
       },
       {
         id: 'm10',
-        label: 'Abilities',
-        children: [{ id: 'm11', label: 'Coordinative' }]
+        label: 'Coordination',
+        children: [{ id: 'm11', label: '7 Types (Orientation etc)' }]
       }
     ]
   },
   cheatSheet: [
     { title: 'Training Founders', points: ['Isometric: Hettinger/Muller', 'Isotonic: De Lorme', 'Isokinetic: Perrine', 'Circuit: Morgan/Adamson'] },
-    { title: 'Cycle Durations', points: ['Micro: 3-10 days', 'Meso: 3-6 weeks', 'Macro: 3-12 months'] },
-    { title: 'Endurance Quick Look', points: ['Continuous: Aerobic base', 'Interval: Recovery adaptation', 'Fartlek: Heart rate variance'] }
+    { title: 'Cycles', points: ['Micro: Days (Acute)', 'Meso: Weeks (Specific)', 'Macro: Months (Season)'] },
+    { title: 'Coordination', points: ['Coupling', 'Orientation', 'Reaction', 'Balance', 'Rhythm', 'Adaptation', 'Differentiation'] }
   ]
 };

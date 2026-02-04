@@ -1,4 +1,3 @@
-
 import { Chapter } from '../types';
 
 export const unit7: Chapter = {
@@ -12,23 +11,23 @@ export const unit7: Chapter = {
       title: 'Physiological Factors of Fitness',
       description: 'Internal biological factors that determine an individual’s physical capabilities.',
       content: [
-        'Strength: Determined by muscle size (hypertrophy), muscle composition (white fibers), and nerve impulses.',
-        'Speed: Determined by explosive strength, muscle composition (fast-twitch fibers), and flexibility.',
-        'Endurance: Determined by aerobic capacity (VO2 Max), lactate threshold, and glycogen storage.',
-        'Flexibility: Determined by joint structure, ligament elasticity, and muscle temperature.'
+        'Determining Strength: Muscle Cross-Sectional Area (Hypertrophy), Muscle Fiber Composition (Fast Twitch), Neural Impulse intensity.',
+        'Determining Speed: Explosive Strength, Mobility of Nervous System (Reaction Time), Muscle Composition (White Fibers), Flexibility.',
+        'Determining Endurance: Aerobic Capacity (VO2 Max), Lactate Threshold, Movement Economy, Muscle Composition (Red/Slow Twitch Fibers), Energy Reserves (Glycogen).',
+        'Determining Flexibility: Joint Structure, Connective Tissue elasticity (Ligaments/Tendons), Muscle Stretchability, Age and Gender.'
       ],
       visualizations: [
         {
           id: 'v1',
-          title: 'Fitness Components & Determinants',
+          title: 'Physiological Determinants',
           type: 'table',
           data: {
-            headers: ['Component', 'Primary Physiological Determinant'],
+            headers: ['Component', 'Primary Factors'],
             rows: [
-              ['Strength', 'Muscle cross-sectional area (size) & fast fibers.'],
-              ['Speed', 'Percentage of Fast Twitch (White) fibers.'],
-              ['Endurance', 'Aerobic capacity and Hemoglobin levels.'],
-              ['Flexibility', 'Elasticity of ligaments and tendons.']
+              ['Strength', 'Muscle Size, Nerve Impulse, % Fast Twitch'],
+              ['Speed', 'CNS Mobility, Explosive Power, Flexibility'],
+              ['Endurance', 'VO2 Max, Lactate Threshold, % Slow Twitch'],
+              ['Flexibility', 'Joint Structure, Ligament Elasticity, Age']
             ]
           }
         }
@@ -37,22 +36,22 @@ export const unit7: Chapter = {
     {
       id: 'exercise-effects',
       title: 'Effects of Exercise on Body Systems',
-      description: 'Long-term physiological adaptations to regular physical activity.',
+      description: 'Long-term physiological adaptations to regular training.',
       content: [
-        'Muscular System: Increase in muscle size, strength, and capillary density; improved coordination.',
-        'Cardio-Respiratory System: Heart hypertrophy (Athletes heart), increased stroke volume, decreased resting heart rate (Bradycardia).',
-        'Lungs: Increased tidal volume, vital capacity, and improved gas exchange efficiency.'
+        'Muscular System: Hypertrophy (Size increase), Shape improvement, increased capillarity, better coordination, delayed fatigue.',
+        'Cardio System: Cardiac Hypertrophy (Athlete\'s Heart), Stroke Volume increase, Bradycardia (Lower Resting HR), Increased Cardiac Output.',
+        'Respiratory System: Increased Tidal Volume, Vital Capacity, faster recovery rate, improved gas exchange efficiency.'
       ],
       visualizations: [
         {
           id: 'v2',
-          title: 'Cardio-Respiratory Adaptations',
+          title: 'Cardio-Respiratory Formulae',
           type: 'grid',
           data: [
-            { label: 'Stroke Volume', desc: 'Amount of blood pumped per beat increases.' },
-            { label: 'Cardiac Output', desc: 'Total blood volume per minute increases during work.' },
-            { label: 'Resting HR', desc: 'Decreases (Bradycardia) as the heart becomes efficient.' },
-            { label: 'Vital Capacity', desc: 'Max volume of air exhaled after max inhalation increases.' }
+            { label: 'Cardiac Output', desc: 'Stroke Volume × Heart Rate' },
+            { label: 'Stroke Volume', desc: 'Blood pumped per beat (70ml -> 100ml+)' },
+            { label: 'Minute Volume', desc: 'Tidal Volume × Respiratory Rate' },
+            { label: 'VO2 Max', desc: 'Max Oxygen consumption during peak effort' }
           ]
         }
       ]
@@ -60,104 +59,198 @@ export const unit7: Chapter = {
     {
       id: 'injury-classification',
       title: 'Classification of Sports Injuries',
-      description: 'Categorizing injuries based on the type of tissue affected.',
+      description: 'Categorization based on tissue type and cause.',
       content: [
-        'Soft Tissue Injuries (STI): Damage to muscles, ligaments, and tendons. Includes Abrasion (skin scrape), Contusion (bruise), Sprain (ligament), and Strain (muscle/tendon).',
-        'Bone Injuries: Fractures (Simple, Compound, Greenstick, Comminuted, Stress).',
-        'Joint Injuries: Dislocations (Lower jaw, shoulder, hip, wrist).'
+        'Soft Tissue Injuries (STI):',
+        '• Abrasion: Friction burn/scrape of skin (epidermis).',
+        '• Contusion: Direct blow causing bleeding under skin (Bruise/Hematoma).',
+        '• Laceration: Irregular cut/tear in skin (sharp object).',
+        '• Sprain: Ligament injury (Bone to Bone connector).',
+        '• Strain: Muscle/Tendon injury (Muscle to Bone connector).',
+        'Bone Injuries (Fractures):',
+        '• Simple: Bone breaks, skin remains intact.',
+        '• Compound (Open): Bone breaks and tears through skin.',
+        '• Greenstick: Bending/Partial break (common in children).',
+        '• Comminuted: Bone shatters into 3+ pieces.',
+        '• Impacted: Broken ends drive into each other.',
+        'Joint Injuries: Dislocation (separation of joint surfaces). Common in Shoulder, Jaw, Hip.'
       ],
       visualizations: [
         {
           id: 'v3',
-          title: 'Soft Tissue Injury Types',
+          title: 'Sprain vs Strain',
           type: 'table',
           data: {
-            headers: ['Injury', 'Definition', 'Common Site'],
+            headers: ['Feature', 'Sprain', 'Strain'],
             rows: [
-              ['Abrasion', 'Scraping of the skin surface.', 'Elbows, Knees'],
-              ['Contusion', 'Crushing of soft tissue (bruise).', 'Muscle belly'],
-              ['Sprain', 'Tear or overstretch of a ligament.', 'Ankle, Wrist'],
-              ['Strain', 'Tear or overstretch of a muscle/tendon.', 'Hamstring, Groin'],
-              ['Laceration', 'Deep cut or tear in the skin.', 'Face, Limbs']
+              ['Tissue', 'Ligament', 'Muscle or Tendon'],
+              ['Connection', 'Bone to Bone', 'Muscle to Bone'],
+              ['Severity', 'Mild/Severe Tear', 'Pulled/Ruptured'],
+              ['Recovery', 'Slow (Poor blood supply)', 'Faster (Vascular)']
             ]
           }
-        },
-        {
-          id: 'v4',
-          title: 'Types of Fractures',
-          type: 'grid',
-          data: [
-            { label: 'Greenstick', desc: 'Bone bends and cracks (common in children).' },
-            { label: 'Comminuted', desc: 'Bone breaks into three or more pieces.' },
-            { label: 'Transverse', desc: 'The break is at a right angle to the bone axis.' },
-            { label: 'Stress', desc: 'Small crack due to overuse or repetitive force.' }
-          ]
         }
       ]
     },
     {
-      id: 'first-aid',
-      title: 'First Aid & RICER',
-      description: 'Immediate care given to an injured person before professional help arrives.',
+      id: 'management',
+      title: 'Management (First Aid)',
+      description: 'Standard protocols for immediate injury care.',
       content: [
-        'Aims: Preserve life, prevent condition from worsening, and promote recovery.',
-        'RICER Procedure: Rest, Ice, Compression, Elevation, Referral.',
-        'PRICED: Protection, Rest, Ice, Compression, Elevation, Diagnosis.',
-        'Management of STI: Immediate cold application to reduce swelling and pain.'
+        'PRICER / PRICE Protocol for Soft Tissue:',
+        '• Protection: Prevent further harm (splint/crutches).',
+        '• Rest: Stop activity immediately.',
+        '• Ice: Vasoconstriction to reduce swelling (Cryotherapy). Max 20 mins.',
+        '• Compression: Bandage to limit swelling.',
+        '• Elevation: Above heart level to drain fluid.',
+        '• Referral: See a doctor if severe.',
+        'Fracture Management: Immobilize joint above and below fracture. Do not move the person unless necessary.'
       ],
       visualizations: [
         {
-          id: 'v5',
-          title: 'RICER Protocol Flow',
-          type: 'flow',
+          id: 'v4',
+          title: 'Physiological Changes Chart',
+          type: 'list',
           data: [
-            'Rest: Stop activity immediately.',
-            'Ice: Apply for 15-20 mins every 2 hours.',
-            'Compression: Wrap with elastic bandage.',
-            'Elevation: Keep injury above heart level.',
-            'Referral: Consult a specialist for diagnosis.'
+            'Heart Rate: Decreases at rest',
+            'Stroke Volume: Increases',
+            'Muscle Mass: Increases',
+            'Fat Mass: Decreases',
+            'Capillaries: Increases density'
           ]
         }
       ]
     }
   ],
   flashcards: [
-    { id: 'f1', category: 'Injury', question: 'What is a Sprain?', answer: 'An injury to a ligament caused by overstretching or tearing.' },
-    { id: 'f2', category: 'Technical', question: 'What is Cardiac Hypertrophy?', answer: 'Increase in the size of the heart muscle, often seen in endurance athletes.' },
-    { id: 'f3', category: 'Technical', question: 'Which fiber type is responsible for explosive speed?', answer: 'White Fast Twitch Fibers.' },
-    { id: 'f4', category: 'Injury', question: 'Define Contusion.', answer: 'A muscle injury where a direct blow causes bleeding under the skin without breaking it.' },
-    { id: 'f5', category: 'Injury', question: 'What does "E" stand for in RICER?', answer: 'Elevation.' }
+    { id: 'f1', category: 'Definition', question: 'What is "Stroke Volume"?', answer: 'The amount of blood ejected by the left ventricle in one contraction.' },
+    { id: 'f2', category: 'Physiology', question: 'Which muscle fiber type is dominant in marathon runners?', answer: 'Slow Twitch (Red) Fibers / Type I.' },
+    { id: 'f3', category: 'Physiology', question: 'What is "Cardiac Hypertrophy"?', answer: 'Thickening and enlargement of the heart muscle due to training (Athlete\'s Heart).' },
+    { id: 'f4', category: 'Physiology', question: 'Define "Vital Capacity".', answer: 'Maximum amount of air a person can exhale after a maximum inhalation.' },
+    { id: 'f5', category: 'Injury', question: 'Differentiation between Sprain and Strain?', answer: 'Sprain = Ligament injury; Strain = Muscle/Tendon injury.' },
+    { id: 'f6', category: 'Injury', question: 'What is a "Greenstick Fracture"?', answer: 'A fracture where the bone bends and cracks, common in children.' },
+    { id: 'f7', category: 'First Aid', question: 'What does "C" stand for in RICER?', answer: 'Compression.' },
+    { id: 'f8', category: 'Physiology', question: 'What is "Tidal Volume"?', answer: 'The volume of air inhaled or exhaled in a normal breath.' },
+    { id: 'f9', category: 'Physiology', question: 'How does exercise affect Resting Heart Rate?', answer: 'It decreases it (Bradycardia) due to increased efficiency.' },
+    { id: 'f10', category: 'Physiology', question: 'Primary determinant of explosive strength?', answer: 'Muscle composition (percentage of Fast Twitch fibers) and nerve impulse intensity.' },
+    { id: 'f11', category: 'Injury', question: 'Define "Abrasion".', answer: 'A superficial injury where skin is scraped off due to friction.' },
+    { id: 'f12', category: 'Injury', question: 'What is a "Comminuted Fracture"?', answer: 'A fracture where the bone breaks into three or more pieces.' },
+    { id: 'f13', category: 'Physiology', question: 'What is the "Second Wind"?', answer: 'A phenomenon characterized by sudden transition from distress to comfort during endurance exercise.' },
+    { id: 'f14', category: 'Physiology', question: 'Formula for Cardiac Output?', answer: 'Cardiac Output = Stroke Volume × Heart Rate.' },
+    { id: 'f15', category: 'Injury', question: 'What is "Tennis Elbow"?', answer: 'An overuse injury (strain/inflammation) of the tendons in the elbow.' },
+    { id: 'f16', category: 'First Aid', question: 'Why apply Ice to an injury?', answer: 'To cause vasoconstriction, reducing blood flow, swelling, and pain.' },
+    { id: 'f17', category: 'Physiology', question: 'What is "Oxygen Debt" (EPOC)?', answer: 'The amount of extra oxygen required by muscle tissue during recovery from vigorous exercise.' },
+    { id: 'f18', category: 'Injury', question: 'Identification: A bruise caused by a direct hit.', answer: 'Contusion.' },
+    { id: 'f19', category: 'Injury', question: 'What is a "Stress Fracture"?', answer: 'A tiny crack in a bone caused by repetitive stress or overuse.' },
+    { id: 'f20', category: 'Physiology', question: 'Role of Myoglobin in endurance?', answer: 'Stores oxygen in muscle cells for aerobic respiration.' },
+    { id: 'f21', category: 'First Aid', question: 'What does Elevation do in PRICE?', answer: 'Uses gravity to help drain fluid away from the injured area to reduce swelling.' },
+    { id: 'f22', category: 'Physiology', question: 'What determines Flexibility?', answer: 'Joint structure, ligament stretchability, and muscle temperature.' },
+    { id: 'f23', category: 'Physiology', question: 'Effect of aging on flexibility?', answer: 'Flexibility generally decreases with age due to loss of tissue elasticity.' },
+    { id: 'f24', category: 'Injury', question: 'What is a "Dislocation"?', answer: 'Displacement of contiguous surfaces of bones comprising a joint.' },
+    { id: 'f25', category: 'Injury', question: 'Difference between Simple and Compound fracture?', answer: 'Simple: Skin intact. Compound: Bone pierces skin.' },
+    { id: 'f26', category: 'Physiology', question: 'What is "Lactate Threshold"?', answer: 'The intensity of exercise at which lactate begins to accumulate in the blood.' },
+    { id: 'f27', category: 'Physiology', question: 'Effect of exercise on capillaries?', answer: 'Capillarization: Density of capillaries increases to improve blood supply.' },
+    { id: 'f28', category: 'Physiology', question: 'Function of Red Muscle Fibers?', answer: 'Endurance activities (Aerobic), fatigue resistant, high mitochondrial density.' },
+    { id: 'f29', category: 'Physiology', question: 'Function of White Muscle Fibers?', answer: 'Power/Speed activities (Anaerobic), fatigue quickly.' },
+    { id: 'f30', category: 'Injury', question: 'Common site for Anterior Cruciate Ligament (ACL) injury?', answer: 'The Knee.' },
+    { id: 'f31', category: 'First Aid', question: 'Duration for Ice application?', answer: '10-20 minutes, every 2-3 hours for the first 48 hours.' },
+    { id: 'f32', category: 'Physiology', question: 'What is "Minute Volume"?', answer: 'Total volume of air breathed in one minute (TV x Rate).' },
+    { id: 'f33', category: 'Injury', question: 'What is "Laceration"?', answer: 'A deep cut or tear in the skin or flesh.' },
+    { id: 'f34', category: 'Physiology', question: 'Does Vital Capacity increase with training?', answer: 'Yes, regular aerobic training increases vital capacity.' },
+    { id: 'f35', category: 'Physiology', question: 'What is "Reaction Time"?', answer: 'The interval of time between the presentation of a stimulus and the initiation of a response.' },
+    { id: 'f36', category: 'Physiology', question: 'Main fuel source for aerobic exercise?', answer: 'Glycogen and Fats.' },
+    { id: 'f37', category: 'Physiology', question: 'Main fuel source for anaerobic exercise?', answer: 'ATP-CP and Glucose (Glycolysis).' }
   ],
   sqp: [
     {
       id: 'q1',
-      year: '2025-26',
-      paperType: 'SQP',
+      year: '2023-24',
+      paperType: 'Board',
       marks: 1,
       type: 'MCQ',
-      question: 'Which of the following is a joint injury?',
-      answer: 'Dislocation',
-      aiExplanation: 'Dislocation is the displacement of bone surfaces in a joint, while others like Sprain are soft tissue injuries.'
+      question: 'Which physiological factor determines the speed of an athlete?',
+      answer: '(b) Muscle Fiber Type',
+      aiExplanation: 'Fast Twitch (White) fibers contract rapidly and are essential for speed.'
     },
     {
       id: 'q2',
       year: '2024-25',
-      paperType: 'Board',
+      paperType: 'SQP',
       marks: 3,
       type: 'SA',
-      question: 'Explain the difference between a Strain and a Sprain.',
-      answer: 'A Strain is an injury to a muscle or tendon, whereas a Sprain is an injury to a ligament.',
-      aiExplanation: 'Both involve overstretching but affect different types of connective tissue.'
+      question: 'Differentiate between Sprain and Strain.',
+      answer: 'Sprain: Ligament injury (Bone-Bone). Strain: Muscle/Tendon injury (Muscle-Bone).',
+      aiExplanation: 'Mnemonic: "T" in Strain -> Tendon. Sprain is for ligaments (like ankles).'
     },
     {
       id: 'q3',
-      year: '2025-26',
-      paperType: 'SQP',
+      year: '2022-23',
+      paperType: 'Board',
       marks: 5,
       type: 'LA',
-      question: 'What are the effects of regular exercise on the cardio-respiratory system?',
-      answer: 'Increased stroke volume, decreased resting HR, increased vital capacity, better gas exchange, and heart hypertrophy.',
-      aiExplanation: 'Regular training leads to functional and structural changes that improve aerobic efficiency.'
+      question: 'Explain the effects of regular exercise on the Muscular System.',
+      answer: '1. Hypertrophy (Size) 2. Change in shape 3. Increased Capillaries 4. Delayed Fatigue 5. Better Coordination.',
+      aiExplanation: 'Focus on structural changes (size, blood supply) and functional changes (endurance, efficiency).'
+    },
+    {
+      id: 'q4',
+      year: '2025-26',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'A fracture where the bone is crushed into many pieces is called:',
+      answer: '(c) Comminuted Fracture',
+      aiExplanation: 'Greenstick = Bend; Comminuted = Shattered/Many pieces; Simple = Clean break.'
+    },
+    {
+      id: 'q5',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      question: 'What is the PRICER protocol? Explain briefly.',
+      answer: 'P-Protection, R-Rest, I-Ice, C-Compression, E-Elevation, R-Referral. Used for soft tissue injuries.',
+      aiExplanation: 'Ideally list each letter and its action. "Protection" and "Referral" are the extensions to the classic RICE.'
+    },
+    {
+      id: 'q6',
+      year: '2021-22',
+      paperType: 'Term-1',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Which of the following decreases due to regular exercise?',
+      answer: '(a) Resting Heart Rate',
+      aiExplanation: 'Stroke volume and Cardiac output increase, but Resting Heart Rate decreases (Bradycardia) due to efficiency.'
+    },
+    {
+      id: 'q7',
+      year: '2024-25',
+      paperType: 'Board',
+      marks: 5,
+      type: 'LA',
+      question: 'Elucidate the physiological factors determining Strength.',
+      answer: '1. Muscle Cross-sectional area (Size). 2. Muscle Fiber Composition (% Fast Twitch). 3. Nerve Impulse Intensity.',
+      aiExplanation: 'Size is the biggest factor (Hypertrophy). Fiber type is genetic. Nerve impulse allows recruitment of more fibers.'
+    },
+    {
+      id: 'q8',
+      year: '2022-23',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      question: 'Define Vital Capacity and Stroke Volume.',
+      answer: 'Vital Capacity: Max air exhaled after max inhalation. Stroke Volume: Blood pumped per beat (~70ml resting).',
+      aiExplanation: 'Key difference: One is Respiratory (Lungs/Air), the other is Cardiovascular (Heart/Blood).'
+    },
+    {
+      id: 'q9',
+      year: '2025-26',
+      paperType: 'SQP',
+      marks: 4,
+      type: 'Case',
+      question: 'Rohan, a basketball player, landed awkwardly and felt a pop in his ankle, followed by swelling. 1. Identify injury. 2. First Aid?',
+      answer: '1. Sprain (Ligament injury). 2. Apply PRICER (Ice, Compression, Elevation).',
+      aiExplanation: 'Ankle turns usually result in Ligament damage (Sprain). Immediate Ice reduces the swelling.'
     }
   ],
   mindMap: {
@@ -167,23 +260,24 @@ export const unit7: Chapter = {
       {
         id: 'm2',
         label: 'Physiology',
-        children: [{ id: 'm3', label: 'Fitness Factors' }, { id: 'm4', label: 'Exercise Effects' }]
+        children: [{ id: 'm3', label: 'Determinants (Strength/Speed)' }, { id: 'm4', label: 'Adaptations (Hypertrophy/Bradycardia)' }]
       },
       {
         id: 'm5',
         label: 'Injuries',
-        children: [{ id: 'm6', label: 'Soft Tissue' }, { id: 'm7', label: 'Bone/Joint' }]
+        children: [{ id: 'm6', label: 'Soft Tissue (Sprain/Strain)' }, { id: 'm7', label: 'Bone (Fractures)' }]
       },
       {
         id: 'm8',
         label: 'Management',
-        children: [{ id: 'm9', label: 'RICER' }, { id: 'm10', label: 'First Aid' }]
+        children: [{ id: 'm9', label: 'PRICER' }, { id: 'm10', label: 'First Aid' }]
       }
     ]
   },
   cheatSheet: [
-    { title: 'Injury Quick List', points: ['Sprain = Ligament', 'Strain = Muscle', 'Abrasion = Scrape', 'Contusion = Bruise', 'Laceration = Cut'] },
-    { title: 'Fracture Types', points: ['Greenstick: Bent (Kids)', 'Comminuted: Many pieces', 'Stress: Overuse crack', 'Compound: Skin broken'] },
-    { title: 'Exercise Adaptations', points: ['Hypertrophy: Bigger muscles/heart', 'Bradycardia: Lower resting HR', 'Capillarization: More blood vessels'] }
+    { title: 'The 3 S\'s', points: ['Strength = Muscle Size', 'Speed = CNS + Fast Fibers', 'Stamina = VO2 Max'] },
+    { title: 'Injury Terms', points: ['Sprain = Ligament', 'Strain = Tendon', 'Contusion = Bruise', 'Abrasion = Scrape'] },
+    { title: 'Fractures', points: ['Greenstick (Kids)', 'Comminuted (Shattered)', 'Compound (Open Skin)'] },
+    { title: 'Cardio Math', points: ['Cardiac Output = SV x HR', 'Minute Volume = TV x Rate'] }
   ]
 };

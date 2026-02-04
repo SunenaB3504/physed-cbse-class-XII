@@ -1,34 +1,38 @@
-
 import { Chapter } from '../types';
 
 export const unit9: Chapter = {
   id: 9,
   slug: 'psychology-sports',
   name: 'Psychology & Sports',
-  description: 'Big Five personality theory, motivation techniques, exercise adherence strategies, and aggression in sports.',
+  description: 'Personality theories, motivation techniques, exercise adherence strategies, and aggression types in sports.',
   topics: [
     {
       id: 'personality-theory',
       title: 'Personality & Big Five Theory',
-      description: 'Understanding individual differences through the lens of psychological traits.',
+      description: 'Understanding individual differences through psychological traits.',
       content: [
-        'Definition: Personality is the dynamic organization within the individual of those psychophysical systems that determine their unique adjustment to their environment.',
-        'Big Five Model (OCEAN): Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism.',
-        'Jung’s Classification: Introverts (reserved, shy), Extroverts (social, outgoing), and Ambiverts (mixture of both).'
+        'Definition: The dynamic organization within the individual of those psychophysical systems that determine their unique adjustment to the environment.',
+        'Jung’s Classification: 1. Introverts (Focus on inner thoughts, reserved), 2. Extroverts (Focus on external world, social, energetic), 3. Ambiverts (Balanced mix).',
+        'Big Five Model (OCEAN):',
+        '• Openness: Imagination, creativity, curiosity. (Low: Traditional).',
+        '• Conscientiousness: Discipline, organization, dependability. (Low: Impulsive).',
+        '• Extraversion: Social, talkative, assertive. (Low: Quiet/Introverted).',
+        '• Agreeableness: Trusting, helpful, cooperative. (Low: Skeptical/Competitive).',
+        '• Neuroticism: Emotional instability, anxiety, moodiness. (Low: Stable/Calm).'
       ],
       visualizations: [
         {
           id: 'v1',
-          title: 'The Big Five Model (OCEAN)',
+          title: 'The Big Five (OCEAN) Traits',
           type: 'table',
           data: {
-            headers: ['Trait', 'High Score Characteristics', 'Low Score Characteristics'],
+            headers: ['Trait', 'High Score', 'Low Score'],
             rows: [
-              ['Openness', 'Curious, imaginative, creative.', 'Conventional, prefers routine.'],
-              ['Conscientiousness', 'Organized, dependable, disciplined.', 'Careless, impulsive, disorganized.'],
-              ['Extraversion', 'Outgoing, talkative, energetic.', 'Reserved, quiet, solitary.'],
-              ['Agreeableness', 'Trusting, helpful, empathetic.', 'Skeptical, competitive, stubborn.'],
-              ['Neuroticism', 'Anxious, moody, sensitive.', 'Secure, confident, calm.']
+              ['Openness', 'Creative, Curious', 'Routine-oriented'],
+              ['Conscientiousness', 'Organized, Disciplined', 'Careless, Impulsive'],
+              ['Extraversion', 'Social, Energetic', 'Reserved, Solitary'],
+              ['Agreeableness', 'Friendly, Compassionate', 'Analytical, Detached'],
+              ['Neuroticism', 'Anxious, Sensitive', 'Calm, Confident']
             ]
           }
         }
@@ -39,30 +43,36 @@ export const unit9: Chapter = {
       title: 'Motivation: Types & Techniques',
       description: 'The internal and external forces that drive athletic performance.',
       content: [
-        'Intrinsic Motivation: Internal drive, love for the sport, personal satisfaction, and mastery.',
-        'Extrinsic Motivation: Driven by external rewards like medals, cash prizes, fame, or avoiding punishment.',
-        'Techniques: Goal setting, feedback, social support, positive self-talk, and rewards.'
+        'Types of Motivation:',
+        '• Intrinsic: Internal drive (Enjoyment, Satisfaction, Curiosity). "I play because I love it."',
+        '• Extrinsic: External rewards (Medals, Money, Praise, Avoiding Punishment). "I play to win the trophy."',
+        'Techniques to Enhance Motivation:',
+        '1. Goal Setting (SMART Goals).',
+        '2. Reinforcement (Positive rewards/praise).',
+        '3. Knowledge of Progress (Feedback).',
+        '4. Social Support (Team cohesion).',
+        '5. Positive Self-Talk.'
       ],
       visualizations: [
         {
           id: 'v2',
-          title: 'Intrinsic vs Extrinsic Motivation',
+          title: 'Intrinsic vs Extrinsic',
           type: 'grid',
           data: [
-            { label: 'Intrinsic', desc: 'Enjoyment, Interest, Personal Challenge, Satisfaction.' },
-            { label: 'Extrinsic', desc: 'Trophies, Social Status, Money, Fear of Failure.' }
+            { label: 'Intrinsic', desc: 'Flow state, Love for game, Internal mastery.' },
+            { label: 'Extrinsic', desc: 'Medals, Fame, Sponsorships, Fear of coach.' }
           ]
         },
         {
           id: 'v3',
-          title: 'Effective Goal Setting (SMART)',
+          title: 'SMART Goals',
           type: 'flow',
           data: [
-            'Specific: Clear and defined.',
-            'Measurable: Trackable progress.',
-            'Achievable: Realistic targets.',
-            'Relevant: Aligned with long-term vision.',
-            'Time-bound: Deadlines for completion.'
+            'Specific',
+            'Measurable',
+            'Achievable',
+            'Relevant',
+            'Time-Bound'
           ]
         }
       ]
@@ -70,89 +80,186 @@ export const unit9: Chapter = {
     {
       id: 'exercise-adherence',
       title: 'Exercise Adherence',
-      description: 'Reasons for starting and strategies for maintaining a regular exercise program.',
+      description: 'Strategies to maintain a regular exercise routine.',
       content: [
-        'Benefits: Improved health, stress management, social interaction, and weight control.',
-        'Barriers: Lack of time, lack of energy, lack of motivation, and injury fears.',
-        'Strategies: Setting realistic goals, finding a partner, making it fun, and tracking progress.'
+        'Definition: Checking the stickiness/faithfulness to an exercise program.',
+        'Common Barriers: Lack of time, Fatigue, Lack of motivation, Cost, Injury.',
+        'Strategies for Adherence:',
+        '1. Simple Routines: Start easy to build habit.',
+        '2. Social Support: Workout buddies or group classes.',
+        '3. Progress Tracking: Apps or journals.',
+        '4. Variety: Mixing activities to prevent boredom.',
+        '5. Reward System: Treating oneself for milestones.'
       ],
       visualizations: [
         {
           id: 'v4',
-          title: 'Strategies for Adherence',
-          type: 'table',
-          data: {
-            headers: ['Strategy', 'Implementation'],
-            rows: [
-              ['Social Support', 'Exercising with friends or in groups.'],
-              ['Behavioral Contracts', 'Signing a commitment to oneself.'],
-              ['Prompting', 'Setting reminders on phones or post-its.'],
-              ['Reward Systems', 'Treating oneself after hitting a milestone.']
-            ]
-          }
+          title: 'Adherence Strategies',
+          type: 'list',
+          data: [
+            'Make it fun (Variety)',
+            'Set small goals (Progress)',
+            'Get a buddy (Accountability)',
+            'Schedule it (Priority)'
+          ]
         }
       ]
     },
     {
       id: 'aggression-sports',
       title: 'Aggression in Sports',
-      description: 'Classification of aggressive behaviors in competitive environments.',
+      description: 'Physical or verbal behavior intended to cause harm.',
       content: [
-        'Hostile Aggression: Primary goal is to cause injury or physical harm to an opponent. Often accompanied by anger.',
-        'Instrumental Aggression: Behavior intended to harm but as a means to achieve a non-aggressive goal (e.g., tackling hard to win the ball).',
-        'Assertive Behavior: Playing hard and with high intensity within the rules, without intent to harm.'
+        '1. Hostile Aggression (Reactive): Primary goal is to inflict injury/psychological harm. Driven by anger/frustration. (e.g., Punching a player after a foul).',
+        '2. Instrumental Aggression: Intent to harm is present, but as a means to a goal (winning). (e.g., A rugby tackle to stop a try).',
+        '3. Assertive Behavior: Often confused with aggression. High intensity, forceful play within the rules, no intent to harm. (e.g., Hard rebounding in basketball).'
       ],
       visualizations: [
         {
           id: 'v5',
-          title: 'Types of Aggression Matrix',
-          type: 'grid',
-          data: [
-            { label: 'Hostile', desc: 'Intent to harm, driven by anger (Retaliation).' },
-            { label: 'Instrumental', desc: 'Intent to harm for a tactical goal (Strategic foul).' },
-            { label: 'Assertive', desc: 'High intensity, no intent to harm (Clean hard play).' }
-          ]
+          title: 'Aggression Spectrum',
+          type: 'table',
+          data: {
+            headers: ['Type', 'Goal', 'Emotion', 'Rules'],
+            rows: [
+              ['Hostile', 'To Harm', 'Anger', 'Violated'],
+              ['Instrumental', 'To Win', 'Focused', 'Often Violated'],
+              ['Assertive', 'To Dominate', 'Controlled', 'Respected']
+            ]
+          }
         }
       ]
     }
   ],
   flashcards: [
-    { id: 'f1', category: 'Technical', question: 'What does "O" stand for in the Big Five theory?', answer: 'Openness.' },
-    { id: 'f2', category: 'Technical', question: 'Differentiate between Hostile and Instrumental aggression.', answer: 'Hostile is purely to harm; Instrumental is to harm as a means to achieve a goal.' },
-    { id: 'f3', category: 'Technical', question: 'Define Intrinsic Motivation.', answer: 'Motivation that comes from within an individual based on personal satisfaction.' },
-    { id: 'f4', category: 'Technical', question: 'What is the full form of OCEAN in personality?', answer: 'Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism.' },
-    { id: 'f5', category: 'Technical', question: 'Which trait is linked to anxiety and moodiness?', answer: 'Neuroticism.' }
+    { id: 'f1', category: 'Personality', question: 'What does "O" stand for in OCEAN?', answer: 'Openness.' },
+    { id: 'f2', category: 'Personality', question: 'Who classified personality into Introverts and Extroverts?', answer: 'C.G. Jung.' },
+    { id: 'f3', category: 'Motivation', question: 'Define Intrinsic Motivation.', answer: 'Motivation driven by internal satisfaction or love for the activity.' },
+    { id: 'f4', category: 'Motivation', question: 'What is Extrinsic Motivation?', answer: 'Motivation driven by external rewards like money, fame, or awards.' },
+    { id: 'f5', category: 'Aggression', question: 'Primary goal of Hostile Aggression?', answer: 'To inflict physical or psychological harm on someone.' },
+    { id: 'f6', category: 'Aggression', question: 'What is Instrumental Aggression?', answer: 'Aggressive behavior used as a tool to achieve a non-aggressive goal (winning).' },
+    { id: 'f7', category: 'Personality', question: 'Characteristics of Neuroticism?', answer: 'Anxiety, moodiness, emotional instability, sadness.' },
+    { id: 'f8', category: 'Motivation', question: 'What does SMART stand for?', answer: 'Specific, Measurable, Achievable, Relevant, Time-bound.' },
+    { id: 'f9', category: 'Aggression', question: 'Is Assertive Behavior considered aggression?', answer: 'Technically no, because there is no intent to harm.' },
+    { id: 'f10', category: 'Personality', question: 'What is an Ambivert?', answer: 'A person who exhibits a balance of introverted and extroverted traits.' },
+    { id: 'f11', category: 'Adherence', question: 'A common barrier to exercise adherence?', answer: 'Lack of time / Fatigue / Lack of facilities.' },
+    { id: 'f12', category: 'Personality', question: 'Trait associated with being organized and disciplined?', answer: 'Conscientiousness.' },
+    { id: 'f13', category: 'Personality', question: 'Trait associated with being cooperative and trusting?', answer: 'Agreeableness.' },
+    { id: 'f14', category: 'Motivation', question: 'Example of Positive Self-Talk?', answer: '"I can do this", "Focus on the ball", "Keep going".' },
+    { id: 'f15', category: 'Definition', question: 'Define "Personality".', answer: 'The dynamic organization of psychophysical systems determining unique adjustment to the environment.' },
+    { id: 'f16', category: 'Aggression', question: 'Sledging in cricket is an example of?', answer: 'Often Hostile or Instrumental Aggression (verbal).' },
+    { id: 'f17', category: 'Adherence', question: 'How does "Social Support" help adherence?', answer: 'Provides accountability, motivation, and makes exercise more enjoyable.' },
+    { id: 'f18', category: 'Motivation', question: 'Is "Fear of Punishment" intrinsic or extrinsic?', answer: 'Extrinsic.' },
+    { id: 'f19', category: 'Personality', question: 'High score in Extraversion means?', answer: 'Talkative, energetic, assertive, social.' },
+    { id: 'f20', category: 'Aggression', question: 'A boxer punching an opponent to win points?', answer: 'Instrumental Aggression (Harm is essential to winning, but winning is the goal).' },
+    { id: 'f21', category: 'Motivation', question: 'What is "Knowledge of Progress"?', answer: 'Feedback on performance (e.g., timing, score) that motivates improvement.' },
+    { id: 'f22', category: 'General', question: 'What is Sports Psychology?', answer: 'Study of how psychological factors affect performance and how participation affects psychology.' },
+    { id: 'f23', category: 'Adherence', question: 'Strategy: Signing a contract with yourself.', answer: 'Behavioral Contract.' },
+    { id: 'f24', category: 'Personality', question: 'Jung: A person interested in their own thoughts?', answer: 'Introvert.' },
+    { id: 'f25', category: 'Aggression', question: 'Cause of Hostile Aggression?', answer: 'Frustration, anger, desire for revenge.' },
+    { id: 'f26', category: 'Personality', question: 'Low score in Openness means?', answer: 'Practical, conventional, prefers routine.' },
+    { id: 'f27', category: 'Motivation', question: 'Why is Goal Setting effective?', answer: 'It provides direction, focus, and a standard for measuring success.' },
+    { id: 'f28', category: 'Adherence', question: 'What is "Prompting"?', answer: 'Using cues (alarms, notes, gym bag by door) to trigger exercise behavior.' },
+    { id: 'f29', category: 'Personality', question: 'Is personality static or dynamic?', answer: 'Dynamic (it can change/evolve).' },
+    { id: 'f30', category: 'Aggression', question: 'Playing hard within rules is?', answer: 'Assertive Behavior.' },
+    { id: 'f31', category: 'Motivation', question: 'Technique: Visualizing success.', answer: 'Imagery / Mental Practice.' },
+    { id: 'f32', category: 'Personality', question: 'People who initiate conversation easily are likely?', answer: 'Extroverts.' },
+    { id: 'f33', category: 'Adherence', question: 'Effect of high intensity on adherence for beginners?', answer: 'Usually negative (too hard -> quit). Start low intensity.' },
+    { id: 'f34', category: 'Aggression', question: 'Who defined the Frustration-Aggression theory?', answer: 'Often attributed to Dollard et al.' },
+    { id: 'f35', category: 'Motivation', question: 'Are cash prizes intrinsic?', answer: 'No, Extrinsic.' },
+    { id: 'f36', category: 'Personality', question: 'Which Big Five trait helps in team cohesion?', answer: 'Agreeableness.' },
+    { id: 'f37', category: 'Personality', question: 'Which Big Five trait helps in rigorous training?', answer: 'Conscientiousness.' }
   ],
   sqp: [
     {
       id: 'q1',
-      year: '2025-26',
-      paperType: 'SQP',
+      year: '2023-24',
+      paperType: 'Board',
       marks: 1,
       type: 'MCQ',
-      question: 'Which trait of the Big Five theory characterizes someone who is disciplined and organized?',
-      answer: 'Conscientiousness',
-      aiExplanation: 'Conscientious individuals are thorough, careful, and vigilant in their tasks.'
+      question: 'Which of the following is NOT a Big Five personality trait?',
+      answer: '(d) Aggressiveness',
+      aiExplanation: 'The Big Five are Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism (OCEAN). Aggressiveness is not one of them.'
     },
     {
       id: 'q2',
       year: '2024-25',
-      paperType: 'Board',
+      paperType: 'SQP',
       marks: 3,
       type: 'SA',
-      question: 'Briefly explain any three strategies to enhance exercise adherence.',
-      answer: '1. Goal setting. 2. Social support. 3. Fun and variety.',
-      aiExplanation: 'Maintaining an exercise routine requires both psychological motivation and environmental support.'
+      question: 'Differentiate between Intrinsic and Extrinsic motivation with examples.',
+      answer: 'Intrinsic: Internal satisfaction (Running for joy). Extrinsic: External reward (Running for a medal).',
+      aiExplanation: 'Key Difference: The source of the drive (Internal vs External). Intrinsic is generally more sustainable.'
     },
     {
       id: 'q3',
+      year: '2022-23',
+      paperType: 'Board',
+      marks: 5,
+      type: 'LA',
+      question: 'Explain Jung’s Classification of Personality.',
+      answer: '1. Introverts (Inner focused, shy). 2. Extroverts (Outer focused, social). 3. Ambiverts (Balanced).',
+      aiExplanation: 'Define each type involving their social interaction, thought process (reflective vs expressive), and energy source.'
+    },
+    {
+      id: 'q4',
       year: '2025-26',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Punching a player in anger after a foul is an example of:',
+      answer: '(a) Hostile Aggression',
+      aiExplanation: 'The primary intent is harm, driven by anger. Instrumental aggression would be "strategic" harm.'
+    },
+    {
+      id: 'q5',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      question: 'Suggest three strategies to increase Exercise Adherence.',
+      answer: 'Social Support (Group classes), Goal Setting (Tracking progress), Making it Fun (Variety).',
+      aiExplanation: 'Focus on overcoming barriers like boredom and lack of accountability.'
+    },
+    {
+      id: 'q6',
+      year: '2021-22',
+      paperType: 'Term-1',
+      marks: 4,
+      type: 'Case',
+      question: 'Rahul is a calm, organized, and hard-working athlete. He follows his training schedule strictly. 1. Identify the Big Five trait. 2. Explain it.',
+      answer: '1. Conscientiousness. 2. It reflects self-discipline, organization, and dependability.',
+      aiExplanation: 'The keywords "organized" and "schedule" point directly to Conscientiousness.'
+    },
+    {
+      id: 'q7',
+      year: '2024-25',
+      paperType: 'Board',
+      marks: 3,
+      type: 'SA',
+      question: 'What is Aggression? Explain Instrumental Aggression.',
+      answer: 'Aggression: Behavior to harm. Instrumental: Harming to achieve a goal (e.g., tackle to stop a score), not out of anger.',
+      aiExplanation: 'Crucial distinction: Instrumental aggression is "business-like" or tactical. Hostile is emotional.'
+    },
+    {
+      id: 'q8',
+      year: '2022-23',
       paperType: 'SQP',
       marks: 5,
       type: 'LA',
-      question: 'Define Personality. Explain the Big Five Theory of personality in detail.',
-      answer: 'Personality is unique adjustment. Explain OCEAN: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism.',
-      aiExplanation: 'The OCEAN model is the most widely accepted theory for describing human personality traits in modern psychology.'
+      question: 'Describe the Big Five Personality Theory (OCEAN).',
+      answer: 'Openness (Creative), Conscientiousness (Disciplined), Extraversion (Social), Agreeableness (Helpful), Neuroticism (Anxious).',
+      aiExplanation: 'List all five traits. For a 5-mark question, provide a 1-line description and a "Sports Application" for each.'
+    },
+    {
+      id: 'q9',
+      year: '2025-26',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Self-talk and Goal Setting are types of:',
+      answer: '(b) Motivation Techniques',
+      aiExplanation: 'These are psychological strategies used to enhance focus and drive behavior (motivation).'
     }
   ],
   mindMap: {
@@ -162,23 +269,29 @@ export const unit9: Chapter = {
       {
         id: 'm2',
         label: 'Personality',
-        children: [{ id: 'm3', label: 'Big Five (OCEAN)' }, { id: 'm4', label: 'Jung Classification' }]
+        children: [{ id: 'm3', label: 'Big Five (OCEAN)' }, { id: 'm4', label: 'Jung Traits' }]
       },
       {
         id: 'm5',
         label: 'Motivation',
-        children: [{ id: 'm6', label: 'Intrinsic vs Extrinsic' }, { id: 'm7', label: 'Techniques' }]
+        children: [{ id: 'm6', label: 'Intrinsic/Extrinsic' }, { id: 'm7', label: 'Techniques (SMART)' }]
       },
       {
         id: 'm8',
         label: 'Aggression',
-        children: [{ id: 'm9', label: 'Hostile' }, { id: 'm10', label: 'Instrumental' }, { id: 'm11', label: 'Assertive' }]
+        children: [{ id: 'm9', label: 'Hostile vs Instrumental' }, { id: 'm10', label: 'Assertive Play' }]
+      },
+      {
+        id: 'm11',
+        label: 'Adherence',
+        children: [{ id: 'm12', label: 'Strategies' }, { id: 'm13', label: 'Barriers' }]
       }
     ]
   },
   cheatSheet: [
-    { title: 'Big Five (OCEAN)', points: ['O: Openness (Creative)', 'C: Conscientiousness (Disciplined)', 'E: Extraversion (Social)', 'A: Agreeableness (Trusting)', 'N: Neuroticism (Moody)'] },
-    { title: 'Aggression Types', points: ['Hostile: Injury + Anger', 'Instrumental: Injury for Goal', 'Assertive: Hard play, No harm'] },
-    { title: 'Motivation Hacks', points: ['Set SMART goals', 'Positive Self-talk', 'Use External rewards wisely', 'Find Intrinsic joy'] }
+    { title: 'OCEAN Traits', points: ['O: Creative', 'C: Organized', 'E: Social', 'A: Helpful', 'N: Anxious'] },
+    { title: 'Jung Traits', points: ['Introvert: Inner-focused', 'Extrovert: Outer-focused', 'Ambivert: Balanced'] },
+    { title: 'Aggression', points: ['Hostile = Anger + Harm', 'Instrumental = Goal + Harm', 'Assertive = No Harm'] },
+    { title: 'Motivation', points: ['Intrinsic = Love', 'Extrinsic = Reward'] }
   ]
 };

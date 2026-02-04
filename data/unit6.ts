@@ -1,181 +1,286 @@
-
 import { Chapter } from '../types';
 
 export const unit6: Chapter = {
   id: 6,
   slug: 'test-measurement',
   name: 'Test & Measurement in Sports',
-  description: 'Fitness testing protocols including SAI Khelo India, Harvard Step Test, and Rikli & Jones Senior Citizen Fitness Test.',
+  description: 'Procedures for Motor Fitness, Cardio-Vascular Fitness, and Senior Citizen Fitness Tests.',
   topics: [
     {
-      id: 'khelo-india',
-      title: 'SAI Khelo India Fitness Test',
-      description: 'Standardized fitness battery for school-going children in India.',
+      id: 'sai-khelo-india',
+      title: 'Motor Fitness (SAI Khelo India)',
+      description: 'Standardized fitness assessments for different age groups in schools.',
       content: [
-        'Age Group 5-8 Years (Class 1-3): Focuses on fundamental movement skills. Tests include BMI, Flamingo Balance Test, and Plate Tapping Test.',
-        'Age Group 9-18 Years (Class 4-12): Focuses on physical fitness components. Tests include BMI, 50m Dash (Speed), 600m Run/Walk (Endurance), Sit & Reach (Flexibility), and Strength tests.',
-        'Strength Tests (9-18 yrs): Abdominal Partial Curl Up (Core), Push-Ups for Boys, and Modified Push-Ups for Girls.'
+        'Purpose: To assess fitness levels of children to identify talent and monitor health.',
+        'Age Group 5-8 Years (Class 1-3):',
+        '• BMI (Body Mass Index): Body Composition.',
+        '• Flamingo Balance Test: Static Balance (Stand on one leg on a beam).',
+        '• Plate Tapping Test: Speed and Limb Coordination (Tap two plates with hand).',
+        'Age Group 9-18 Years (Class 4-12):',
+        '• 50m Standing Start: Speed (Sprint).',
+        '• 600m Run/Walk: Cardiovascular Endurance.',
+        '• Sit and Reach: Flexibility (Lower back/Hamstrings).',
+        '• Partial Curl Up: Abdominal Strength/Endurance.',
+        '• Push-Ups (Boys) / Modified Push-Ups (Girls): Upper Body Strength.',
+        '• Standing Broad Jump: Explosive Leg Power.',
+        '• 4x10m Shuttle Run: Agility.'
       ],
       visualizations: [
         {
           id: 'v1',
-          title: 'SAI Khelo India Test Battery',
+          title: '9-18 Years Test Battery',
           type: 'table',
           data: {
-            headers: ['Component', 'Test Name (9-18 Years)', 'Purpose'],
+            headers: ['Component', 'Test Item'],
             rows: [
-              ['Body Composition', 'BMI', 'Healthy weight assessment.'],
-              ['Speed', '50m Dash', 'Acceleration and speed.'],
-              ['Endurance', '600m Run/Walk', 'Aerobic capacity.'],
-              ['Flexibility', 'Sit & Reach', 'Lower back and hamstring flexibility.'],
-              ['Core Strength', 'Partial Curl Up', 'Abdominal endurance.'],
-              ['Upper Body Strength', 'Push-Ups (B) / Mod. Push-Ups (G)', 'Muscular strength.']
+              ['Speed', '50m Dash'],
+              ['Endurance', '600m Run/Walk'],
+              ['Flexibility', 'Sit & Reach'],
+              ['Abdominal Strength', 'Partial Curl Up'],
+              ['Upper Body Strength', 'Push Ups (Boys) / Mod. Push Ups (Girls)'],
+              ['Explosive Power', 'Standing Broad Jump'],
+              ['Agility', '4x10m Shuttle Run']
             ]
           }
-        },
+        }
+      ]
+    },
+    {
+      id: 'general-motor-fitness',
+      title: 'General Motor Fitness (Barrow)',
+      description: 'Barrow Three-Item General Motor Ability Test.',
+      content: [
+        'Developer: Harold M. Barrow (1953) for college men (adaptable).',
+        'Item 1: Standing Broad Jump (Explosive Leg Power). Measured in feet/inches.',
+        'Item 2: Zig-Zag Run (Agility and Speed). Run through a course of cones. Measured in seconds.',
+        'Item 3: Medicine Ball Put (Arm/Shoulder Strength). 3 kg for boys, 1 kg for girls. Measured in feet/meters.'
+      ],
+      visualizations: [
         {
           id: 'v2',
-          title: 'Tests for Younger Kids (5-8 Yrs)',
+          title: 'Barrow Test Items',
           type: 'grid',
           data: [
-            { label: 'BMI', desc: 'Height and weight measurement.' },
-            { label: 'Flamingo Balance', desc: 'Static balance on one leg.' },
-            { label: 'Plate Tapping', desc: 'Limb movement speed and coordination.' }
+            { label: 'Broad Jump', desc: 'Power (Legs)' },
+            { label: 'Zig-Zag Run', desc: 'Agility' },
+            { label: 'Med Ball Put', desc: 'Strength (Arms)' }
           ]
         }
       ]
     },
     {
       id: 'cardio-fitness',
-      title: 'Measurement of Cardiovascular Fitness',
-      description: 'Efficiency of heart and lungs to supply oxygen during activity.',
+      title: 'Cardio-Vascular Fitness',
+      description: 'Tests to measure Aerobic Capacity (VO2 Max).',
       content: [
-        'Harvard Step Test: Developed by Brouha (1943). Measures aerobic fitness by stepping up and down a 20-inch bench for 5 minutes (or until exhaustion).',
-        'Pulse Recovery: Heart rate is measured at 1-1.5 min, 2-2.5 min, and 3-3.5 min after the test.',
-        'Fitness Index Score: (100 × Duration in seconds) / (2 × Sum of pulse counts in recovery).',
-        'Rockport One Mile Test: Walking one mile as fast as possible to estimate VO2 Max based on time, heart rate, age, and weight.'
+        'Harvard Step Test: Developed by Brouha. Bench height 20 inches (Men) / 16 inches (Women). Rate: 30 steps/min for 5 min.',
+        'Pulse Count: Taken at 1-1.5 min, 2-2.5 min, 3-3.5 min recovery.',
+        'Fitness Index (Long): (Duration in sec × 100) / (2 × Sum of 3 pulse counts).',
+        'Fitness Index (Short): (Duration in sec × 100) / (5.5 × Pulse count at 1-1.5 min).',
+        'Rockport One Mile Test: Walk 1 mile as fast as possible. Record Time and Heart Rate (immediately after).',
+        'VO2 Max Formula: 132.853 - (0.0769 × Weight[lb]) - (0.3877 × Age) + (6.315 × Gender[M=1,F=0]) - (3.2649 × Time[min]) - (0.1565 × HR).'
       ],
       visualizations: [
         {
           id: 'v3',
-          title: 'Harvard Step Test Formulas',
+          title: 'Harvard Step Test Norms',
           type: 'table',
           data: {
-            headers: ['Version', 'Formula'],
+            headers: ['Score', 'Rating'],
             rows: [
-              ['Long Form Index', '(100 × Test Duration in Sec) / (2 × Sum of 3 Pulse Counts)'],
-              ['Short Form Index', '(100 × Test Duration in Sec) / (5.5 × Pulse Count 1)']
+              ['> 96', 'Excellent'],
+              ['83 - 96', 'Good'],
+              ['68 - 82', 'Average'],
+              ['< 68', 'Below Average (Poor)']
             ]
           }
         }
       ]
     },
     {
-      id: 'senior-citizen-test',
-      title: 'Rikli & Jones: Senior Citizen Fitness Test',
-      description: 'Functional fitness battery designed for older adults (60+ years).',
+      id: 'senior-citizens',
+      title: 'Rikli & Jones Senior Citizen Test',
+      description: 'Functional fitness test for ages 60-94.',
       content: [
-        'Purpose: To assess the functional capacity of seniors to perform activities of daily living (ADLs).',
-        'Chair Stand Test: Measures lower body strength.',
-        'Arm Curl Test: Measures upper body strength (5lb for women, 8lb for men).',
-        'Chair Sit & Reach: Measures lower body flexibility.',
-        'Back Scratch Test: Measures upper body (shoulder) flexibility.',
-        '8-Foot Up & Go: Measures agility and dynamic balance.',
-        '6-Minute Walk Test: Measures aerobic endurance.'
+        '1. Chair Stand Test: Lower Body Strength (Sit-to-stand in 30s).',
+        '2. Arm Curl Test: Upper Body Strength (Bicep curls in 30s). Men: 8lbs, Women: 5lbs.',
+        '3. Chair Sit and Reach: Lower Body Flexibility (Distance usually negative if cant touch toes).',
+        '4. Back Scratch Test: Upper Body Flexibility (Distance between fingers behind back).',
+        '5. 8-Foot Up and Go: Agility/Dynamic Balance (Stand, walk 8ft, return).',
+        '6. 6-Minute Walk Test: Aerobic Endurance (Distance covered). Alternative: 2-Minute Step Test.'
       ],
       visualizations: [
         {
           id: 'v4',
-          title: 'Functional Fitness Matrix',
-          type: 'table',
-          data: {
-            headers: ['Test Name', 'Component Measured'],
-            rows: [
-              ['Chair Stand', 'Lower Body Strength'],
-              ['Arm Curl', 'Upper Body Strength'],
-              ['Chair Sit & Reach', 'Lower Body Flexibility'],
-              ['Back Scratch', 'Upper Body Flexibility'],
-              ['8-Foot Up & Go', 'Agility / Dynamic Balance'],
-              ['6-Minute Walk', 'Aerobic Endurance']
-            ]
-          }
-        },
-        {
-          id: 'v5',
-          title: 'Equipment Needed',
-          type: 'grid',
+          title: 'Senior Test Battery',
+          type: 'list',
           data: [
-            { label: 'Chair Stand', desc: 'Straight back chair (no arms).' },
-            { label: 'Arm Curl', desc: '5lb and 8lb dumbbells + Stopwatch.' },
-            { label: '8-Foot Up & Go', desc: 'Cone, chair, and clear 8ft path.' }
+            'Chair Stand -> Legs',
+            'Arm Curl -> Arms',
+            'Sit & Reach -> Hams/Back',
+            'Back Scratch -> Shoulder',
+            '8-ft Up & Go -> Agility',
+            '6-min Walk -> Endurance'
           ]
         }
       ]
     }
   ],
   flashcards: [
-    { id: 'f1', category: 'Technical', question: 'Who developed the Senior Citizen Fitness Test?', answer: 'Rikli and Jones.' },
-    { id: 'f2', category: 'Technical', question: 'What is the bench height for the Harvard Step Test?', answer: '20 inches (50.8 cm).' },
-    { id: 'f3', category: 'Technical', question: 'Which test measures agility in senior citizens?', answer: '8-Foot Up & Go Test.' },
-    { id: 'f4', category: 'Technical', question: 'Plate Tapping test is for which age group?', answer: '5-8 years (Class 1-3).' },
-    { id: 'f5', category: 'Technical', question: 'What does the Back Scratch test measure?', answer: 'Upper body (shoulder) flexibility.' }
+    { id: 'f1', category: 'Age Group', question: 'What is the age group for the Flamingo Balance Test?', answer: '5-8 Years.' },
+    { id: 'f2', category: 'Technical', question: 'What is the bench height for Men in Harvard Step Test?', answer: '20 inches.' },
+    { id: 'f3', category: 'Technical', question: 'What does the Partial Curl Up measure?', answer: 'Abdominal Strength and Endurance.' },
+    { id: 'f4', category: 'Technical', question: 'Formula for BMI?', answer: 'Weight (kg) / Height (m)².' },
+    { id: 'f5', category: 'Technical', question: 'What is the weight of the dumbbell for Women in Arm Curl Test?', answer: '5 lbs.' },
+    { id: 'f6', category: 'Senior', question: 'Which test measures upper body flexibility in seniors?', answer: 'Back Scratch Test.' },
+    { id: 'f7', category: 'Technical', question: 'What is the duration of the Harvard Step Test?', answer: '5 minutes (300 seconds).' },
+    { id: 'f8', category: 'Formula', question: 'State the Short Form Formula for Fitness Index.', answer: '(Duration × 100) / (5.5 × Pulse 1).' },
+    { id: 'f9', category: 'Technical', question: 'What is measured by the 600m Run/Walk?', answer: 'Cardiovascular Endurance.' },
+    { id: 'f10', category: 'Technical', question: 'What does the Plate Tapping test measure?', answer: 'Limb movement speed and coordination.' },
+    { id: 'f11', category: 'Technical', question: 'What equipment is needed for the 8-Foot Up and Go?', answer: 'Chair, Cone, Stopwatch, Measuring Tape.' },
+    { id: 'f12', category: 'Cardio', question: 'Who developed the Harvard Step Test?', answer: 'Lucien Brouha (1943).' },
+    { id: 'f13', category: 'Barrow', question: 'Name the three items in the Barrow Motor Ability Test.', answer: 'Standing Broad Jump, Zig-Zag Run, Medicine Ball Put.' },
+    { id: 'f14', category: 'Technical', question: 'What represents "Gender" in the Rockport formula for females?', answer: '0.' },
+    { id: 'f15', category: 'Senior', question: 'Alternative to 6-Minute Walk test for seniors?', answer: '2-Minute Step Test.' },
+    { id: 'f16', category: 'Technical', question: 'Modified Push-Ups (Girls) differs how from standard?', answer: 'Knees touch the ground.' },
+    { id: 'f17', category: 'Technical', question: 'What does Sit and Reach measure?', answer: 'Flexibility (Lower Back & Hamstrings).' },
+    { id: 'f18', category: 'Cardio', question: 'In Harvard Step Test, when are pulses taken?', answer: '1-1.5 min, 2-2.5 min, and 3-3.5 min after exercise.' },
+    { id: 'f19', category: 'Technical', question: 'Define VO2 Max.', answer: 'Maximum volume of oxygen one can use during intense exercise.' },
+    { id: 'f20', category: 'Barrow', question: 'What does Medicine Ball Put measure?', answer: 'Explosive Upper Body (Arm/Shoulder) Strength.' },
+    { id: 'f21', category: 'Technical', question: 'Distance for Shuttle Run in Khelo India?', answer: '10 meters (4 x 10m).' },
+    { id: 'f22', category: 'Senior', question: 'Purpose of Chair Stand Test?', answer: 'Measure Lower Body Strength.' },
+    { id: 'f23', category: 'Technical', question: 'What is the stepping rate in Harvard Step Test?', answer: '30 steps per minute.' },
+    { id: 'f24', category: 'Formula', question: 'What is the constant "5.5" used for?', answer: 'Denominator in the Short Form Fitness Index formula.' },
+    { id: 'f25', category: 'Barrow', question: 'What does Zig-Zag Run measure?', answer: 'Agility and Speed.' },
+    { id: 'f26', category: 'Technical', question: 'Which is an Aerobic test: 50m Dash or 600m Run?', answer: '600m Run.' },
+    { id: 'f27', category: 'Definition', question: 'What is "Motor Fitness"?', answer: 'Ability to perform physical activities effectively (Speed, Agility, Power etc).' },
+    { id: 'f28', category: 'Technical', question: 'Weight of Medicine Ball for Boys (Barrow)?', answer: '3 kg.' },
+    { id: 'f28b', category: 'Technical', question: 'Weight of Medicine Ball for Girls (Barrow)?', answer: '1 kg.' },
+    { id: 'f29', category: 'Senior', question: 'Weight of dumbbell for Men in Arm Curl?', answer: '8 lbs.' },
+    { id: 'f30', category: 'Technical', question: 'Rockport Test requires walking what distance?', answer: '1 Mile (1.6 km).' },
+    { id: 'f31', category: 'Technical', question: 'Why is BMI part of the test battery?', answer: 'To screen for obesity/underweight issues early.' },
+    { id: 'f32', category: 'Cardio', question: 'If a student stops at 3 mins in Harvard Test, what duration is used?', answer: '180 seconds.' },
+    { id: 'f33', category: 'Technical', question: 'Flamingo Balance Test focuses on?', answer: 'Static Balance.' },
+    { id: 'f34', category: 'Technical', question: 'What constitutes one "cycle" in Plate Tapping?', answer: 'Touching both plates (Left-Right) or vice versa.' },
+    { id: 'f35', category: 'Senior', question: 'Standard height of step for Seniors?', answer: 'Seniors do not do a step test; they do 2-Min Step (marching in place).' },
+    { id: 'f36', category: 'Technical', question: 'What is the "Reach" in Sit and Reach?', answer: 'The distance fingers extend beyond the toes (or zero point).' },
+    { id: 'f37', category: 'Technical', question: 'Primary muscle in Chair Stand Test?', answer: 'Quadriceps / Glutes.' },
+    { id: 'f38', category: 'Technical', question: 'Purpose of 50m Dash?', answer: 'To measure Speed (Acceleration).' },
+    { id: 'f39', category: 'Senior', question: 'What constitutes a "Zero" score in Back Scratch?', answer: 'Tips of middle fingers just touching.' },
+    { id: 'f40', category: 'Formula', question: 'Rockport Formula: Is Weight in Kg or Lbs?', answer: 'Pounds (lbs).' },
+    { id: 'f41', category: 'Calculation', question: 'If Short Index is < 50, what is the fitness level?', answer: 'Poor.' },
+    { id: 'f42', category: 'Technical', question: 'Safety precaution for Harvard Step Test?', answer: 'Stop if the subject gets too exhausted or dizzy.' },
+    { id: 'f43', category: 'Barrow', question: 'Why "Zig-Zag" run?', answer: 'To test the ability to change direction quickly (Agility).' },
+    { id: 'f44', category: 'Technical', question: 'Does 600m Run require a track?', answer: 'Not necessarily, but accurate distance measurement is required.' },
+    { id: 'f45', category: 'General', question: 'What is "Cardiovascular Endurance"?', answer: 'Ability of heart/lungs to supply oxygen during sustained activity.' }
   ],
   sqp: [
     {
       id: 'q1',
-      year: '2025-26',
-      paperType: 'SQP',
-      marks: 1,
-      type: 'MCQ',
-      question: 'Which test is used to measure upper body strength in senior citizens?',
-      answer: 'Arm Curl Test',
-      aiExplanation: 'Arm Curl test uses dumbbells to measure muscular endurance and strength of the biceps.'
+      year: '2023-24',
+      paperType: 'Board',
+      marks: 3,
+      type: 'SA',
+      question: 'Explain the procedure of the Harvard Step Test.',
+      answer: '5 min stepping, 30 steps/min, 20-inch bench. Pulse taken at 1-1.5, 2-2.5, 3-3.5 mins post-exercise.',
+      aiExplanation: 'Teacher\'s Note: Break it down into equipment, procedure (stepping rhythm), and recovery measurement. Mention calculation of Fitness Index.'
     },
     {
       id: 'q2',
       year: '2024-25',
-      paperType: 'Board',
-      marks: 3,
-      type: 'SA',
-      question: 'Calculate the fitness index for a student who completed the Harvard Step test for 5 minutes and had recovery pulse counts of 80, 70, and 60.',
-      answer: 'Score = (300 * 100) / (2 * 210) = 30000 / 420 = 71.42',
-      aiExplanation: 'Fitness Index = (Duration in sec * 100) / (2 * Sum of 3 recovery pulses).'
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Which test item is used to measure partial abdominal strength?',
+      answer: '(c) Partial Curl Up',
+      aiExplanation: 'Key differentiator: Sit-ups are full range, "Partial" Curl Up isolates the abs better and is safer for the back.'
     },
     {
       id: 'q3',
+      year: '2022-23',
+      paperType: 'Board',
+      marks: 5,
+      type: 'LA',
+      question: 'Describe the Rikli and Jones Senior Citizen Fitness Test. Explain the purpose of any three items.',
+      answer: 'Battery for elderly fitness. 1. Chair Stand (Lower Strength), 2. Back Scratch (Upper Flex), 3. 6-Min Walk (Endurance).',
+      aiExplanation: 'Structure: Introduction (Purpose: Functional Fitness) -> List all 6 items -> Detail any 3 with Procedure and Purpose.'
+    },
+    {
+      id: 'q4',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      question: 'Calculate the Physical Fitness Index (Long Form) for a girl who steps for 4 minutes and her heart rates are 100, 90, and 80.',
+      answer: 'Duration=240s. Sum=270. Index = (240*100)/(2*270) = 24000/540 = 44.4 (Poor).',
+      aiExplanation: 'Step 1: Convert minutes to seconds (4 * 60 = 240). Step 2: Sum pulses (100+90+80=270). Step 3: Apply Formula.'
+    },
+    {
+      id: 'q5',
       year: '2025-26',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Weight of the medicine ball for boys in Barrow Motor Ability Test is:',
+      answer: '(b) 3 kg',
+      aiExplanation: 'Standard weight is often cited as 3kg or 6lbs. Choose the option closest to this standard.'
+    },
+    {
+      id: 'q6',
+      year: '2021-22',
+      paperType: 'Term-1',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Which component is NOT measured by the Rikli & Jones test?',
+      answer: '(d) 50m Sprint',
+      aiExplanation: 'Sprinting is too high-risk for seniors; they do "8-ft Up & Go" instead.'
+    },
+    {
+      id: 'q7',
+      year: '2024-25',
+      paperType: 'Board',
+      marks: 3,
+      type: 'SA',
+      question: 'Elucidate the Barrow Three Item General Motor Ability Test.',
+      answer: 'Consists of Standing Broad Jump, Zig-Zag Run, and Medicine Ball Put. Measures General Motor Capacity.',
+      aiExplanation: 'Mention the three specific items. "Zig-Zag" measures agility, "Broad Jump" measures leg power, "Med Ball" measures arm power.'
+    },
+    {
+      id: 'q8',
+      year: '2023-24',
       paperType: 'SQP',
       marks: 5,
       type: 'LA',
-      question: 'Explain the Rikli & Jones Senior Citizen Fitness Test battery in detail.',
-      answer: 'Include: Chair Stand (Lower Strength), Arm Curl (Upper Strength), Chair Sit & Reach (Lower Flex), Back Scratch (Upper Flex), 8-ft Up & Go (Agility), 6-Min Walk (Endurance).',
-      aiExplanation: 'Functional fitness is vital for seniors to maintain independence and perform daily tasks without assistance.'
+      question: 'Suggest a fitness test battery for primary school children (5-8 years) and explain the tests.',
+      answer: 'Flamingo Balance (Balance), Plate Tapping (Coordination), BMI (Composition).',
+      aiExplanation: 'Focus on "SAI Khelo India" guidelines for the younger age group (Class 1-3). Do not confuse with the 9-18 yrs (Class 4-12) battery.'
     }
   ],
   mindMap: {
     id: 'm1',
-    label: 'Unit 6: Test & Measurement',
+    label: 'Unit 6: Testing',
     children: [
       {
         id: 'm2',
-        label: 'Khelo India',
-        children: [{ id: 'm3', label: '5-8 Yrs (Balance)' }, { id: 'm4', label: '9-18 Yrs (Fitness)' }]
+        label: 'General Fitness',
+        children: [{ id: 'm3', label: 'SAI Khelo India (5-18)' }, { id: 'm4', label: 'Barrow (Motor)' }]
       },
       {
         id: 'm5',
-        label: 'Cardio Tests',
+        label: 'Cardio',
         children: [{ id: 'm6', label: 'Harvard Step' }, { id: 'm7', label: 'Rockport 1-Mile' }]
       },
       {
         id: 'm8',
-        label: 'Senior Citizens',
-        children: [{ id: 'm9', label: 'Rikli & Jones' }, { id: 'm10', label: 'Functional Fitness' }]
+        label: 'Seniors',
+        children: [{ id: 'm9', label: 'Rikli & Jones (6 Items)' }]
       }
     ]
   },
   cheatSheet: [
-    { title: 'Harvard Formula', points: ['Duration (sec) x 100 / (2 x Sum of Pulses)', 'Pulses taken at 1-1.5, 2-2.5, 3-3.5 mins'] },
-    { title: 'Senior Citizen Weights', points: ['Arm Curl Men: 8 lbs', 'Arm Curl Women: 5 lbs'] },
-    { title: 'Flexibility Tests', points: ['Junior (9-18): Sit & Reach', 'Senior: Chair Sit & Reach', 'Upper Body Senior: Back Scratch'] }
+    { title: 'The Formulas', points: ['Fitness Index Long = (Duration x 100) / (2 x Pulse Sum)', 'Fitness Index Short = (Duration x 100) / (5.5 x Pulse 1)'] },
+    { title: 'Senior Weights', points: ['Arm Curl: Men 8lbs, Women 5lbs'] },
+    { title: 'Barrow Items', points: ['Jump (Legs)', 'Zig-Zag (Agility)', 'Ball Put (Arms)'] },
+    { title: 'Khelo India (5-8)', points: ['Flamingo (Balance)', 'Plate Tap (Coordination)', 'BMI'] }
   ]
 };

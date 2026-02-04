@@ -1,32 +1,31 @@
-
 import { Chapter } from '../types';
 
 export const unit8: Chapter = {
   id: 8,
   slug: 'biomechanics-sports',
   name: 'Biomechanics & Sports',
-  description: 'Newton’s Laws of motion, types of equilibrium, center of gravity, and projectile trajectory in sporting activities.',
+  description: 'Newton’s Laws of motion, types of equilibrium, center of gravity, friction, and projectile trajectory in sporting activities.',
   topics: [
     {
       id: 'newton-laws',
       title: 'Newton’s Laws of Motion',
       description: 'The fundamental physical principles governing movement in sports.',
       content: [
-        'Law of Inertia (1st Law): A body remains at rest or in uniform motion unless acted upon by an external force. Example: A football remains still until kicked.',
-        'Law of Acceleration (2nd Law): The acceleration of an object is directly proportional to the force applied and inversely proportional to its mass. Example: Pushing a shot-put with more force for greater distance.',
-        'Law of Reaction (3rd Law): For every action, there is an equal and opposite reaction. Example: A swimmer pushing back against the water to move forward.'
+        'Law of Inertia (1st Law): A body remains at rest or in uniform motion unless acted upon by an external force. Includes Inertia of Rest (Sprinter in blocks), Inertia of Motion (Follow through in throwing), and Inertia of Direction (Car turning).',
+        'Law of Acceleration (2nd Law): F = ma. The acceleration of an object is directly proportional to the force applied and inversely proportional to its mass. Application: A lighter shot-put travels further than a heavier one with the same force.',
+        'Law of Reaction (3rd Law): For every action, there is an equal and opposite reaction. Examples: Swimming (Push water back -> Move forward), High Jump (Push ground down -> Move up), Walking.'
       ],
       visualizations: [
         {
           id: 'v1',
-          title: 'Newton’s Laws in Sports',
+          title: 'Newton’s Laws in Action',
           type: 'table',
           data: {
-            headers: ['Law', 'Sporting Application'],
+            headers: ['Law', 'Sport Example', 'Key Concept'],
             rows: [
-              ['Law of Inertia', 'Sprinting start (overcoming inertia of rest).'],
-              ['Law of Acceleration', 'Increasing the speed of a cricket ball during a throw.'],
-              ['Law of Reaction', 'The bounce of a basketball on the court.']
+              ['Inertia (1st)', 'Starting blocks in 100m sprint.', 'Resisting change of state.'],
+              ['Acceleration (2nd)', 'Hitting a cricket ball for a six.', 'Force determines speed change.'],
+              ['Reaction (3rd)', 'Dribbling a basketball.', 'Force returned by the floor.']
             ]
           }
         }
@@ -37,30 +36,20 @@ export const unit8: Chapter = {
       title: 'Equilibrium & Center of Gravity',
       description: 'Stability and balance factors in athletic performance.',
       content: [
-        'Equilibrium: A state of balance. Static Equilibrium (body at rest) and Dynamic Equilibrium (body in motion).',
-        'Center of Gravity (C.G.): An imaginary point where the entire weight of the body is concentrated.',
-        'Stability Factors: Lower C.G., wider base of support, and keeping the line of gravity within the base of support increases stability.'
+        'Center of Gravity (C.G.): The imaginary point where the body’s weight is concentrated. Men: Higher C.G. | Women: Lower C.G. (due to pelvic structure).',
+        'Equilibrium Types: 1. Static (Body at rest, e.g., Handstand), 2. Dynamic (Body in motion, e.g., Skating).',
+        'Principles of Stability: 1. Lower the C.G. (Crouching), 2. Widen Base of Support (Feet apart), 3. Line of Gravity within Base, 4. Increase Mass (Heavyweight wrestlers are harder to topple).'
       ],
       visualizations: [
         {
           id: 'v2',
-          title: 'Types of Equilibrium',
+          title: 'Stability Conditions',
           type: 'grid',
           data: [
-            { label: 'Stable', desc: 'Body returns to original position after slight displacement (e.g., wrestling stance).' },
-            { label: 'Unstable', desc: 'Body moves away from original position (e.g., handstand).' },
-            { label: 'Neutral', desc: 'C.G. remains at the same height (e.g., ball rolling).' }
-          ]
-        },
-        {
-          id: 'v3',
-          title: 'Stability Principles',
-          type: 'flow',
-          data: [
-            'Lower the C.G.',
-            'Widen the Base',
-            'Align Line of Gravity',
-            'Increase Mass'
+            { label: 'Stable', desc: 'Returns to original state (e.g., Hanging from bar).' },
+            { label: 'Unstable', desc: 'Topples easily (e.g., Pencil on tip).' },
+            { label: 'Neutral', desc: 'New position is sustainable (e.g., Ball rolling).' },
+            { label: 'Dynamic', desc: 'Balance while moving (e.g., Gymnastics).' }
           ]
         }
       ]
@@ -70,22 +59,23 @@ export const unit8: Chapter = {
       title: 'Friction & Sports',
       description: 'The force resisting the relative motion of solid surfaces.',
       content: [
-        'Types of Friction: Static Friction (preventing motion), Sliding Friction (rubbing), and Rolling Friction (wheels/balls).',
-        'Advantages: Spikes in athletics for grip, chalk in gymnastics, rough surface of a basketball.',
-        'Disadvantages: Wear and tear of equipment, heat production, and slowing down movement in some sports.'
+        'Definition: Resistance to motion between two surfaces in contact.',
+        'Types: Static (Starting motion), Sliding (Kinetic), Rolling (Least friction).',
+        'Increasing Friction: Spikes/Cleats (Traction), Chalk/Magnesium (Gymnastics/Weightlifting), Textured balls (Basketball/Rugby).',
+        'Decreasing Friction: Lubrication (Ski wax), Smoothing surfaces (Ice skating), Aerodynamics (Cycling helmets/suits), Ball Bearings.'
       ],
       visualizations: [
         {
-          id: 'v4',
+          id: 'v3',
           title: 'Friction Management',
           type: 'table',
           data: {
-            headers: ['Method', 'Effect', 'Example'],
+            headers: ['Goal', 'Method', 'Sport'],
             rows: [
-              ['Cleats/Spikes', 'Increases Friction', 'Football/Sprint shoes.'],
-              ['Lubrication', 'Decreases Friction', 'Skiing wax.'],
-              ['Chalk Powder', 'Increases Friction', 'Weightlifting/Gymnastics.'],
-              ['Ball Bearings', 'Decreases Friction', 'Skateboarding wheels.']
+              ['Maximize Grip', 'Use Spikes/Studs', 'Football / Sprinting'],
+              ['Maximize Grip', 'Use Chalk', 'Rock Climbing'],
+              ['Minimize Drag', 'Polished Surface', 'Bowling'],
+              ['Minimize Drag', 'Sharp Blades', 'Figure Skating']
             ]
           }
         }
@@ -96,62 +86,161 @@ export const unit8: Chapter = {
       title: 'Projectile in Sports',
       description: 'The path of an object thrown or kicked into the air.',
       content: [
-        'Trajectory: The path followed by a projectile (Parabolic path).',
-        'Factors Affecting Trajectory: Angle of release (Optimal is ~45° for distance), Initial Velocity, Height of release, Gravity, and Air Resistance.',
-        'Examples: Javelin throw, Discus, Long Jump (body as projectile), and Basketball shooting.'
+        'Trajectory: The parabolic path followed by a projectile.',
+        'Factors Affecting Flight:',
+        '1. Angle of Release: 45° for max distance (theoretical). In sports like Shot Put, ~40-42° is optimal due to release height.',
+        '2. Initial Velocity: Most critical factor. Higher speed = Longer distance.',
+        '3. Height of Release: Higher release point allows for a smaller angle for max distance.',
+        '4. Air Resistance: Wind speed and aerodynamics (Drag).',
+        '5. Gravity: Constant downward pull.'
       ],
       visualizations: [
         {
-          id: 'v5',
-          title: 'Factors affecting Projectile Path',
-          type: 'grid',
+          id: 'v4',
+          title: 'Projectile Components',
+          type: 'list',
           data: [
-            { label: 'Angle', desc: 'Determines height and horizontal distance.' },
-            { label: 'Velocity', desc: 'Higher initial speed leads to greater range.' },
-            { label: 'Gravity', desc: 'Pulls the object down to earth.' },
-            { label: 'Air Resistance', desc: 'Affects the glide and speed of the object.' }
+            'Vertical Component: Height (against gravity)',
+            'Horizontal Component: Distance (range)',
+            'Apex: Highest point of the trajectory',
+            'Range: Horizontal distance covered'
           ]
         }
       ]
     }
   ],
   flashcards: [
-    { id: 'f1', category: 'Technical', question: 'Define Biomechanics.', answer: 'The study of mechanical laws relating to the movement or structure of living organisms.' },
-    { id: 'f2', category: 'Technical', question: 'Which Law is the "Law of Inertia"?', answer: 'Newton’s First Law of Motion.' },
-    { id: 'f3', category: 'Technical', question: 'What is the optimal angle for maximum projectile range?', answer: '45 degrees (under ideal conditions).' },
-    { id: 'f4', category: 'Technical', question: 'What happens to stability when the C.G. is lowered?', answer: 'Stability increases.' },
-    { id: 'f5', category: 'Technical', question: 'Name the force that opposes the motion of a rolling ball.', answer: 'Rolling Friction.' }
+    { id: 'f1', category: 'Definition', question: 'What is Biomechanics?', answer: 'Study of forces and their effects on living systems (human body in sports).' },
+    { id: 'f2', category: 'Newton', question: 'State Newton’s First Law.', answer: 'A body continues in its state of rest or uniform motion unless acted upon by an external force.' },
+    { id: 'f3', category: 'Newton', question: 'Another name for Newton’s First Law?', answer: 'Law of Inertia.' },
+    { id: 'f4', category: 'Newton', question: 'What is Newton’s Second Law formula?', answer: 'F = ma (Force = Mass × Acceleration).' },
+    { id: 'f5', category: 'Newton', question: 'Example of Third Law in swimming?', answer: 'Swimmer pushes water backward (Action), water pushes swimmer forward (Reaction).' },
+    { id: 'f6', category: 'Stability', question: 'What is "Center of Gravity" (CG)?', answer: 'The point where the total weight of the body is concentrated.' },
+    { id: 'f7', category: 'Stability', question: 'How can a wrestler increase stability?', answer: 'By lowering their Center of Gravity and widening their Base of Support.' },
+    { id: 'f8', category: 'Friction', question: 'Which friction is stronger: Static or Rolling?', answer: 'Static Friction.' },
+    { id: 'f9', category: 'Friction', question: 'Why do gymansts use chalk?', answer: 'To absorb sweat and increase friction for better grip.' },
+    { id: 'f10', category: 'Projectile', question: 'What shape is a projectile’s path?', answer: 'Parabola.' },
+    { id: 'f11', category: 'Projectile', question: 'Theoretical optimal angle for max range?', answer: '45 degrees.' },
+    { id: 'f12', category: 'Projectile', question: 'If release height is higher than landing, optimal angle is...?', answer: 'Less than 45 degrees.' },
+    { id: 'f13', category: 'Friction', question: 'Why use spikes in running shoes?', answer: 'To increase friction (traction) and prevent slipping.' },
+    { id: 'f14', category: 'Newton', question: 'What is "Inertia of Direction"?', answer: 'Tendency of an object to continue moving in the same direction.' },
+    { id: 'f15', category: 'Stability', question: 'Define "Base of Support".', answer: 'The area bounded by the contact points of the body with the ground.' },
+    { id: 'f16', category: 'Friction', question: 'Example of rolling friction?', answer: 'Ball rolling on grass / Skateboard wheels.' },
+    { id: 'f17', category: 'Friction', question: 'Why is friction called a "necessary evil"?', answer: 'It is needed for movement (grip) but causes wear/tear and energy loss.' },
+    { id: 'f18', category: 'Newton', question: 'Identify the law: Catching a ball pulls hands back.', answer: '2nd Law (Increasing time to reduce force impact).' },
+    { id: 'f19', category: 'Newton', question: 'Identify the law: Starting blocks in sprinting.', answer: '3rd Law (Action-Reaction) & 1st Law (Overcoming Inertia).' },
+    { id: 'f20', category: 'Projectile', question: 'Primary factor affecting projectile distance?', answer: 'Initial Velocity.' },
+    { id: 'f21', category: 'Stability', question: 'Example of Unstable Equilibrium?', answer: 'Handstand or standing on one toe.' },
+    { id: 'f22', category: 'Stability', question: 'Women have lower CG than men because?', answer: 'Broader pelvis and heavier lower body relative to upper body.' },
+    { id: 'f23', category: 'Definition', question: 'Describe "Dynamic Equilibrium".', answer: 'Maintaining balance while the body is in motion.' },
+    { id: 'f24', category: 'Friction', question: 'How does lubrication affect friction?', answer: 'It reduces friction by separating surfaces.' },
+    { id: 'f25', category: 'Projectile', question: 'Gravity acts on which component regarding projectile?', answer: 'Vertical component.' },
+    { id: 'f26', category: 'Projectile', question: 'Does mass affect projectile range in a vacuum?', answer: 'No (Gravity accelerates all objects equally).' },
+    { id: 'f27', category: 'Friction', question: 'Type of friction when an object slides?', answer: 'Sliding (Kinetic) Friction.' },
+    { id: 'f28', category: 'Newton', question: 'Unit of Force?', answer: 'Newton (N).' },
+    { id: 'f29', category: 'Stability', question: 'Relation between CG height and stability?', answer: 'Inversely proportional (Higher CG = Lower Stability).' },
+    { id: 'f30', category: 'Friction', question: 'Why do cyclists wear aerodynamic helmets?', answer: 'To reduce air resistance (Air Friction/Drag).' },
+    { id: 'f31', category: 'Newton', question: 'A heavier object requires ____ force to accelerate.', answer: 'More.' },
+    { id: 'f32', category: 'Friction', question: 'Is air resistance a type of friction?', answer: 'Yes (Fluid friction).' },
+    { id: 'f33', category: 'Projectile', question: 'What is "Apex"?', answer: 'The highest point reached by the projectile.' },
+    { id: 'f34', category: 'Stability', question: 'Technique to regain balance?', answer: 'Widening the stance or lowering the body.' },
+    { id: 'f35', category: 'Newton', question: 'Recoil of a gun is an example of?', answer: 'Newton’s 3rd Law.' },
+    { id: 'f36', category: 'General', question: 'Why is biomechanics important?', answer: ' Improves technique, prevents injury, enhances performance.' },
+    { id: 'f37', category: 'Newton', question: 'What is Momentum?', answer: 'Mass × Velocity.' },
+    { id: 'f38', category: 'Friction', question: 'Why water on a court makes it slippery?', answer: 'Water acts as a lubricant, reducing friction.' },
+    { id: 'f39', category: 'Stability', question: 'Where is the CG of a standing human?', answer: 'Around the navel/sacrum area.' },
+    { id: 'f40', category: 'Friction', question: 'Why is ice skating possible?', answer: 'Low friction of ice allows gliding.' }
   ],
   sqp: [
     {
       id: 'q1',
-      year: '2025-26',
-      paperType: 'SQP',
+      year: '2023-24',
+      paperType: 'Board',
       marks: 1,
       type: 'MCQ',
-      question: 'A swimmer pushes the water backwards to move forward. Which law is being applied?',
-      answer: 'Newton’s Third Law of Motion',
-      aiExplanation: 'Action (pushing water) and Reaction (moving forward) are equal and opposite.'
+      question: 'Newton’s First Law of Motion is also known as:',
+      answer: '(a) Law of Inertia',
+      aiExplanation: 'Inertia explains the resistance to change in motion state.'
     },
     {
       id: 'q2',
       year: '2024-25',
-      paperType: 'Board',
+      paperType: 'SQP',
       marks: 3,
       type: 'SA',
-      question: 'Explain the factors that affect the trajectory of a projectile.',
-      answer: 'Initial velocity, angle of release, gravity, and air resistance.',
-      aiExplanation: 'These physical factors combined dictate the distance and height achieved by any object in flight.'
+      question: 'Explain the Law of Acceleration with a suitable example from sports.',
+      answer: 'Force = Mass x Acc. In Shot Put, applying more force to the shot increases its acceleration and distance.',
+      aiExplanation: 'Mention the formula F=ma. Explain that for a constant mass, Force is proportional to Acceleration.'
     },
     {
       id: 'q3',
+      year: '2022-23',
+      paperType: 'Board',
+      marks: 5,
+      type: 'LA',
+      question: 'Define Projectile. Elaborate on any four factors affecting the trajectory of a projectile.',
+      answer: 'Projectile: Object thrown in air. Factors: 1. Angle (45 deg) 2. Velocity (Direct prop) 3. Gravity 4. Air Resistance.',
+      aiExplanation: 'Provide the definition first. Then detail the factors, emphasizing Initial Velocity and Angle as the controllable ones.'
+    },
+    {
+      id: 'q4',
       year: '2025-26',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'To increase stability, an athlete should:',
+      answer: '(c) Lower the Center of Gravity',
+      aiExplanation: 'Raising CG makes one unstable. Lowering it makes one stable.'
+    },
+    {
+      id: 'q5',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      question: 'Differentiate between Sliding Friction and Rolling Friction.',
+      answer: 'Sliding: Surfaces rub (Sled). Rolling: Object rolls (Ball). Rolling friction is much weaker than Sliding friction.',
+      aiExplanation: 'Key concept: Rolling involves less surface area contact friction at any moment compared to sliding.'
+    },
+    {
+      id: 'q6',
+      year: '2021-22',
+      paperType: 'Term-1',
+      marks: 4,
+      type: 'Case',
+      question: 'Amit is a wrestler. He adopts a specific stance to avoid being pushed over. 1. What physical principle is he using? 2. How does it help?',
+      answer: '1. Stability/Equilibrium. 2. Wide base and low CG prevent him from being toppled easily.',
+      aiExplanation: 'He is manipulating the Base of Support and Center of Gravity.'
+    },
+    {
+      id: 'q7',
+      year: '2024-25',
+      paperType: 'Board',
+      marks: 3,
+      type: 'SA',
+      question: 'Why is Friction considered a necessary evil in sports?',
+      answer: 'Necessary: Provides grip (Running). Evil: Slows motion (Skiing) and causes wear.',
+      aiExplanation: 'Must mention both the positive (Traction) and negative (Drag/Heat/Wear) aspects.'
+    },
+    {
+      id: 'q8',
+      year: '2022-23',
       paperType: 'SQP',
       marks: 5,
       type: 'LA',
-      question: 'Define Equilibrium. Discuss the principles of stability and their application in wrestling.',
-      answer: 'Equilibrium is state of balance. Stability: Lower C.G., wide base. Wrestlers stay low and wide to prevent being toppled.',
-      aiExplanation: 'Understanding the center of gravity and base of support is critical for maintaining balance under external force.'
+      question: 'Explain Newton’s Third Law of Motion with application in three different sports.',
+      answer: 'Swimming (Push water back), Walking (Push ground back), Dribbling (Ball hits floor). Action = -Reaction.',
+      aiExplanation: 'Choose dynamic examples. Swimming is the classic textbook example.'
+    },
+    {
+      id: 'q9',
+      year: '2025-26',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'The angle of release for maximum distance when release height and landing height are equal is:',
+      answer: '(b) 45 degrees',
+      aiExplanation: 'Theoretical maximum is always 45 degrees.'
     }
   ],
   mindMap: {
@@ -161,23 +250,24 @@ export const unit8: Chapter = {
       {
         id: 'm2',
         label: 'Newton’s Laws',
-        children: [{ id: 'm3', label: '1: Inertia' }, { id: 'm4', label: '2: Acceleration' }, { id: 'm5', label: '3: Reaction' }]
+        children: [{ id: 'm3', label: '1. Inertia' }, { id: 'm4', label: '2. Acceleration' }, { id: 'm5', label: '3. Reaction' }]
       },
       {
         id: 'm6',
-        label: 'Equilibrium',
-        children: [{ id: 'm7', label: 'Static vs Dynamic' }, { id: 'm8', label: 'C.G. & Stability' }]
+        label: 'Stability',
+        children: [{ id: 'm7', label: 'Equilibrium (Static/Dynamic)' }, { id: 'm8', label: 'Center of Gravity' }]
       },
       {
         id: 'm9',
         label: 'Forces',
-        children: [{ id: 'm10', label: 'Friction' }, { id: 'm11', label: 'Projectile' }]
+        children: [{ id: 'm10', label: 'Friction' }, { id: 'm11', label: 'Projectile Motion' }]
       }
     ]
   },
   cheatSheet: [
-    { title: 'Newton Summary', points: ['1st: Stop/Start inertia', '2nd: More force = More speed', '3rd: Push back to go forward'] },
-    { title: 'Stability Hacks', points: ['Stay low (Drop C.G.)', 'Stand wide (Increase Base)', 'Be heavy (Increase Mass)', 'Line of gravity must stay in base'] },
-    { title: 'Projectile Tips', points: ['Path is a Parabola', 'Gravity pulls down', 'Air slows down', 'Velocity drives forward'] }
+    { title: 'Newton in Keywords', points: ['1st Law = Inertia', '2nd Law = F=ma', '3rd Law = Action-Reaction'] },
+    { title: 'Projectiles', points: ['Optimal Angle = 45°', 'Velocity = Key for Distance', 'Gravity = 9.8 m/s² down'] },
+    { title: 'Stability Rules', points: ['Low CG = Stable', 'Wide Base = Stable', 'High Mass = Stable'] },
+    { title: 'Friction Types', points: ['Static > Sliding > Rolling'] }
   ]
 };

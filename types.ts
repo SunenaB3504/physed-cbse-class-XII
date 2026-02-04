@@ -1,10 +1,10 @@
 
-export type VisualType = 'table' | 'flow' | 'grid' | 'steps';
+export type VisualType = 'table' | 'flow' | 'grid' | 'steps' | 'list';
 
 export type VisualData = 
   | { headers: string[]; rows: string[][] } // for 'table'
   | { label: string; desc: string }[]      // for 'grid'
-  | string[];                              // for 'flow' (steps)
+  | string[];                              // for 'flow' (steps), 'list'
 
 export interface Visualization {
   id: string;
@@ -27,15 +27,15 @@ export interface Flashcard {
   id: string;
   question: string;
   answer: string;
-  category: 'Definition' | 'Theory' | 'Classification' | 'Calculation' | 'TrueFalse' | 'Application' | 'Management' | 'Technical' | 'Asana' | 'Injury' | 'Physiology';
+  category: string;
 }
 
 export interface SQPQuestion {
   id: string;
   year: string;
-  paperType: 'SQP' | 'Board';
+  paperType: 'SQP' | 'Board' | 'Term-1';
   marks: number;
-  type: 'MCQ' | 'SA' | 'LA';
+  type: 'MCQ' | 'SA' | 'LA' | 'Case';
   question: string;
   answer?: string; // Standard Answer text
   markingScheme?: string;
