@@ -8,20 +8,15 @@ const FlashcardComp: React.FC<{ card: Flashcard; isActive?: boolean }> = ({ card
   return (
     <div 
       onClick={() => setFlipped(!flipped)}
-      className={`relative h-80 cursor-pointer group w-full transition-all duration-300 ${isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-40'}`}
+      className={`relative h-80 cursor-pointer group w-full transition-all duration-300 perspective-1000 ${isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-40'}`}
     >
       {/* Flip animation container */}
       <div 
-        className={`relative w-full h-full transition-transform duration-500 transform-gpu`}
-        style={{
-          transformStyle: 'preserve-3d',
-          transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
-        }}
+        className={`relative w-full h-full transition-transform duration-500 preserve-3d ${flipped ? 'rotate-y-180' : 'rotate-y-0'}`}
       >
         {/* Front - Question */}
         <div 
-          className="absolute inset-0 bg-white border-3 border-emerald-100 rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl group-hover:shadow-2xl group-hover:border-emerald-400 transition-all"
-          style={{ backfaceVisibility: 'hidden' }}
+          className="absolute inset-0 bg-white border-3 border-emerald-100 rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl group-hover:shadow-2xl group-hover:border-emerald-400 transition-all backface-hidden"
         >
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">📝</span>
@@ -35,11 +30,7 @@ const FlashcardComp: React.FC<{ card: Flashcard; isActive?: boolean }> = ({ card
 
         {/* Back - Answer */}
         <div 
-          className="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl"
-          style={{ 
-            backfaceVisibility: 'hidden',
-            transform: 'rotateY(180deg)'
-          }}
+          className="absolute inset-0 bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-800 rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl rotate-y-180 backface-hidden"
         >
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">✅</span>
@@ -89,12 +80,11 @@ const SlidingFlashcards: React.FC<SlidingFlashcardsProps> = ({ chapter }) => {
         <p className="text-sm font-black text-emerald-600 uppercase tracking-widest mb-3">
           Card {currentIndex + 1} of {totalCards}
         </p>
-        <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-          <div 
-            className="bg-emerald-500 h-full transition-all duration-300"
-            style={{ width: `${((currentIndex + 1) / totalCards) * 100}%` }}
-          />
-        </div>
+        <progress 
+          value={currentIndex + 1} 
+          max={totalCards} 
+          className="w-full h-2 rounded-full overflow-hidden appearance-none [&::-webkit-progress-bar]:bg-gray-200 [&::-webkit-progress-bar]:rounded-full [&::-webkit-progress-value]:bg-emerald-500 [&::-webkit-progress-value]:rounded-full [&::-webkit-progress-value]:transition-all [&::-webkit-progress-value]:duration-300 [&::-moz-progress-bar]:bg-emerald-500"
+        />
       </div>
 
       {/* Flashcard display */}
@@ -175,13 +165,13 @@ export const RevisionHQ: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-700">
       <div className="flex justify-center gap-4 mb-8 flex-wrap">
         {[
-          { id: 'cards', label: 'Flashcards', icon: Zap },
-          { id: 'map', label: 'Mind Map', icon: MapIcon },
-          { id: 'cheat', label: 'Cheat Sheet', icon: ClipboardCheck }
+          { id: 'cards' as const, label: 'Flashcards', icon: Zap },
+          { id: 'map' as const, label: 'Mind Map', icon: MapIcon },
+          { id: 'cheat' as const, label: 'Cheat Sheet', icon: ClipboardCheck }
         ].map(tab => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id as any)}
+            onClick={() => setActiveTab(tab.id)}
             className={`px-6 py-3 rounded-full font-black text-sm flex items-center gap-2 transition-all ${activeTab === tab.id ? 'bg-amber-400 text-amber-950 shadow-xl scale-105' : 'bg-emerald-900 text-emerald-100 opacity-60 hover:opacity-100'}`}
           >
             <tab.icon className="w-4 h-4" />

@@ -129,7 +129,7 @@ export const unit6: Chapter = {
       type: 'MCQ',
       question: 'Which test is used to measure upper body strength in senior citizens?',
       answer: 'Arm Curl Test',
-      explanation: 'Arm Curl test uses dumbbells to measure muscular endurance and strength of the biceps.'
+      aiExplanation: 'Arm Curl test uses dumbbells to measure muscular endurance and strength of the biceps.'
     },
     {
       id: 'q2',
@@ -139,7 +139,7 @@ export const unit6: Chapter = {
       type: 'SA',
       question: 'Calculate the fitness index for a student who completed the Harvard Step test for 5 minutes and had recovery pulse counts of 80, 70, and 60.',
       answer: 'Score = (300 * 100) / (2 * 210) = 30000 / 420 = 71.42',
-      explanation: 'Fitness Index = (Duration in sec * 100) / (2 * Sum of 3 recovery pulses).'
+      aiExplanation: 'Fitness Index = (Duration in sec * 100) / (2 * Sum of 3 recovery pulses).'
     },
     {
       id: 'q3',
@@ -149,7 +149,7 @@ export const unit6: Chapter = {
       type: 'LA',
       question: 'Explain the Rikli & Jones Senior Citizen Fitness Test battery in detail.',
       answer: 'Include: Chair Stand (Lower Strength), Arm Curl (Upper Strength), Chair Sit & Reach (Lower Flex), Back Scratch (Upper Flex), 8-ft Up & Go (Agility), 6-Min Walk (Endurance).',
-      explanation: 'Functional fitness is vital for seniors to maintain independence and perform daily tasks without assistance.'
+      aiExplanation: 'Functional fitness is vital for seniors to maintain independence and perform daily tasks without assistance.'
     }
   ],
   mindMap: {

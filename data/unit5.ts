@@ -135,7 +135,7 @@ export const unit5: Chapter = {
       type: 'MCQ',
       question: 'Which nutrient is known as the "Body Builder"?',
       answer: 'Proteins',
-      explanation: 'Proteins are essential for the growth and repair of body tissues.'
+      aiExplanation: 'Proteins are essential for the growth and repair of body tissues.'
     },
     {
       id: 'q2',
@@ -145,7 +145,7 @@ export const unit5: Chapter = {
       type: 'SA',
       question: 'Briefly explain any three food myths prevalent in society.',
       answer: '1. Potatoes make you fat. 2. Drinking water during meals. 3. Skipping meals.',
-      explanation: 'Knowledge of nutritional science helps in debunking these and promoting healthy eating habits.'
+      aiExplanation: 'Knowledge of nutritional science helps in debunking these and promoting healthy eating habits.'
     },
     {
       id: 'q3',
@@ -155,7 +155,7 @@ export const unit5: Chapter = {
       type: 'LA',
       question: 'What is a balanced diet? Explain the functions of any four macro-nutrients.',
       answer: 'Balanced diet contains all nutrients. Carbs (Energy), Proteins (Repair), Fats (Storage), Water (Regulator).',
-      explanation: 'A balanced diet ensures optimal physiological function and performance in athletes.'
+      aiExplanation: 'A balanced diet ensures optimal physiological function and performance in athletes.'
     }
   ],
   mindMap: {

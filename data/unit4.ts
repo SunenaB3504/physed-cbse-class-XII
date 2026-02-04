@@ -120,7 +120,7 @@ export const unit4: Chapter = {
       type: 'MCQ',
       question: 'Which organization is responsible for the Paralympic Games?',
       answer: 'International Paralympic Committee (IPC)',
-      explanation: 'The IPC is the global governing body for the Paralympic movement.'
+      aiExplanation: 'The IPC is the global governing body for the Paralympic movement.'
     },
     {
       id: 'q2',
@@ -130,7 +130,7 @@ export const unit4: Chapter = {
       type: 'SA',
       question: 'Explain any three strategies to make physical activities accessible for CWSN.',
       answer: '1. Modified equipment. 2. Simplified instructions. 3. Accessible environment.',
-      explanation: 'Adaptations must be specific to the disability type to ensure safety and engagement.'
+      aiExplanation: 'Adaptations must be specific to the disability type to ensure safety and engagement.'
     },
     {
       id: 'q3',
@@ -140,7 +140,7 @@ export const unit4: Chapter = {
       type: 'LA',
       question: 'Define Inclusion. Discuss its need and implementation in Physical Education.',
       answer: 'Inclusion is integrating CWSN in regular settings. Need: Social, Psychological. Implementation: Staff training, infrastructure, curriculum.',
-      explanation: 'Inclusion fosters a sense of belonging and prepares all students for a diverse society.'
+      aiExplanation: 'Inclusion fosters a sense of belonging and prepares all students for a diverse society.'
     }
   ],
   mindMap: {

@@ -132,7 +132,7 @@ export const unit9: Chapter = {
       type: 'MCQ',
       question: 'Which trait of the Big Five theory characterizes someone who is disciplined and organized?',
       answer: 'Conscientiousness',
-      explanation: 'Conscientious individuals are thorough, careful, and vigilant in their tasks.'
+      aiExplanation: 'Conscientious individuals are thorough, careful, and vigilant in their tasks.'
     },
     {
       id: 'q2',
@@ -142,7 +142,7 @@ export const unit9: Chapter = {
       type: 'SA',
       question: 'Briefly explain any three strategies to enhance exercise adherence.',
       answer: '1. Goal setting. 2. Social support. 3. Fun and variety.',
-      explanation: 'Maintaining an exercise routine requires both psychological motivation and environmental support.'
+      aiExplanation: 'Maintaining an exercise routine requires both psychological motivation and environmental support.'
     },
     {
       id: 'q3',
@@ -152,7 +152,7 @@ export const unit9: Chapter = {
       type: 'LA',
       question: 'Define Personality. Explain the Big Five Theory of personality in detail.',
       answer: 'Personality is unique adjustment. Explain OCEAN: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism.',
-      explanation: 'The OCEAN model is the most widely accepted theory for describing human personality traits in modern psychology.'
+      aiExplanation: 'The OCEAN model is the most widely accepted theory for describing human personality traits in modern psychology.'
     }
   ],
   mindMap: {

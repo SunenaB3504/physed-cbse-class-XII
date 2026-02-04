@@ -46,7 +46,7 @@ export const TheoryView: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
                     {vis.title}
                     <span className="text-xs px-2 py-1 bg-emerald-200 text-emerald-700 rounded uppercase">{vis.type}</span>
                   </h5>
-                  {vis.type === 'table' ? (
+                  {vis.type === 'table' && 'headers' in vis.data ? (
                     <div className="overflow-x-auto rounded-xl shadow-sm">
                       <table className="w-full text-left text-sm">
                         <thead className="bg-emerald-900 text-white">
@@ -63,9 +63,9 @@ export const TheoryView: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
                         </tbody>
                       </table>
                     </div>
-                  ) : vis.type === 'grid' ? (
+                  ) : vis.type === 'grid' && Array.isArray(vis.data) && typeof vis.data[0] !== 'string' ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      {vis.data.map((item: any, i: number) => (
+                      {(vis.data as {label: string; desc: string}[]).map((item, i: number) => (
                         <div key={i} className="bg-white p-5 rounded-2xl border border-emerald-100 shadow-sm">
                           <p className="text-emerald-900 font-black text-sm mb-1 uppercase tracking-tight">{item.label}</p>
                           <p className="text-gray-600 text-sm font-medium">{item.desc}</p>
@@ -74,12 +74,13 @@ export const TheoryView: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
                     </div>
                   ) : (
                     <div className="flex flex-wrap items-center gap-3">
-                      {vis.data.map((step: string, i: number) => (
+                      {Array.isArray(vis.data) && (vis.data as string[]).map((step, i, arr) => (
                         <React.Fragment key={i}>
                           <div className="bg-white p-4 rounded-xl border border-emerald-200 shadow-sm font-bold text-emerald-900 text-sm">
                             {step}
                           </div>
-                          {i < vis.data.length - 1 && <ChevronRight className="w-5 h-5 text-emerald-300" />}
+
+                          {i < arr.length - 1 && <ChevronRight className="w-5 h-5 text-emerald-300" />}
                         </React.Fragment>
                       ))}
                     </div>

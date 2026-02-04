@@ -1,11 +1,18 @@
 
-export type VisualType = 'table' | 'flow' | 'grid';
+export type VisualType = 'table' | 'flow' | 'grid' | 'steps';
+
+export type VisualData = 
+  | { headers: string[]; rows: string[][] } // for 'table'
+  | { label: string; desc: string }[]      // for 'grid'
+  | string[];                              // for 'flow' (steps)
 
 export interface Visualization {
   id: string;
   title: string;
   type: VisualType;
-  data: any;
+  caption?: string;
+  formula?: string;
+  data: VisualData;
 }
 
 export interface TheoryTopic {
@@ -30,7 +37,8 @@ export interface SQPQuestion {
   marks: number;
   type: 'MCQ' | 'SA' | 'LA';
   question: string;
-  markingScheme: string;
+  answer?: string; // Standard Answer text
+  markingScheme?: string;
   aiExplanation: string;
   questionNumber?: string;
   source?: string;

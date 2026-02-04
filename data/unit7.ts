@@ -137,7 +137,7 @@ export const unit7: Chapter = {
       type: 'MCQ',
       question: 'Which of the following is a joint injury?',
       answer: 'Dislocation',
-      explanation: 'Dislocation is the displacement of bone surfaces in a joint, while others like Sprain are soft tissue injuries.'
+      aiExplanation: 'Dislocation is the displacement of bone surfaces in a joint, while others like Sprain are soft tissue injuries.'
     },
     {
       id: 'q2',
@@ -147,7 +147,7 @@ export const unit7: Chapter = {
       type: 'SA',
       question: 'Explain the difference between a Strain and a Sprain.',
       answer: 'A Strain is an injury to a muscle or tendon, whereas a Sprain is an injury to a ligament.',
-      explanation: 'Both involve overstretching but affect different types of connective tissue.'
+      aiExplanation: 'Both involve overstretching but affect different types of connective tissue.'
     },
     {
       id: 'q3',
@@ -157,7 +157,7 @@ export const unit7: Chapter = {
       type: 'LA',
       question: 'What are the effects of regular exercise on the cardio-respiratory system?',
       answer: 'Increased stroke volume, decreased resting HR, increased vital capacity, better gas exchange, and heart hypertrophy.',
-      explanation: 'Regular training leads to functional and structural changes that improve aerobic efficiency.'
+      aiExplanation: 'Regular training leads to functional and structural changes that improve aerobic efficiency.'
     }
   ],
   mindMap: {

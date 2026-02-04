@@ -35,7 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeView, setActiveView, isDas
           </button>
         ))}
       </div>
-      <button className="md:hidden">
+      <button className="md:hidden" aria-label="Open Menu">
         <Menu className="w-6 h-6" />
       </button>
     </div>

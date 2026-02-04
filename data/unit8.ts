@@ -131,7 +131,7 @@ export const unit8: Chapter = {
       type: 'MCQ',
       question: 'A swimmer pushes the water backwards to move forward. Which law is being applied?',
       answer: 'Newton’s Third Law of Motion',
-      explanation: 'Action (pushing water) and Reaction (moving forward) are equal and opposite.'
+      aiExplanation: 'Action (pushing water) and Reaction (moving forward) are equal and opposite.'
     },
     {
       id: 'q2',
@@ -141,7 +141,7 @@ export const unit8: Chapter = {
       type: 'SA',
       question: 'Explain the factors that affect the trajectory of a projectile.',
       answer: 'Initial velocity, angle of release, gravity, and air resistance.',
-      explanation: 'These physical factors combined dictate the distance and height achieved by any object in flight.'
+      aiExplanation: 'These physical factors combined dictate the distance and height achieved by any object in flight.'
     },
     {
       id: 'q3',
@@ -151,7 +151,7 @@ export const unit8: Chapter = {
       type: 'LA',
       question: 'Define Equilibrium. Discuss the principles of stability and their application in wrestling.',
       answer: 'Equilibrium is state of balance. Stability: Lower C.G., wide base. Wrestlers stay low and wide to prevent being toppled.',
-      explanation: 'Understanding the center of gravity and base of support is critical for maintaining balance under external force.'
+      aiExplanation: 'Understanding the center of gravity and base of support is critical for maintaining balance under external force.'
     }
   ],
   mindMap: {

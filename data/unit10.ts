@@ -140,7 +140,7 @@ export const unit10: Chapter = {
       type: 'MCQ',
       question: 'Which method of training is best for developing endurance in natural surroundings?',
       answer: 'Fartlek Method',
-      explanation: 'Fartlek involves varying speed in natural terrain like woods or hills.'
+      aiExplanation: 'Fartlek involves varying speed in natural terrain like woods or hills.'
     },
     {
       id: 'q2',
@@ -150,7 +150,7 @@ export const unit10: Chapter = {
       type: 'SA',
       question: 'Explain the difference between Isometric and Isotonic exercises.',
       answer: 'Isometric: No movement, constant length. Isotonic: Visible movement, changing length.',
-      explanation: 'Both are vital for strength but differ in mechanical output and muscle contraction type.'
+      aiExplanation: 'Both are vital for strength but differ in mechanical output and muscle contraction type.'
     },
     {
       id: 'q3',
@@ -160,7 +160,7 @@ export const unit10: Chapter = {
       type: 'LA',
       question: 'Define Flexibility. Discuss the various methods used to improve it.',
       answer: 'Flexibility is range of motion. Methods: Ballistic, Static, Dynamic, and PNF stretching.',
-      explanation: 'Improving flexibility reduces injury risk and enhances movement efficiency in sports.'
+      aiExplanation: 'Improving flexibility reduces injury risk and enhances movement efficiency in sports.'
     }
   ],
   mindMap: {
