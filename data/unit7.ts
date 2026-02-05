@@ -259,6 +259,26 @@ export const unit7: Chapter = {
       question: 'Rohan, a basketball player, landed awkwardly and felt a pop in his ankle, followed by swelling. 1. Identify injury. 2. First Aid?',
       answer: '1. Sprain (Ligament injury). 2. Apply PRICER (Ice, Compression, Elevation).',
       aiExplanation: 'Ankle turns usually result in Ligament damage (Sprain). Immediate Ice reduces the swelling.'
+    },
+    {
+      id: 'q10',
+      year: '2023-24',
+      paperType: 'Term-1',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Identify the soft tissue injury characterized by an irregular cut in the skin caused by a sharp object.',
+      answer: 'Laceration',
+      aiExplanation: 'Laceration implies a jagged tear, unlike an Incision (smooth) or Abrasion (scrape).'
+    },
+    {
+      id: 'q11',
+      year: '2024-25',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'If Stroke Volume is 70ml and Heart Rate is 72 beats/min, what is the Cardiac Output?',
+      answer: '5040 ml/min',
+      aiExplanation: 'Cardiac Output = SV × HR = 70 × 72 = 5040 ml.'
     }
   ],
   mindMap: {

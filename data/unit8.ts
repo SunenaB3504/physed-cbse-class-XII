@@ -284,6 +284,26 @@ export const unit8: Chapter = {
       question: 'The angle of release for maximum distance when release height and landing height are equal is:',
       answer: '(b) 45 degrees',
       aiExplanation: 'Theoretical maximum is always 45 degrees.'
+    },
+    {
+      id: 'q10',
+      year: '2023-24',
+      paperType: 'Term-1',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Which law of motion is also known as the Law of Inertia?',
+      answer: 'Newton’s First Law',
+      aiExplanation: 'First Law states a body stays at rest/motion unless acted on. This property is Inertia.'
+    },
+    {
+      id: 'q11',
+      year: '2024-25',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      question: 'Which type of friction is the strongest?',
+      answer: 'Static Friction',
+      aiExplanation: 'Static > Sliding > Rolling. It takes more force to start an object moving than to keep it moving.'
     }
   ],
   mindMap: {

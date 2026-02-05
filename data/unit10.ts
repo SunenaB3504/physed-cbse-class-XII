@@ -179,7 +179,13 @@ export const unit10: Chapter = {
     { id: 'f17', category: 'Coordination', question: 'Ability to determine body position in space/time?', answer: 'Orientation Ability.' },
     { id: 'f18', category: 'General', question: 'Goal of Sports Training?', answer: 'Preparation for highest performance.' },
     { id: 'f19', category: 'Strength', question: 'Pushing a wall is?', answer: 'Isometric (No length change).' },
-    { id: 'f20', category: 'Cycles', question: 'Duration of Macro Cycle?', answer: '3 to 12 Months.' }
+    { id: 'f20', category: 'Cycles', question: 'Duration of Macro Cycle?', answer: '3 to 12 Months.' },
+    { id: 'f21', category: 'Endurance', question: 'Heart Rate zone for Continuous Method?', answer: '140 - 160 Beats per minute.' },
+    { id: 'f22', category: 'Speed', question: 'Ability to respond to a given signal?', answer: 'Reaction Ability.' },
+    { id: 'f23', category: 'Coordination', question: 'Ability to adjust movement according to changing situations?', answer: 'Adaptation Ability.' },
+    { id: 'f24', category: 'General', question: 'Principle of "Overload"?', answer: 'Training load must be greater than normal to produce adaptation.' },
+    { id: 'f25', category: 'Cycles', question: 'Duration of Micro Cycle?', answer: '3 to 10 Days (Weekly).' },
+    { id: 'f26', category: 'Strength', question: 'Dynamic Strength is also known as?', answer: 'Isotonic Strength.' }
   ],
   sqp: [
     {
