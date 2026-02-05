@@ -7,6 +7,42 @@ export const unit8: Chapter = {
   description: 'Newton’s Laws of motion, types of equilibrium, center of gravity, friction, and projectile trajectory in sporting activities.',
   topics: [
     {
+      id: 'biomech-basics',
+      title: 'Biomechanics Basics',
+      description: 'Understanding Movement, Locomotion, Planes, and Axes.',
+      content: [
+        'Movement vs Locomotion: Movement is displacement of body parts (e.g., blinking). Locomotion translates the whole body from place to place (e.g., running).',
+        'Planes (Surfaces):',
+        '1. Sagittal Plane: Vertical split into Left/Right. Movements: Flexion/Extension (e.g., Walking, Sit-ups).',
+        '2. Frontal (Coronal) Plane: Vertical split into Anterior/Posterior. Movements: Abduction/Adduction (e.g., Jumping Jacks).',
+        '3. Transverse Plane: Horizontal split into Superior/Inferior. Movements: Rotation (e.g., Discus throw twist).',
+        'Axes (Lines of Rotation):',
+        '• Sagittal Axis: Passes front-to-back (Pivot for Frontal Plane).',
+        '• Frontal Axis: Passes left-to-right (Pivot for Sagittal Plane).',
+        '• Vertical Axis: Passes top-to-bottom (Pivot for Transverse Plane).',
+        'Types of Movement:',
+        '• Flexion: Decreasing angle between bones (Bending).',
+        '• Extension: Increasing angle between bones (Straightening).',
+        '• Abduction: Moving away from midline ("Taking away").',
+        '• Adduction: Moving towards midline ("Adding").'
+      ],
+      visualizations: [
+        {
+          id: 'v0',
+          title: 'Body Planes & Axes',
+          type: 'table',
+          data: {
+            headers: ['Plane', 'Axis of Rotation', 'Example Movement'],
+            rows: [
+              ['Sagittal (Side View)', 'Frontal (Left-Right)', 'Somersault, Running'],
+              ['Frontal (Front View)', 'Sagittal (Front-Back)', 'Cartwheel, Jumping Jack'],
+              ['Transverse (Top View)', 'Vertical (Top-Down)', 'Pirouette, Discus Turn']
+            ]
+          }
+        }
+      ]
+    },
+    {
       id: 'newton-laws',
       title: 'Newton’s Laws of Motion',
       description: 'The fundamental physical principles governing movement in sports.',
@@ -60,6 +96,7 @@ export const unit8: Chapter = {
       description: 'The force resisting the relative motion of solid surfaces.',
       content: [
         'Definition: Resistance to motion between two surfaces in contact.',
+        'Coefficient of Friction (COF): Ratio of friction force to normal force. Formula: F = μN (where μ is COF).',
         'Types: Static (Starting motion), Sliding (Kinetic), Rolling (Least friction).',
         'Increasing Friction: Spikes/Cleats (Traction), Chalk/Magnesium (Gymnastics/Weightlifting), Textured balls (Basketball/Rugby).',
         'Decreasing Friction: Lubrication (Ski wax), Smoothing surfaces (Ice skating), Aerodynamics (Cycling helmets/suits), Ball Bearings.'
@@ -111,6 +148,12 @@ export const unit8: Chapter = {
   ],
   flashcards: [
     { id: 'f1', category: 'Definition', question: 'What is Biomechanics?', answer: 'Study of forces and their effects on living systems (human body in sports).' },
+    { id: 'f2a', category: 'Biomechanics', question: 'What is the Sagittal Plane?', answer: 'Vertical plane dividing body into Left and Right.' },
+    { id: 'f2b', category: 'Biomechanics', question: 'Axis for Sagittal Plane movements?', answer: 'Frontal Axis.' },
+    { id: 'f2c', category: 'Biomechanics', question: 'Movement away from midline is called?', answer: 'Abduction.' },
+    { id: 'f2d', category: 'Biomechanics', question: 'Formula for Friction?', answer: 'F = μN (Force = Coeff × Normal Force).' },
+    { id: 'f2e', category: 'Biomechanics', question: 'Bending the elbow is an example of?', answer: 'Flexion.' },
+    { id: 'f2f', category: 'Biomechanics', question: 'Which plane involves Rotation?', answer: 'Transverse Plane (around Vertical Axis).' },
     { id: 'f2', category: 'Newton', question: 'State Newton’s First Law.', answer: 'A body continues in its state of rest or uniform motion unless acted upon by an external force.' },
     { id: 'f3', category: 'Newton', question: 'Another name for Newton’s First Law?', answer: 'Law of Inertia.' },
     { id: 'f4', category: 'Newton', question: 'What is Newton’s Second Law formula?', answer: 'F = ma (Force = Mass × Acceleration).' },
@@ -265,6 +308,8 @@ export const unit8: Chapter = {
     ]
   },
   cheatSheet: [
+    { title: 'Planes & Axes', points: ['Sagittal Plane -> Frontal Axis (Run)', 'Frontal Plane -> Sagittal Axis (Cartwheel)', 'Transverse Plane -> Vertical Axis (Spin)'] },
+    { title: 'Movements', points: ['Flexion (Bend) / Extension (Straighten)', 'Abduction (Away) / Adduction (Add)'] },
     { title: 'Newton in Keywords', points: ['1st Law = Inertia', '2nd Law = F=ma', '3rd Law = Action-Reaction'] },
     { title: 'Projectiles', points: ['Optimal Angle = 45°', 'Velocity = Key for Distance', 'Gravity = 9.8 m/s² down'] },
     { title: 'Stability Rules', points: ['Low CG = Stable', 'Wide Base = Stable', 'High Mass = Stable'] },
