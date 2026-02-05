@@ -12,6 +12,10 @@ export const unit9: Chapter = {
       description: 'Understanding individual differences through psychological traits.',
       content: [
         'Definition: The dynamic organization within the individual of those psychophysical systems that determine their unique adjustment to the environment.',
+        'Sheldon’s Classification (Somatotypes):',
+        '• Endomorph: Pear-shaped, wide hips, round. Personality (Viscerotonic): Relaxed, sociable, loves comfort/food.',
+        '• Mesomorph: Muscular, broad shoulders, wedge-shaped. Personality (Somatotonic): Active, aggressive, adventurous, dominant.',
+        '• Ectomorph: Thin, fine-boned, narrow chest. Personality (Cerebrotonic): Introverted, thoughtful, inhibited, sensitive.',
         'Jung’s Classification: 1. Introverts (Focus on inner thoughts, reserved), 2. Extroverts (Focus on external world, social, energetic), 3. Ambiverts (Balanced mix).',
         'Big Five Model (OCEAN):',
         '• Openness: Imagination, creativity, curiosity. (Low: Traditional).',
@@ -21,6 +25,16 @@ export const unit9: Chapter = {
         '• Neuroticism: Emotional instability, anxiety, moodiness. (Low: Stable/Calm).'
       ],
       visualizations: [
+        {
+          id: 'v0',
+          title: 'Sheldon’s Body Types',
+          type: 'grid',
+          data: [
+            { label: 'Endomorph', desc: 'Round/Fat -> Relaxed (Viscerotonic)' },
+            { label: 'Mesomorph', desc: 'Muscular -> Aggressive (Somatotonic)' },
+            { label: 'Ectomorph', desc: 'Thin -> Introverted (Cerebrotonic)' }
+          ]
+        },
         {
           id: 'v1',
           title: 'The Big Five (OCEAN) Traits',
@@ -43,6 +57,7 @@ export const unit9: Chapter = {
       title: 'Motivation: Types & Techniques',
       description: 'The internal and external forces that drive athletic performance.',
       content: [
+        'Motivation Cycle: Need -> Drive -> Arousal -> Goal-directed Behavior -> Achievement -> Reduction of Arousal.',
         'Types of Motivation:',
         '• Intrinsic: Internal drive (Enjoyment, Satisfaction, Curiosity). "I play because I love it."',
         '• Extrinsic: External rewards (Medals, Money, Praise, Avoiding Punishment). "I play to win the trophy."',
@@ -54,6 +69,18 @@ export const unit9: Chapter = {
         '5. Positive Self-Talk.'
       ],
       visualizations: [
+        {
+          id: 'v1-cycle',
+          title: 'Motivation Cycle',
+          type: 'flow',
+          data: [
+            'Need (Lack of something)',
+            'Drive (State of tension)',
+            'Arousal (Action)',
+            'Goal Achievement',
+            'Reduction of Drive'
+          ]
+        },
         {
           id: 'v2',
           title: 'Intrinsic vs Extrinsic',
@@ -168,7 +195,11 @@ export const unit9: Chapter = {
     { id: 'f34', category: 'Aggression', question: 'Who defined the Frustration-Aggression theory?', answer: 'Often attributed to Dollard et al.' },
     { id: 'f35', category: 'Motivation', question: 'Are cash prizes intrinsic?', answer: 'No, Extrinsic.' },
     { id: 'f36', category: 'Personality', question: 'Which Big Five trait helps in team cohesion?', answer: 'Agreeableness.' },
-    { id: 'f37', category: 'Personality', question: 'Which Big Five trait helps in rigorous training?', answer: 'Conscientiousness.' }
+    { id: 'f37', category: 'Personality', question: 'Which Big Five trait helps in rigorous training?', answer: 'Conscientiousness.' },
+    { id: 'f2a', category: 'Personality', question: 'Sheldon: Body type that is muscular and wedge-shaped?', answer: 'Mesomorph.' },
+    { id: 'f2b', category: 'Personality', question: 'Sheldon: Personality type of an Endomorph?', answer: 'Viscerotonic (Sociable, relaxed, lover of comfort).' },
+    { id: 'f2c', category: 'Personality', question: 'Sheldon: Body type that is thin and narrow?', answer: 'Ectomorph.' },
+    { id: 'f3a', category: 'Motivation', question: 'First stage of the Motivation Cycle?', answer: 'Need.' }
   ],
   sqp: [
     {
@@ -289,9 +320,11 @@ export const unit9: Chapter = {
     ]
   },
   cheatSheet: [
+    { title: 'Sheldon’s Types', points: ['Endo (Fat) = Viscerotonic (Relaxed)', 'Meso (Muscle) = Somatotonic (Active)', 'Ecto (Thin) = Cerebrotonic (Introvert)'] },
     { title: 'OCEAN Traits', points: ['O: Creative', 'C: Organized', 'E: Social', 'A: Helpful', 'N: Anxious'] },
     { title: 'Jung Traits', points: ['Introvert: Inner-focused', 'Extrovert: Outer-focused', 'Ambivert: Balanced'] },
     { title: 'Aggression', points: ['Hostile = Anger + Harm', 'Instrumental = Goal + Harm', 'Assertive = No Harm'] },
+    { title: 'Motivation Cycle', points: ['Need -> Drive -> Arousal -> Goal -> Reduction'] },
     { title: 'Motivation', points: ['Intrinsic = Love', 'Extrinsic = Reward'] }
   ]
 };
