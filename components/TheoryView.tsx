@@ -72,6 +72,14 @@ export const TheoryView: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
                         </div>
                       ))}
                     </div>
+                  ) : vis.type === 'list' && Array.isArray(vis.data) ? (
+                    <div className="flex flex-wrap gap-3">
+                      {(vis.data as string[]).map((item, i) => (
+                        <div key={i} className="bg-white p-4 rounded-xl border border-emerald-200 shadow-sm font-bold text-emerald-900 text-sm">
+                          {item}
+                        </div>
+                      ))}
+                    </div>
                   ) : (
                     <div className="flex flex-wrap items-center gap-3">
                       {Array.isArray(vis.data) && (vis.data as string[]).map((step, i, arr) => (
