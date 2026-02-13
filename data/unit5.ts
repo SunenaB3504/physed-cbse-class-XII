@@ -161,7 +161,7 @@ export const unit5: Chapter = {
       type: 'LA',
       question: 'Define Female Athlete Triad. Explain its three components in detail.',
       answer: 'Defined as a syndrome involving Osteoporosis, Amenorrhea, and Eating Disorders. Explanation of interrelation: Low energy leads to hormonal suppression.',
-      aiExplanation: 'Teacher\'s Note: Start with the definition of the Triad. Draw a triangle diagram. Explain how "Low Energy Availability" is the driving factor. Mention that Amenorrhea is a protective mechanism where the body shuts down reproduction to save energy, which unfortunately reduces estrogen needed for bone density (Osteoporosis).'
+      aiExplanation: 'Teacher\'s Voice - Scoring Breakdown (5 Marks):\n1. **Definition (1 Mark):** Define as a syndrome of three interrelated conditions affecting female athletes.\n2. **Three Components (3 Marks):**\n   *   **Osteoporosis:** Low bone mass/density increasing fracture risk.\n   *   **Amenorrhea:** Absence of menstrual periods (Primary or Secondary).\n   *   **Eating Disorders:** Spectrum of abnormal eating behaviors (Anorexia/Bulimia) leading to Low Energy Availability.\n3. **Relationship (1 Mark):** Briefly explain that low energy leads to menstrual dysfunction, which causes bone loss.'
     },
     {
       id: 'q2',
@@ -181,7 +181,7 @@ export const unit5: Chapter = {
       type: 'LA',
       question: 'List five common postural deformities and suggest one corrective yoga asana for each.',
       answer: '1. Kyphosis (Bhujangasana), 2. Lordosis (Paschimottanasana), 3. Scoliosis (Trikonasana), 4. Knock Knees (Padmasana), 5. Round Shoulders (Dhanurasana).',
-      aiExplanation: 'This is a high-scoring question. Format your answer as a table: Column 1 "Deformity", Column 2 "Description", Column 3 "Corrective Asana".'
+      aiExplanation: 'Teacher\'s Voice - Table Strategy (5 Marks):\nCreate a table with 3 columns: Deformity | Description | Corrective Asana.\n1. **Kyphosis:** Round upper back -> Bhujangasana (Cobra Pose).\n2. **Lordosis:** Inward lower back curve -> Halasana (Plow Pose).\n3. **Scoliosis:** Sideways spine curve -> Trikonasana (Triangle Pose).\n4. **Knock Knees (Genu Valgum):** Knees touch -> Padmasana (Lotus Pose).\n5. **Bow Legs (Genu Varum):** Knees apart -> Garudasana (Eagle Pose).'
     },
     {
       id: 'q4',
@@ -231,7 +231,7 @@ export const unit5: Chapter = {
       type: 'LA',
       question: 'Analyze the sociological and psychological constraints for women participation in sports in India.',
       answer: 'Social: Patriarchal mindset, safety concerns. Psych: Body image, confidence.',
-      aiExplanation: 'Divide answer into two sections: Sociological (Family support, marriage pressure, safety) and Psychological (Fear of judgement, "Masculine" stereotype of muscles). End with a positive note on recent improvement (Mary Kom, PV Sindhu).'
+      aiExplanation: 'Teacher\'s Voice - Essay Structure (5 Marks):\nDivide your answer into two clear sections:\n1. **Sociological Constraints (2.5 Marks):** Focus on external factors.\n   *   Traditional gender roles (Home-makers).\n   *   Lack of safety/transport.\n   *   Lack of female role models.\n2. **Psychological Constraints (2.5 Marks):** Focus on internal mindsets.\n   *   Low self-confidence.\n   *   Body image issues (fear of being "muscular").\n   *   Fear of social criticism.'
     }
   ],
   mindMap: {

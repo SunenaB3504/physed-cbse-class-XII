@@ -188,7 +188,7 @@ export const unit7: Chapter = {
       type: 'SA',
       question: 'Differentiate between Sprain and Strain.',
       answer: 'Sprain: Ligament injury (Bone-Bone). Strain: Muscle/Tendon injury (Muscle-Bone).',
-      aiExplanation: 'Mnemonic: "T" in Strain -> Tendon. Sprain is for ligaments (like ankles).'
+      aiExplanation: 'Teacher\'s Voice - Differentiation Strategy (3 Marks):\nCreate a comparison for full marks:\n1. **Tissue Involved:** Sprain = Ligament; Strain = Muscle/Tendon. (1 Mark)\n2. **Connection:** Sprain = Bone-to-Bone; Strain = Muscle-to-Bone. (1 Mark)\n3. **Severity/Recovery:** Sprains often take longer to heal due to poor blood supply compared to vascular muscles. (1 Mark)'
     },
     {
       id: 'q3',

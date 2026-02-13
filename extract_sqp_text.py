@@ -14,10 +14,7 @@ def extract_text(pdf_path):
 
 base_path = r"C:\Users\Admin\Neil\XII-Commerce\SQPs\Physical Education\PhysicalEducation-SQPs"
 files = [
-    "PhysicalEducation-SQP-2025-26.pdf",
-    "PhysicalEducation-MS-2025-26.pdf",
-    "PhysicalEducation-SQP-2024-25.pdf",
-    "PhysicalEducation-MS-2024-25.pdf"
+    "PhysicalEducation-SQP-2025-26.pdf"
 ]
 
 for file in files:

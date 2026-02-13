@@ -48,7 +48,66 @@ export const unit1: Chapter = {
         }
       ]
     },
-    // ...existing topics from chapter1.ts...
+    {
+      id: 'fixtures-drawing',
+      title: 'Procedure to Draw Fixtures',
+      description: 'Step-by-step specific procedures for Knock-Out and League tournaments.',
+      content: [
+        'Knock-Out Fixture Procedure:',
+        '1. N = Total Number of Teams.',
+        '2. Total Combinations/Matches = N - 1.',
+        '3. Semi-Finals & Quarter-Finals are determined by Powers of 2 (2, 4, 8, 16, 32...).',
+        '4. Byes: Privilege given to teams to skip the first round. Calculated as (Next Power of 2) - N.',
+        '5. Seeding: Placing strong teams in separate halves/pools to avoid early elimination.',
+        'League Fixture Procedure:',
+        '1. Staircase Method: Teams are arranged in a stepped ladder format. Simplest calculation, no byes.',
+        '2. Cyclic Method: Teams rotate in a circle. If N is even, Team 1 is fixed. If N is odd, a "Bye" is fixed.'
+      ],
+      visualizations: [
+        {
+          id: 'v2-bye-order',
+          title: 'Order of Bye Placement (Fixed Rules)',
+          type: 'steps',
+          data: [
+            '1st Bye: Bottom of Lower Half',
+            '2nd Bye: Top of Upper Half',
+            '3rd Bye: Top of Lower Half',
+            '4th Bye: Bottom of Upper Half',
+            'Repeats... 5th Bye (Bottom Lower), etc.'
+          ]
+        },
+        {
+          id: 'v3-divisions',
+          title: 'Division of Teams (N = Odd)',
+          type: 'table',
+          data: {
+            headers: ['Division', 'Teams Formula', 'Byes Formula'],
+            rows: [
+              ['Upper Half', '(N + 1) / 2', '(Total Byes - 1) / 2'],
+              ['Lower Half', '(N - 1) / 2', '(Total Byes + 1) / 2']
+            ]
+          }
+        }
+      ]
+    },
+    {
+      id: 'specific-programmes',
+      title: 'Intramural, Extramural & Specific Programmes',
+      description: 'Understanding internal vs external competitions and community sports events.',
+      content: [
+        'Intramural: Derived from Latin "Intra" (Within) + "Muralis" (Wall). Competitions within the institution (e.g., Inter-House).',
+        'Objectives of Intramural: Mass participation, Fun & Recreation, Talent Identification, Leadership development.',
+        'Extramural: Derived from Latin "Extra" (Outside) + "Muralis" (Wall). Competitions between institutions (e.g., Inter-School).',
+        'Objectives of Extramural: Enhancing standard of sports, learning new techniques, sportsmanship, and fraternity.',
+        'Specific Sports Programmes: Non-competitive events for social causes.',
+        '1. Sports Day: Annual event to showcase talent and mass participation.',
+        '2. Health Run: Promoting fitness awareness (ISO standard rules not required).',
+        '3. Run for Fun: purely for enjoyment.',
+        '4. Run for Unity: To promote national integration and peace.',
+        '5. Run for Specific Cause: Charity runs (Cancer awareness, Green environment).'
+      ],
+      visualizations: []
+    }
   ],
   flashcards: [
     {
@@ -456,8 +515,8 @@ export const unit1: Chapter = {
         id: 'committees',
         label: 'Committees',
         children: [
-          { 
-            id: 'pre', 
+          {
+            id: 'pre',
             label: 'Pre-Event',
             children: [
               { id: 'publicity', label: 'Publicity' },
@@ -465,8 +524,8 @@ export const unit1: Chapter = {
               { id: 'purchase', label: 'Purchase' }
             ]
           },
-          { 
-            id: 'during', 
+          {
+            id: 'during',
             label: 'During Event',
             children: [
               { id: 'organization', label: 'Organization' },
@@ -476,8 +535,8 @@ export const unit1: Chapter = {
               { id: 'technical', label: 'Technical/Officials' }
             ]
           },
-          { 
-            id: 'post', 
+          {
+            id: 'post',
             label: 'Post-Event',
             children: [
               { id: 'record', label: 'Records' },
@@ -490,8 +549,8 @@ export const unit1: Chapter = {
         id: 'tournaments',
         label: 'Tournaments',
         children: [
-          { 
-            id: 'knockout', 
+          {
+            id: 'knockout',
             label: 'Knock-Out',
             children: [
               { id: 'bye', label: 'Byes' },
@@ -499,8 +558,8 @@ export const unit1: Chapter = {
               { id: 'special', label: 'Special Seeding' }
             ]
           },
-          { 
-            id: 'league', 
+          {
+            id: 'league',
             label: 'League',
             children: [
               { id: 'staircase', label: 'Staircase Method' },
@@ -679,7 +738,7 @@ export const unit1: Chapter = {
       question: 'League tournament is a better way to judge the best team of the tournament. Comment.',
       answer: 'It provides equal opportunity to all teams and reduces the element of luck.',
       markingScheme: '● Equal opportunities to all the teams \n● League matches minimize impact of luck or unexpected outcomes \n● Judged on basis of multiple matches \n● Ranking of basis of points earned \n● Less pressure on teams with compassion to knockout tournament \n● Scope of improvement',
-      aiExplanation: 'League (Round Robin) is superior for ranking because:\n1. TRUE MERIT: A team must perform consistently over many matches, not just one.\n2. LUCK FACTOR: In knockout, one bad day eliminates a good team. In league, a good team can lose once and still win the championship.\n3. EQUAL OPPORTUNITY: Every team plays every other team, ensuring a fair comparison across the board.'
+      aiExplanation: 'Teacher\'s Voice - Scoring Strategy (3 Marks):\nTo secure full marks, you must provide 3 distinct arguments. \n1. **True Merit (1 Mark):** Unlike Knockout, a single bad match doesn\'t eliminate a strong team. \n2. **Equal Opportunity (1 Mark):** Every team plays every other team, ensuring a fair assessment. \n3. **Ranking Accuracy (1 Mark):** The final standing is based on points accumulated over many matches, reflecting true consistency.'
     },
     {
       id: 'u1-la-2026-sqp-q31',

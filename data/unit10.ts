@@ -216,7 +216,7 @@ export const unit10: Chapter = {
       type: 'LA',
       question: 'Define Flexibility. Explain types and any 2 methods to improve it.',
       answer: 'Range of motion. Types: Active, Passive. Methods: PNF (Contract-Relax), Static Stretching.',
-      aiExplanation: 'PNF is the most distinct technical method to mention.'
+      aiExplanation: 'Teacher\'s Voice - Scoring Breakdown (5 Marks):\n1. **Definition (1 Mark):** Define as the "range of motion around a joint".\n2. **Types (2 Marks):** Distinguish between:\n   *   **Passive Flexibility:** Ability to stretch with external help (Partner).\n   *   **Active Flexibility:** Ability to stretch without help (further divided into Static & Dynamic).\n3. **Methods (2 Marks):** Explain any two methods details:\n   *   **PNF (Proprioceptive Neuromuscular Facilitation):** Contract-Relax method, fastest for gains.\n   *   **Ballistic Method:** Rhythmic swinging movements (Caution: Risk of injury).\n   *   **Static Stretching:** Holding the pose for a duration.'
     },
     {
       id: 'q17',
@@ -246,7 +246,7 @@ export const unit10: Chapter = {
       type: 'LA',
       question: 'Define Strength. Differentiate Isometric, Isotonic, and Isokinetic.',
       answer: 'Strength: Muscle force. Isometric: No Move. Isotonic: Visible Move. Isokinetic: Machine/Constant Speed.',
-      aiExplanation: 'Use the Greek roots (Metric=Length, Tonic=Tone, Kinetic=Motion) to differentiate.'
+      aiExplanation: 'Teacher\'s Voice - Scoring Breakdown (5 Marks):\n1. **Define Strength (1 Mark):** Ability to overcome resistance.\n2. **Differentiate Types (4 Marks):**\n   *   **Isometric:** Static, No movement (e.g., Plank).\n   *   **Isotonic:** Dynamic, Visible movement (e.g., Push-ups).\n   *   **Isokinetic:** Machine-controlled, Constant speed (e.g., Cybex).\n   *   *Note:* Using Greek roots (Metric=Length, Tonic=Tone, Kinetic=Motion) adds credibility.'
     },
     {
       id: 'q17_26',
@@ -276,7 +276,7 @@ export const unit10: Chapter = {
       type: 'LA',
       question: 'Define Circuit Training. Plan a session with 6 stations.',
       answer: 'Series of stations (Adamson & Morgan). Plan: 1. jacks, 2. pushup, 3. squat, 4. crunch, 5. dip, 6. rope.',
-      aiExplanation: 'Ensure the plan alternates upper, lower, and core muscles.'
+      aiExplanation: 'Teacher\'s Voice - Session Design (5 Marks):\n1. **Definition (1 Mark):** Training method by Adamson & Morgan involving stations.\n2. **The "Checklist" for your Plan (4 Marks):**\n   *   **Diagram:** Draw a circle with 6 stations.\n   *   **Selection:** You must alternate muscle groups (Circuit Principle).\n   *   **Example:** 1. Jacks (Warmup) -> 2. Pushups (Upper) -> 3. Squats (Lower) -> 4. Crunches (Core) -> 5. Dips (Upper) -> 6. Rope Skipping (Cardio).'
     }
   ],
   mindMap: {

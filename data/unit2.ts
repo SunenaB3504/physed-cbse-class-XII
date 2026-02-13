@@ -287,44 +287,56 @@ export const unit2: Chapter = {
             id: 'm3',
             label: 'Macronutrients',
             children: [
-              { id: 'm3a', label: 'Carbohydrates', children: [
-                { id: 'm3a1', label: 'Simple (Sugars)' },
-                { id: 'm3a2', label: 'Complex (Starch, Fiber)' },
-                { id: 'm3a3', label: 'Functions: Energy (4 kcal/g)' },
-                { id: 'm3a4', label: 'Sources: Rice, wheat, potatoes, fruits' }
-              ] },
-              { id: 'm3b', label: 'Proteins', children: [
-                { id: 'm3b1', label: 'Amino acids' },
-                { id: 'm3b2', label: 'Functions: Growth, repair (4 kcal/g)' },
-                { id: 'm3b3', label: 'Sources: Milk, eggs, pulses, meat' }
-              ] },
-              { id: 'm3c', label: 'Fats', children: [
-                { id: 'm3c1', label: 'Saturated/Unsaturated' },
-                { id: 'm3c2', label: 'Functions: Storage, insulation (9 kcal/g)' },
-                { id: 'm3c3', label: 'Sources: Ghee, butter, oils, nuts' }
-              ] },
-              { id: 'm3d', label: 'Water', children: [
-                { id: 'm3d1', label: 'Functions: Transport, temperature' },
-                { id: 'm3d2', label: 'Sources: Water, fruits, vegetables' }
-              ] }
+              {
+                id: 'm3a', label: 'Carbohydrates', children: [
+                  { id: 'm3a1', label: 'Simple (Sugars)' },
+                  { id: 'm3a2', label: 'Complex (Starch, Fiber)' },
+                  { id: 'm3a3', label: 'Functions: Energy (4 kcal/g)' },
+                  { id: 'm3a4', label: 'Sources: Rice, wheat, potatoes, fruits' }
+                ]
+              },
+              {
+                id: 'm3b', label: 'Proteins', children: [
+                  { id: 'm3b1', label: 'Amino acids' },
+                  { id: 'm3b2', label: 'Functions: Growth, repair (4 kcal/g)' },
+                  { id: 'm3b3', label: 'Sources: Milk, eggs, pulses, meat' }
+                ]
+              },
+              {
+                id: 'm3c', label: 'Fats', children: [
+                  { id: 'm3c1', label: 'Saturated/Unsaturated' },
+                  { id: 'm3c2', label: 'Functions: Storage, insulation (9 kcal/g)' },
+                  { id: 'm3c3', label: 'Sources: Ghee, butter, oils, nuts' }
+                ]
+              },
+              {
+                id: 'm3d', label: 'Water', children: [
+                  { id: 'm3d1', label: 'Functions: Transport, temperature' },
+                  { id: 'm3d2', label: 'Sources: Water, fruits, vegetables' }
+                ]
+              }
             ]
           },
           {
             id: 'm4',
             label: 'Micronutrients',
             children: [
-              { id: 'm4a', label: 'Vitamins', children: [
-                { id: 'm4a1', label: 'Fat-soluble: A, D, E, K' },
-                { id: 'm4a2', label: 'Water-soluble: B-complex, C' },
-                { id: 'm4a3', label: 'Functions: Metabolism, immunity' },
-                { id: 'm4a4', label: 'Deficiencies: Night blindness, scurvy, rickets' }
-              ] },
-              { id: 'm4b', label: 'Minerals', children: [
-                { id: 'm4b1', label: 'Macro: Ca, K, Na, Mg, P' },
-                { id: 'm4b2', label: 'Micro: Fe, I, Zn, Cu' },
-                { id: 'm4b3', label: 'Functions: Bones, nerves, blood' },
-                { id: 'm4b4', label: 'Deficiencies: Anemia, goiter, weak bones' }
-              ] }
+              {
+                id: 'm4a', label: 'Vitamins', children: [
+                  { id: 'm4a1', label: 'Fat-soluble: A, D, E, K' },
+                  { id: 'm4a2', label: 'Water-soluble: B-complex, C' },
+                  { id: 'm4a3', label: 'Functions: Metabolism, immunity' },
+                  { id: 'm4a4', label: 'Deficiencies: Night blindness, scurvy, rickets' }
+                ]
+              },
+              {
+                id: 'm4b', label: 'Minerals', children: [
+                  { id: 'm4b1', label: 'Macro: Ca, K, Na, Mg, P' },
+                  { id: 'm4b2', label: 'Micro: Fe, I, Zn, Cu' },
+                  { id: 'm4b3', label: 'Functions: Bones, nerves, blood' },
+                  { id: 'm4b4', label: 'Deficiencies: Anemia, goiter, weak bones' }
+                ]
+              }
             ]
           }
         ]
@@ -333,28 +345,36 @@ export const unit2: Chapter = {
         id: 'm5',
         label: 'Components',
         children: [
-          { id: 'm6', label: 'Nutritive', children: [
-            { id: 'm6a', label: 'Carbohydrates, Proteins, Fats, Vitamins, Minerals' }
-          ] },
-          { id: 'm7', label: 'Non-Nutritive', children: [
-            { id: 'm7a', label: 'Fiber (Roughage)' },
-            { id: 'm7b', label: 'Water' },
-            { id: 'm7c', label: 'Flavors, Pigments' }
-          ] }
+          {
+            id: 'm6', label: 'Nutritive', children: [
+              { id: 'm6a', label: 'Carbohydrates, Proteins, Fats, Vitamins, Minerals' }
+            ]
+          },
+          {
+            id: 'm7', label: 'Non-Nutritive', children: [
+              { id: 'm7a', label: 'Fiber (Roughage)' },
+              { id: 'm7b', label: 'Water' },
+              { id: 'm7c', label: 'Flavors, Pigments' }
+            ]
+          }
         ]
       },
       {
         id: 'm8',
         label: 'Weight Control',
         children: [
-          { id: 'm9', label: 'BMI', children: [
-            { id: 'm9a', label: 'Formula: Weight (kg) / [Height (m)]²' },
-            { id: 'm9b', label: 'Categories: Underweight, Normal, Overweight, Obesity' }
-          ] },
-          { id: 'm10', label: 'WHR', children: [
-            { id: 'm10a', label: 'Formula: Waist / Hip' },
-            { id: 'm10b', label: 'Cut-offs: >1.0 (men), >0.85 (women)' }
-          ] },
+          {
+            id: 'm9', label: 'BMI', children: [
+              { id: 'm9a', label: 'Formula: Weight (kg) / [Height (m)]²' },
+              { id: 'm9b', label: 'Categories: Underweight, Normal, Overweight, Obesity' }
+            ]
+          },
+          {
+            id: 'm10', label: 'WHR', children: [
+              { id: 'm10a', label: 'Formula: Waist / Hip' },
+              { id: 'm10b', label: 'Cut-offs: >1.0 (men), >0.85 (women)' }
+            ]
+          },
           { id: 'm11', label: 'Pitfalls of Dieting' },
           { id: 'm12', label: 'Food Intolerance' }
         ]
@@ -372,31 +392,31 @@ export const unit2: Chapter = {
     ]
   },
   cheatSheet: [
-    { 
-      title: 'Balanced Diet & BMI', 
+    {
+      title: 'Balanced Diet & BMI',
       points: [
         'Balanced Diet: Contains Carbohydrates, Proteins, Fats, Vitamins, Minerals, Water, Roughage.',
         'BMI Formula: Weight (kg) / Height (m)^2',
         'BMI Categories: <18.5 Underweight, 18.5-24.9 Normal, 25-29.9 Overweight, >30 Obese.'
-      ] 
+      ]
     },
-    { 
-      title: 'Nutrients', 
+    {
+      title: 'Nutrients',
       points: [
         'Carbohydrates (4 kcal/g): Energy Source.',
         'Proteins (4 kcal/g): Growth & Repair.',
         'Fats (9 kcal/g): Energy Storage & Insulation.',
         'Water: Transport, Temperature Regulation.',
         'Roughage: Digestion (No nutritional value).'
-      ] 
+      ]
     },
-    { 
-      title: 'Vitamin Deficiencies', 
-      points: ['A: Night Blindness', 'B1: Beri Beri', 'C: Scurvy', 'D: Rickets', 'K: Blood clotting issues'] 
+    {
+      title: 'Vitamin Deficiencies',
+      points: ['A: Night Blindness', 'B1: Beri Beri', 'C: Scurvy', 'D: Rickets', 'K: Blood clotting issues']
     },
-    { 
-      title: 'Mineral Functions', 
-      points: ['Calcium: Bone/Teeth strength', 'Iron: Hemoglobin formation', 'Iodine: Thyroid health', 'Sodium: Water balance'] 
+    {
+      title: 'Mineral Functions',
+      points: ['Calcium: Bone/Teeth strength', 'Iron: Hemoglobin formation', 'Iodine: Thyroid health', 'Sodium: Water balance']
     },
     {
       title: 'Food Myths',
@@ -442,7 +462,7 @@ export const unit2: Chapter = {
       question: 'What is a balanced diet? Mention its importance also.',
       answer: 'A balanced diet contains all essential nutrients in the correct proportion.',
       markingScheme: 'Balanced Diet – Definition [1] \n● Contains all essential nutrients in correct proportion. \nImportance of Balanced Diet (Any 2-3 points): \n● Provides energy \n● Supports growth and repay \n● Boosts immunity \n● Prevents deficiencies and diseases \n● Maintains body functions efficiently',
-      aiExplanation: 'Teacher\'s Voice - Structuring your Answer: \n1. **Definition (1 Mark):** Keywords "Correct Proportion" and "Essential Nutrients" are mandatory. \n2. **Importance (1 Mark):** Do not just list points; categorize them into *Energy* (Fuel), *Structure* (Growth/Repair), and *Protection* (Immunity). Listing 2 distinct categories ensures full marks.'
+      aiExplanation: 'Teacher\'s Voice - Structuring your Answer: \n1. **Definition (1 Mark):** You MUST use the keywords "Correct Proportion" and "Essential Nutrients". \n2. **Importance (1 Mark):** Do not just list points; categorize them into ONE of the following to ensure the mark: \n   *   *Energy* (Fuel for activity). \n   *   *Structure* (Growth & Repair). \n   *   *Protection* (Immunity & Disease prevention).'
     },
     {
       id: 'u2-sa-2026-sqp-q28',
@@ -454,7 +474,7 @@ export const unit2: Chapter = {
       question: 'Discuss the importance of pre, during and post competition diet in detail.',
       answer: 'Pre-competition fuels the body, during maintains levels, post aids recovery.',
       markingScheme: 'Pre-Competition Diet \no Provides energy, prevents early fatigue, and ensures smooth digestion \nbefore performance. \no Consume high-carbohydrate foods like rice, pasta, or bread for \nsustained energy. \no Prefer easily digestible, low-fat, and non-fried meals taken 3–4 hours \nbefore the event. \n \nDuring Competition Diet \no Maintains hydration, energy, and electrolyte balance to avoid fatigue \nand muscle cramps. \no Sip on glucose-rich drinks or electrolyte solutions to maintain blood \nsugar and sodium levels. \no Include small portions of quick energy foods like banana or energy \ngels if needed. \n \nPost-Competition Diet \no Supports recovery by replenishing lost fluids and restoring glycogen \nlevels in muscles. \no Eat carbohydrate-rich foods such as fruits, sandwiches, or energy bars \nimmediately after. \no Rehydrate with fluids like water, juice, or sports drinks to replace lost \nelectrolytes.',
-      aiExplanation: 'Teacher\'s Voice - The "3-Phase Protocol": \n1. **Pre-Event (Fueling):** Focus on Glycogen Loading. High Carb + Low Fat + Low Fiber (to prevent digestive issues). \n2. **During-Event (Sustaining):** Focus on Hydration + Glucose Maintenance. Prevents "hitting the wall" (hypoglycemia). \n3. **Post-Event (Recovery):** The "3 R\'s": Rehydrate (Fluids), Replenish (Carbs), Repair (Protein). This structure guarantees 3/3 marks.'
+      aiExplanation: 'Teacher\'s Voice - The "3-Phase Protocol" (3 Marks): \n1. **Pre-Event (1 Mark):** Focus on *Glycogen Loading*. High Carb + Low Fat + Low Fiber (to prevent digestive issues). \n2. **During-Event (1 Mark):** Focus on *Hydration & Sustenance*. Sip electrolytes/glucose to prevent hypoglycemia. \n3. **Post-Event (1 Mark):** The "3 R\'s" of Recovery: *Rehydrate* (Fluids), *Replenish* (Carbs), *Repair* (Protein).'
     },
     {
       id: 'u2-la-2026-sqp-q33-vi',
@@ -466,7 +486,7 @@ export const unit2: Chapter = {
       question: 'Vitamins and minerals are essential nutrients which protect us from various diseases and \nare helpful for general development of the body. \n \n1. __________ is a group of 8 water-soluble vitamins which are important for \ncellular metabolism.: \n         a) Vitamin A     \nb) Vitamin K \nc) Vitamin B      \nd) Vitamin D \n \n2. _________ disease is caused due to lack of Vitamin B. \na) Anemia \nb) Kwashiorkor \nc) Scurvy \nd) Beri Beri \n \n3. Vitamin______ is important for healthy bones and teeth. \na) K \nb) A \nc) D \nd) C \n \n4. Vitamin_____ is needed for blood clotting \na) A \nb) D \nc) K \nd) E',
       answer: '1. c (Vitamin B), 2. d, 3. c, 4. c',
       markingScheme: '1. b) Vitamin B \n2. d) Beri Beri \n3. c) D \n4. c) K',
-      aiExplanation: 'Teacher\'s Voice - Breakdown: \n1. **B-Complex:** The only "Group" of vitamins (B1, B2, B12 etc). Water-soluble. \n2. **Beri-Beri:** Specific to B1 (Thiamine). Anemia is Iron/B12; Scurvy is C. \n3. **Vitamin D:** "The Sunshine Vitamin" regulates Calcium absorption for bones. \n4. **Vitamin K:** "Koagulation" (German root). Essential for clotting cascade.'
+      aiExplanation: 'Teacher\'s Voice - Breakdown (1 Mark per correct answer): \n1. **B-Complex:** The only "Group" of vitamins (B1, B2, B12 etc). Water-soluble. \n2. **Beri-Beri:** Specific deficiency disease of Vitamin B1 (Thiamine). \n3. **Vitamin D:** "The Sunshine Vitamin" regulates Calcium absorption for bones. \n4. **Vitamin K:** "Koagulation" (German root). Essential for clotting cascade.'
     },
     {
       id: 'u2-mcq-2025-sqp-q4',
@@ -502,7 +522,7 @@ export const unit2: Chapter = {
       question: 'How we can say that protein is an essential component of diet?',
       answer: 'Protein is the building block of life...',
       markingScheme: '• Protein is essential component of diet because protein is known as building block \nof life and it increase the strength of muscle fibers, repair and maintenance of \nbody tissue and also connected with immune mechanism of the body.',
-      aiExplanation: 'Teacher\'s Voice: \nFocus on "Structural" and "Functional" roles: \n1. **Structural:** Foundation of muscles, skin, hair, and nails. \n2. **Functional:** Enzymes are proteins; Antibodies (Immunity) are proteins. \n*Key phrase to use:* "Building block of life".'
+      aiExplanation: 'Teacher\'s Voice (2 Marks): \n1. **Structural Role (1 Mark):** Mention it as the "Building block of life" for muscles, skin, and hair. \n2. **Functional Role (1 Mark):** Mention its role in Immunity (Antibodies) and Metabolism (Enzymes).'
     },
     {
       id: 'u2-la-2025-sqp-q28',
@@ -514,7 +534,7 @@ export const unit2: Chapter = {
       question: 'Differentiate between nutritive and nonnutritive components of a diet on the basis of their \nfunctions.',
       answer: 'Nutritive components provide energy; non-nutritive do not but serve other functions.',
       markingScheme: 'Nutritive Component:\nNutritive components of food are \nthose elements that provide a \nconsiderable quantity of energy to the \nsystem, such as protein, \ncarbohydrates, and fats, all of which \nare essential to the body.  \nNon-Nutritive Component:\nNon-nutritive components of the diet are \nthose components that do not have any \nnutritional value but are nonetheless \nnecessary for the body in tiny quantities.\n\nFunctions:\nNutritive: Provide Energy, Support growth and repair\nNon-Nutritive: Provide flavour and texture, Acts as food addictive, Provide antioxidant',
-      aiExplanation: 'Teacher\'s Voice - The "Energy Rule": \n*   **Nutritive:** Provide Calories (Energy). Think "Fuel". (Carbs, Fats, Proteins). \n*   **Non-Nutritive:** Zero Calories. Provide "functionality" (Digestion via Fiber, Hydration via Water, Metabolism regulation via Phytochemicals). \n*   **Exam Tip:** Explicitly mention "Caloric Value" as the primary differentiator.'
+      aiExplanation: 'Teacher\'s Voice - The Differentiator Strategy (3 Marks):\n1. **Primary Difference (1 Mark):** **Nutritive** provides Calories/Energy; **Non-Nutritive** has NO Caloric value. \n2. **Function of Nutritive (1 Mark):** Growth, Repair, Energy (Carbs, Fats, Proteins). \n3. **Function of Non-Nutritive (1 Mark):** Digestion (Fiber), Hydration (Water), Metabolism (Vitamins/Minerals/Phytochemicals).'
     },
     {
       id: 'u2-ar-2024-sqp-q10',

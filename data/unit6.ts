@@ -243,7 +243,7 @@ export const unit6: Chapter = {
       type: 'SA',
       question: 'Elucidate the Barrow Three Item General Motor Ability Test.',
       answer: 'Consists of Standing Broad Jump, Zig-Zag Run, and Medicine Ball Put. Measures General Motor Capacity.',
-      aiExplanation: 'Mention the three specific items. "Zig-Zag" measures agility, "Broad Jump" measures leg power, "Med Ball" measures arm power.'
+      aiExplanation: 'Teacher\'s Voice - Scoring Breakdown (3 Marks):\n1. **List the 3 Items (1.5 Marks):** Standing Broad Jump, Zig-Zag Run, Medicine Ball Put.\n2. **Explain the purpose of each (1.5 Marks):** \n   *   Broad Jump -> Explosive Leg Power.\n   *   Zig-Zag Run -> Agility/Speed.\n   *   Med Ball Put -> Arm/Shoulder Strength.'
     },
     {
       id: 'q8',

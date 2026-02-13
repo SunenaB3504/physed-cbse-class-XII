@@ -230,7 +230,7 @@ export const unit9: Chapter = {
       type: 'LA',
       question: 'Explain Jung’s Classification of Personality.',
       answer: '1. Introverts (Inner focused, shy). 2. Extroverts (Outer focused, social). 3. Ambiverts (Balanced).',
-      aiExplanation: 'Define each type involving their social interaction, thought process (reflective vs expressive), and energy source.'
+      aiExplanation: 'Teacher\'s Voice - Scoring Breakdown (5 Marks):\n1. **Introverts (1.5 Marks):** Explain traits (shy, reflective) and focus (inner thoughts/ideas). Mention sports suitability (individual sports like Archery).\n2. **Extroverts (1.5 Marks):** Explain traits (social, talkative) and focus (external world/people). Mention sports suitability (team sports like Football).\n3. **Ambiverts (1 Mark):** Explain that they possess a balance of both traits depending on the situation.\n4. **Examples (1 Mark):** Provide clear examples for each category to secure the final mark.'
     },
     {
       id: 'q4',
@@ -280,7 +280,7 @@ export const unit9: Chapter = {
       type: 'LA',
       question: 'Describe the Big Five Personality Theory (OCEAN).',
       answer: 'Openness (Creative), Conscientiousness (Disciplined), Extraversion (Social), Agreeableness (Helpful), Neuroticism (Anxious).',
-      aiExplanation: 'List all five traits. For a 5-mark question, provide a 1-line description and a "Sports Application" for each.'
+      aiExplanation: 'Teacher\'s Voice - Acronym Strategy (5 Marks):\nUse the acronym **OCEAN** to structure your answer. Award 1 mark for each trait:\n1. **O - Openness:** Imagination, curiosity, and willingness to try new sports.\n2. **C - Conscientiousness:** Self-discipline, organization, and dedication to training.\n3. **E - Extraversion:** Sociability, energy, and leadership in team settings.\n4. **A - Agreeableness:** Trust, cooperation, and team cohesion.\n5. **N - Neuroticism:** Emotional stability vs instability (anxiety under pressure).'
     },
     {
       id: 'q9',

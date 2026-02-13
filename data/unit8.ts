@@ -243,7 +243,7 @@ export const unit8: Chapter = {
       type: 'SA',
       question: 'Differentiate between Sliding Friction and Rolling Friction.',
       answer: 'Sliding: Surfaces rub (Sled). Rolling: Object rolls (Ball). Rolling friction is much weaker than Sliding friction.',
-      aiExplanation: 'Key concept: Rolling involves less surface area contact friction at any moment compared to sliding.'
+      aiExplanation: 'Teacher\'s Voice - Scoring Breakdown (3 Marks):\n1. **Define Sliding Friction (1 Mark):** Resistance when one surface slides over another (e.g., Ice Skating).\n2. **Define Rolling Friction (1 Mark):** Resistance when an object rolls over a surface (e.g., Bowling).\n3. **Comparison (1 Mark):** Explicitly state that "Rolling Friction is significantly less than Sliding Friction" because the point of contact is smaller and deformation is minimal.'
     },
     {
       id: 'q6',
