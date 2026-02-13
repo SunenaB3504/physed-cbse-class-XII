@@ -232,6 +232,78 @@ export const unit5: Chapter = {
       question: 'Analyze the sociological and psychological constraints for women participation in sports in India.',
       answer: 'Social: Patriarchal mindset, safety concerns. Psych: Body image, confidence.',
       aiExplanation: 'Teacher\'s Voice - Essay Structure (5 Marks):\nDivide your answer into two clear sections:\n1. **Sociological Constraints (2.5 Marks):** Focus on external factors.\n   *   Traditional gender roles (Home-makers).\n   *   Lack of safety/transport.\n   *   Lack of female role models.\n2. **Psychological Constraints (2.5 Marks):** Focus on internal mindsets.\n   *   Low self-confidence.\n   *   Body image issues (fear of being "muscular").\n   *   Fear of social criticism.'
+    },
+    {
+      id: 'q8-2025',
+      year: '2024-25',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q8.',
+      question: 'Menarche is defined as:\nA. Ending of Menstrual period in women\nB. Beginning of menstrual period in women\nC. Time of pregnancy\nD. Beginning of pregnancy',
+      answer: 'B. Beginning of menstrual period in women',
+      markingScheme: 'B. Beginning of menstrual period in women',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Root Word:** "Arche" means beginning (like Archaeology/Archaic). \n*   **Menarche:** The *start* of menstruation (Puberty). \n*   **Menopause:** The *pause/stop* of menstruation (Old age).'
+    },
+    {
+      id: 'q19-2025',
+      year: '2024-25',
+      paperType: 'SQP',
+      marks: 2,
+      type: 'SA',
+      questionNumber: 'Q19.',
+      question: 'Enlist any two-exercise guideline by WHO for different age groups.',
+      answer: '1. Children (5-17): 60 mins/day. 2. Adults (18-64): 150 mins/week.',
+      markingScheme: '1. For children and youth aged 5–17, should do at least an average of 60 minutes per day of moderate-to-vigorous intensity, mostly aerobic, physical activity, across the week.\n2. Adults aged 18–64 years, should do at least 150–300 minutes of moderate-intensity aerobic physical activity.',
+      aiExplanation: 'Teacher\'s Voice - Specific Metrics (2 Marks):\n1. **Group 1 (5-17 Years):** Must mention "60 minutes daily" and "Moderate-to-Vigorous".\n2. **Group 2 (18-64 Years):** Must mention "150-300 minutes per week" of "Moderate intensity".'
+    },
+    {
+      id: 'q26-2025',
+      year: '2024-25',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      questionNumber: 'Q26.',
+      question: 'What are the health problem face by a woman due to female athlete triad in its sports and athletic performance',
+      answer: 'Bone loss (Osteoporosis), Reproductive issues (Amenorrhea), and Low Energy.',
+      markingScheme: '1. Osteoporosis: Weakening of bones due to low estrogen.\n2. Amenorrhea: Cessation of periods affecting fertility.\n3. Low Energy Availability: Leads to fatigue, poor performance, and increased injury risk.',
+      aiExplanation: 'Teacher\'s Voice - Consequences Focus (3 Marks):\nUnlike the 5-mark definition question, this asks for the *Problems/Consequences*:\n1. **Skeletal Health (1 Mark):** Osteoporosis -> Stress fractures + Weak bones.\n2. **Reproductive Health (1 Mark):** Amenorrhea -> Infertility + Hormonal imbalance.\n3. **Performance Health (1 Mark):** Low Energy -> Fatigue + Slow recovery + Mental stress.'
+    },
+    {
+      id: 'q16-2024-sqp',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q16.',
+      question: 'If the menstruation cycle does not begin at puberty, the condition is called ___________\n(a) Primary Amenorrhea\n(b) Secondary amenorrhea\n(c) Oligomenorrhea\n(d) Dysmenorrhea',
+      answer: '(a) Primary Amenorrhea',
+      markingScheme: '(a) Primary Amenorrhea',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Primary:** Never started by age 15-16. \n*   **Secondary:** Started but stopped for 3+ months. \n*   **Oligomenorrhea:** Infrequent periods. \n*   **Dysmenorrhea:** Painful periods.'
+    },
+    {
+      id: 'q18-2024-sqp',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q18.',
+      question: 'Kyphosis is also known as ____________\n(a) Hallow Back\n(b) Hunch Back\n(c) Curve Back\n(d) both (a) and (b)',
+      answer: '(b) Hunch Back',
+      markingScheme: '(b) Hunch Back',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Kyphosis** = Hunch Back (Round Upper Back). \n*   **Lordosis** = Hollow Back (Sway Lower Back). \n*   **Scoliosis** = C or S curve.'
+    },
+    {
+      id: 'q30-2024-sqp',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      questionNumber: 'Q30.',
+      question: 'Write in brief the corrective measures of Bow Leg, Knock Knee and Flat Foot.',
+      answer: 'Bow Leg: Walking on inner edge. Knock Knee: Horse riding. Flat Foot: Jumping on toes.',
+      markingScheme: '1. Bow Leg: Use braces, walk on inner edge of feet, Vitamin D. \n2. Knock Knee: Horse riding, Padmasana, keep pillow between knees while sleeping. \n3. Flat Foot: Jumping on toes, skipping, walk on heels, pick marbles with toes.',
+      aiExplanation: 'Teacher\'s Voice - 1 Mark per Deformity:\n1. **Bow Legs:** Focus on "Inner Edge Walking".\n2. **Knock Knees:** Focus on "Horse Riding" or "Pillow between knees".\n3. **Flat Foot:** Focus on "Toe exercises" (Skipping/Heel walking).'
     }
   ],
   mindMap: {

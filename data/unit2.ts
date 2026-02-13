@@ -571,6 +571,18 @@ export const unit2: Chapter = {
       answer: 'Non-nutritive components are dietary elements that do not provide energy/calories but have biological functions. Examples: Fiber, Water, Phytochemicals, Artificial Sweeteners.',
       markingScheme: 'Phytochemicals or Plant chemicals, Artificial Sweeteners, Preservatives, Spices, and Coffee are examples. They provide no energy but have other roles like color, flavor, preservation, or antioxidant properties.',
       aiExplanation: 'Teacher\'s Voice - Key Elements for Full Marks: \n1. **Definition:** "Do not provide energy/calories". \n2. **Function:** "Beneficial for health or sensory appeal". \n3. **Examples:** Must list at least 3 diverse types (Fiber, Water, Color Compounds).'
+    },
+    {
+      id: 'u2-sa-2024-sqp-q24',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 2,
+      type: 'SA',
+      questionNumber: 'Q24.',
+      question: 'Explain the importance of fluid intake during a competition.',
+      answer: 'To prevent dehydration, maintain body temperature, and sustain performance.',
+      markingScheme: '1. Prevents Dehydration (Fatigue, Cramps).\n2. Regulates Body Temperature (Sweating).\n3. Transports Nutrients to muscles.\n4. Maintains blood volume for circulation.',
+      aiExplanation: 'Teacher\'s Voice - 2 Key Functions (2 Marks):\n1. **Thermoregulation (1 Mark):** Replacing sweat to keep the body cool.\n2. **Performance Maintenance (1 Mark):** Preventing dehydration-induced fatigue and muscle cramps.'
     }
   ]
 };

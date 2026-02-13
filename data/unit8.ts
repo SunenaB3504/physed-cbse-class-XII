@@ -304,6 +304,54 @@ export const unit8: Chapter = {
       question: 'Which type of friction is the strongest?',
       answer: 'Static Friction',
       aiExplanation: 'Static > Sliding > Rolling. It takes more force to start an object moving than to keep it moving.'
+    },
+    {
+      id: 'q3-2024-sqp-friction',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q3.',
+      question: 'The Friction force acts in a/an _______________ direction to the direction of motion of an object.\n(a) Opposite\n(b) Same\n(c) Downwards\n(d) Diagonal',
+      answer: '(a) Opposite',
+      markingScheme: '(a) Opposite',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Concept:** Friction always opposes motion. \n*   **Direction:** If object moves Right -> Friction acts Left.'
+    },
+    {
+      id: 'q8-2024-sqp-newton1',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q8.',
+      question: 'Identify the given below [Image: Stationary vs Moving Object Logic]\n(a) First Law of Motion\n(b) Second Law of Motion\n(c) Third Law of Motion\n(d) Law of Effects',
+      answer: '(a) First Law of Motion',
+      markingScheme: '(a) First Law of Motion',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Key Phrase:** "Stationary object will not move... moving object will not stop." \n*   **Law:** Law of Inertia (Newton\'s 1st Law).'
+    },
+    {
+      id: 'q32-2024-sqp-equilibrium',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 4,
+      type: 'Case',
+      questionNumber: 'Q32.',
+      question: 'Equilibrium Principles:\n(a) Nearer the CG to the base, more is the ______?\n(b) CG position changes depending on ______?\n(c) Sum of forces must be ______?\n(d) CG is the average location of ______?',
+      answer: '(a) Stability (b) Body position/Shape (c) Zero (d) Weight',
+      markingScheme: '(a) Stability\n(b) Position of body/posture\n(c) Zero\n(d) Weight of an object',
+      aiExplanation: 'Teacher\'s Voice - Fill in the blanks (4 Marks):\n1. **Lower CG:** Increases Stability.\n2. **CG Shift:** Changes with posture (raising hands raises CG).\n3. **Equilibrium Condition:** Net Force = 0.\n4. **Definition:** CG = Center of Weight distribution.'
+    },
+    {
+      id: 'q37-2024-sqp-newton-app',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 5,
+      type: 'LA',
+      questionNumber: 'Q37.',
+      question: 'With the help of suitable examples, discuss the application of Newton\'s Laws of Motion in sports.',
+      answer: '1. Inertia: Starting a sprint. 2. Acceleration: Force applied on ball. 3. Reaction: Swimming tone.',
+      markingScheme: '1. Law of Inertia: Starting from blocks (Sprinter needs force to overcome inertia). \n2. Law of Acceleration: Shot put (More force = more acceleration). \n3. Law of Reaction: High Jump (Pushing ground down to go up).',
+      aiExplanation: 'Teacher\'s Voice - Application Focus (5 Marks):\n1. **Law 1 (1.5 Marks):** Example: Football stationary until kicked.\n2. **Law 2 (1.5 Marks):** Example: Hitting a ball harder makes it go faster (F=ma).\n3. **Law 3 (2 Marks):** Example: Dribbling basketball (Ball pushes floor, floor pushes ball).'
     }
   ],
   mindMap: {

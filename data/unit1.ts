@@ -787,6 +787,30 @@ export const unit1: Chapter = {
       answer: 'I. C, II. D, III. B, IV. D',
       markingScheme: 'a. To take care of their stay \nd.  To arrange opening ceremony \na. To provide them meals \nCommittees are important for proper planning, organization, control during the \ntournament. \nAppropriate path and guidelines are provided by these committees during the \ntournament. Through committees all understand their work duties and responsibilities \nno body interferes in any others work.',
       aiExplanation: 'Detailed Analysis:\nI. Boarding Committee: Responsible for "Stay/Accommodation" (Option C).\nII. Ceremony Committee: Responsible for "Opening Ceremony" (Option D).\nIII. Ground Committee EXCLUSION: Their job is Venues/Officiating. They do NOT provide meals (Option B); that is the job of the Refreshment Committee.\nIV. Requirement: Committees are needed for Organization, Distribution of Work, and Resource Management (Option D covers all).'
+    },
+    {
+      id: 'u1-sa-2025-sqp-q25',
+      year: '2024-25',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      questionNumber: 'Q25.',
+      question: 'Specify the purpose of specific sports programme organised for community services.',
+      answer: 'To create awareness, unity, and health consciousness among the community.',
+      markingScheme: '1. Creating awareness regarding health.\n2. Unity and peace.\n3. Charity for specific cause.\n4. Upliftment of sports standard.',
+      aiExplanation: 'Teacher\'s Voice - 3 Distinct Points (3 Marks):\n1. **Social Cohesion (1 Mark):** Promotes Unity, Peace, and Integration among diverse groups (e.g., Run for Unity).\n2. **Health Awareness (1 Mark):** Spreads message of fitness and lifestyle diseases (e.g., Health Runs).\n3. **Charitable Cause (1 Mark):** Raises funds and awareness for specific social issues like Cancer or Environment.'
+    },
+    {
+      id: 'u1-sa-2024-sqp-q27',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      questionNumber: 'Q27.',
+      question: 'What should be the role of technical and marketing committee while organizing the event?',
+      answer: 'Technical: Equipment, Referees. Marketing: Sponsorship, Publicity.',
+      markingScheme: 'Technical Committee: Procurement of equipment, arrangement of officials, conducting matches. \nMarketing Committee: Generating funds/sponsorships, publicity of the event.',
+      aiExplanation: 'Teacher\'s Voice - Split the Marks (1.5 + 1.5):\n1. **Technical Committee (1.5 Marks):** Focus on the *Game* aspects (Rules, Equipment, Referees, Fixtures).\n2. **Marketing Committee (1.5 Marks):** Focus on the *Business* aspects (Sponsors, Media, Advertisements).'
     }
   ]
 };

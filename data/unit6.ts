@@ -254,6 +254,42 @@ export const unit6: Chapter = {
       question: 'Suggest a fitness test battery for primary school children (5-8 years) and explain the tests.',
       answer: 'Flamingo Balance (Balance), Plate Tapping (Coordination), BMI (Composition).',
       aiExplanation: 'Focus on "SAI Khelo India" guidelines for the younger age group (Class 1-3). Do not confuse with the 9-18 yrs (Class 4-12) battery.'
+    },
+    {
+      id: 'q17-2024-sqp',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q17.',
+      question: 'Senior Citizen Fitness Test the range of age group is___________\n(a) 60-94\n(b) 55-79\n(c) 65-95\n(d) 50-90',
+      answer: '(a) 60-94',
+      markingScheme: '(a) 60-94',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Rikli & Jones Test** is designed for independent living assessment. \n*   **Target:** Adults aged 60 to 94 years.'
+    },
+    {
+      id: 'q23-2024-sqp',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 2,
+      type: 'SA',
+      questionNumber: 'Q23.',
+      question: 'Explain the procedure and scoring of 600meter run/ walk',
+      answer: 'Run/Walk 600m distance. Time taken is recorded in minutes and seconds.',
+      markingScheme: 'Procedure: Subject runs/walks 600m. Can stop if tired. \nScoring: Time taken to cover distance in min/sec. Measures Cardiovascular Endurance.',
+      aiExplanation: 'Teacher\'s Voice - 2 Points (2 Marks):\n1. **Procedure (1 Mark):** Mention "Run or Walk" and "Fastest possible time".\n2. **Scoring (1 Mark):** Measurement unit is "Minutes and Seconds" (Time).'
+    },
+    {
+      id: 'q35-2024-sqp-9to18',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 5,
+      type: 'LA',
+      questionNumber: 'Q35.',
+      question: 'Make a table of test items listed under fitness test by SAI (Age group 9-18 yrs) Explain the Procedure and Scoring of 50 MTS Run and Partial Curl Up',
+      answer: 'Table: BMI, 50m Dash, 600m Run, Sit & Reach, Push-ups/Curl-ups. 50m: Speed (Time). Curl-up: Abdominal Strength (Count).',
+      markingScheme: 'Items: BMI (Body Comp), 50M (Speed), 600M (Endurance), Sit & Reach (Flexibility), Curl Up (Strength). \n50M Procedure: Standing start, max speed. Score: Time. \nCurl Up Procedure: Knees bent, slide hands 6 inches. Score: Max count in 30s.',
+      aiExplanation: 'Teacher\'s Voice - Syllabus Breakdown (5 Marks):\n1. **Table (1 Mark):** List correct tests (BMI, 50m, 600m, Sit & Reach, Curl Up/Push Up).\n2. **50m Dash (2 Marks):** Procedure (Standing Start) + Scoring (Time in sec).\n3. **Partial Curl Up (2 Marks):** Procedure (Knees bent, hands slide) + Scoring (Count/30s).'
     }
   ],
   mindMap: {

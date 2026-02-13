@@ -169,7 +169,7 @@ export const unit4: Chapter = {
         'Space Management: Disturbance-free area (noise/heat/cold control). Boundaries marked clearly. Indoor space preferred initially.',
         'Equipment: Modified devices (lighter balls, larger targets). Bell-balls for visually impaired. Wheelchair-accessible zones.',
         'Graded Activities: Simple to complex progression. Non-locomotor -> Locomotor -> Manipulative activities.'
-      ], 
+      ],
       visualizations: [
         {
           id: 'v4',
@@ -359,6 +359,18 @@ export const unit4: Chapter = {
       answer: '1. Manipulative 2. Locomotor 3. Balancing/Twisting',
       markingScheme: '1. Manipulative Skill \n2. Locomotor Skill \n3. Bending/Stretching/Twisting/Balancing',
       aiExplanation: 'Teacher\'s Voice: \n*   **Manipulative:** Involves an object (Ball). \n*   **Locomotor:** Involves moving location (Run). \n*   **Stability:** Involves staying in place (Balance).'
+    },
+    {
+      id: 'u4-la-2024-sqp-q33-blind',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 4,
+      type: 'LA',
+      questionNumber: 'Q33 (Blind).',
+      question: 'Explain the need for Inclusive Education.',
+      answer: 'Social skills, Academic growth, Sensitivity, Belongingness.',
+      markingScheme: '1. Development of Social Skills.\n2. Development of Academic Skills.\n3. Sensitive towards others.\n4. A sense of belongingness.',
+      aiExplanation: 'Teacher\'s Voice - 4 Distinct Needs (4 Marks):\n1. **Social:** Interaction with diverse peers.\n2. **Academic:** Access to standard curriculum.\n3. **Emotional:** Feeling of belonging/acceptance.\n4. **Moral:** Teaches empathy to non-disabled students.'
     },
     {
       id: 'u4-sqp-2025-mcq-deaflympics',

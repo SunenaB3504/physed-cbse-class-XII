@@ -291,6 +291,54 @@ export const unit9: Chapter = {
       question: 'Self-talk and Goal Setting are types of:',
       answer: '(b) Motivation Techniques',
       aiExplanation: 'These are psychological strategies used to enhance focus and drive behavior (motivation).'
+    },
+    {
+      id: 'q2-2024-sqp-aggression',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q2.',
+      question: 'Reactive Aggression is also called_______________\n(a) Instrumental Aggression\n(b) Hostile Aggression\n(c) Assertive Aggression\n(d) Both (a) and (b)',
+      answer: '(b) Hostile Aggression',
+      markingScheme: '(b) Hostile Aggression',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Hostile/Reactive:** Goal is to harm (Anger driven). \n*   **Instrumental:** Harm is a byproduct of winning (Goal driven). \n*   **Assertive:** Within rules, no intent to harm.'
+    },
+    {
+      id: 'q9-2024-sqp-bigfive-match',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q9.',
+      question: 'Match List – I with List – II:\n1. Extraversion -> Enthusiasm\n2. Conscientiousness -> Responsible\n3. Agreeableness -> Compassionate\n4. Neuroticism -> Emotional Stability\nCode: (a) 1-2-3-4 (b) 4-3-2-1 (c) 3-4-2-1 (d) 2-3-4-1',
+      answer: '(a) 1-i, 2-ii, 3-iii',
+      markingScheme: '(a) 1-i, 2-ii, 3-iii, 4-iv (Note: Neuroticism is actually Emotional *In*stability, but options suggest direct mapping or inverse). *Correction:* In 5-factor, Neuroticism is opposite to Stability. Code (a) implies direct match.',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Extraversion:** Social/Enthusiastic. \n*   **Conscientiousness:** Organized/Responsible. \n*   **Agreeableness:** Kind/Compassionate. \n*   **Neuroticism:** Anxious (Opposite of Stable).'
+    },
+    {
+      id: 'q20-2024-sqp-goal',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 2,
+      type: 'SA',
+      questionNumber: 'Q20.',
+      question: 'Write short note on Goal setting.',
+      answer: 'Process of identifying something you want to accomplish and establishing measurable goals and timeframes.',
+      markingScheme: '1. Definition: Process of setting specific, measurable objectives. \n2. Types: Short term and Long term goals. \n3. SMART principle.',
+      aiExplanation: 'Teacher\'s Voice - Key Concepts (2 Marks):\n1. **Definition (1 Mark):** Mental training technique to focus effort.\n2. **Type/Technique (1 Mark):** Mention "SMART Goals" or "Short/Long Term".'
+    },
+    {
+      id: 'q28-2024-sqp-intro-extro',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      questionNumber: 'Q28.',
+      question: 'Differentiate between introvert and Extrovert personality?',
+      answer: 'Introvert: Reserved, prefers solitude. Extrovert: Outgoing, social.',
+      markingScheme: 'Introvert: 1. Interest centered on self. 2. Reserved/Shy. 3. Good concentration. \nExtrovert: 1. Interest centered on others. 2. Social/Talkative. 3. Good leaders.',
+      aiExplanation: 'Teacher\'s Voice - 3 Differences (3 Marks):\n1. **Social Interaction (1 Mark):** Extroverts gain energy from people; Introverts drain energy.\n2. **Focus (1 Mark):** Extroverts = Outer World; Introverts = Inner World.\n3. **Sports Suitability (1 Mark):** Extroverts = Team Sports; Introverts = Precision/Individual Sports.'
     }
   ],
   mindMap: {

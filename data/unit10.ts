@@ -277,6 +277,30 @@ export const unit10: Chapter = {
       question: 'Define Circuit Training. Plan a session with 6 stations.',
       answer: 'Series of stations (Adamson & Morgan). Plan: 1. jacks, 2. pushup, 3. squat, 4. crunch, 5. dip, 6. rope.',
       aiExplanation: 'Teacher\'s Voice - Session Design (5 Marks):\n1. **Definition (1 Mark):** Training method by Adamson & Morgan involving stations.\n2. **The "Checklist" for your Plan (4 Marks):**\n   *   **Diagram:** Draw a circle with 6 stations.\n   *   **Selection:** You must alternate muscle groups (Circuit Principle).\n   *   **Example:** 1. Jacks (Warmup) -> 2. Pushups (Upper) -> 3. Squats (Lower) -> 4. Crunches (Core) -> 5. Dips (Upper) -> 6. Rope Skipping (Cardio).'
+    },
+    {
+      id: 'q5-2024-sqp-assertion',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q5.',
+      question: 'Given below are two statements...\nAssertion (A): For improvement of performance in long distance running, continuous training is effective.\nReason (R): Continuous method of training improves basic endurance.\n(a) Both A and R are true and R is correct explanation\n(b) Both true but R is not correct explanation\n(c) A true, R false\n(d) A false, R true',
+      answer: '(a) Both (A) and (R) are true and(R) is the correct explanation of (A)',
+      markingScheme: '(a) Both (A) and (R) are true and(R) is the correct explanation of (A)',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Concept:** Continuous training (long duration, no rest) targets Aerobic capacity. \n*   **Link:** Aerobic capacity = Endurance. Therefore, R explains A.'
+    },
+    {
+      id: 'q6-2024-sqp-iso-metric',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q6.',
+      question: 'What do you mean by iso and metric?\n(a) Iso means constant and metric means length\n(b) Iso means change and metric means size\n(c) Iso means constant and metric means velocity\n(d) Iso means size and metric means constant',
+      answer: '(a) Iso means constant and metric means length',
+      markingScheme: '(a) Iso means constant and metric means length',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Isometric:** Iso (Same) + Metric (Length). Muscle length doesn\'t change. \n*   **Isotonic:** Iso (Same) + Tone (Tension). \n*   **Isokinetic:** Iso (Same) + Kinetic (Speed).'
     }
   ],
   mindMap: {

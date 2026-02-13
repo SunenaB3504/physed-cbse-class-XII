@@ -271,6 +271,66 @@ export const unit7: Chapter = {
       aiExplanation: 'Laceration implies a jagged tear, unlike an Incision (smooth) or Abrasion (scrape).'
     },
     {
+      id: 'q4-2024-sqp-laceration',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q4.',
+      question: 'The irregular tear-like wounds caused by some blunt trauma _______________\n(a) Laceration\n(b) Contusion\n(c) Abrasion\n(d) Incision',
+      answer: '(a) Laceration',
+      markingScheme: '(a) Laceration',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Laceration:** Irregular/Jagged tear (Blunt force). \n*   **Incision:** Clean cut (Sharp object). \n*   **Abrasion:** Scrape (Friction). \n*   **Contusion:** Bruise (Internal bleeding).'
+    },
+    {
+      id: 'q7-2024-sqp-cardiac',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 1,
+      type: 'MCQ',
+      questionNumber: 'Q7.',
+      question: 'It is the amount of blood pumped out by each side of the heart (actually each ventricle) in 1 minute_______________\n(a) Blood pressure\n(b) Cardiac Output\n(c) Blood volume',
+      answer: '(b) Cardiac Output',
+      markingScheme: '(b) Cardiac Output',
+      aiExplanation: 'Teacher\'s Voice: \n*   **Formula:** Cardiac Output = Stroke Volume × Heart Rate. \n*   **Definition:** Volume ejected per *minute*.'
+    },
+    {
+      id: 'q19-2024-sqp',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 2,
+      type: 'SA',
+      questionNumber: 'Q19.',
+      question: 'Point out physiological factor for strength.',
+      answer: 'Muscle Cross-sectional area and Muscle Fiber Type (Fast Twitch).',
+      markingScheme: '1. Size of the muscle. \n2. Body weight. \n3. Muscle composition (Fast Twitch fibers). \n4. Intensity of nerve impulse.',
+      aiExplanation: 'Teacher\'s Voice - 2 Factors (2 Marks):\n1. **Muscle Size (1 Mark):** Larger cross-sectional area = More force.\n2. **Fiber Type (1 Mark):** High percentage of Fast Twitch (White) fibers = More explosive strength.'
+    },
+    {
+      id: 'q22-2024-sqp',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 2,
+      type: 'SA',
+      questionNumber: 'Q22.',
+      question: 'Write a key point on cardio respiratory factors determining fitness.',
+      answer: 'VO2 Max and Stroke Volume.',
+      markingScheme: '1. VO2 Max (Aerobic capacity). \n2. Stroke Volume (Blood per beat). \n3. Pulmonary Ventilation (Air flow).',
+      aiExplanation: 'Teacher\'s Voice - 2 Factors (2 Marks):\n1. **VO2 Max (1 Mark):** The maximum amount of oxygen the body can utilize. \n2. **Stroke Volume (1 Mark):** Use the term "Ejection Fraction" or "Blood pumped per beat".'
+    },
+    {
+      id: 'q29-2024-sqp',
+      year: '2023-24',
+      paperType: 'SQP',
+      marks: 3,
+      type: 'SA',
+      questionNumber: 'Q29.',
+      question: 'Define Fracture and explain any four types of fracture.',
+      answer: 'Fracture is a break in bone continuity. Types: Simple, Compound, Greenstick, Comminuted.',
+      markingScheme: 'Definition: Discontinuity in the bone. \nTypes: \n1. Simple (Closed). \n2. Compound (Open - skin borken). \n3. Greenstick (Soft bone bends/cracks). \n4. Comminuted (Shattered into pieces). \n5. Transverse (Right angle). \n6. Impacted (Driven into each other).',
+      aiExplanation: 'Teacher\'s Voice - Structure (3 Marks):\n1. **Definition (1 Mark):** Must mention "Break in continuity of bone".\n2. **Types (2 Marks - 0.5 each):** List any 4. Suggest remembering: Simple, Compound, Greenstick (Children), Comminuted (High impact).'
+    },
+    {
       id: 'q11',
       year: '2024-25',
       paperType: 'SQP',
