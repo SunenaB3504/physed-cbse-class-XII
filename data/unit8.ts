@@ -376,11 +376,51 @@ export const unit8: Chapter = {
     ]
   },
   cheatSheet: [
-    { title: 'Planes & Axes', points: ['Sagittal Plane -> Frontal Axis (Run)', 'Frontal Plane -> Sagittal Axis (Cartwheel)', 'Transverse Plane -> Vertical Axis (Spin)'] },
-    { title: 'Movements', points: ['Flexion (Bend) / Extension (Straighten)', 'Abduction (Away) / Adduction (Add)'] },
-    { title: 'Newton in Keywords', points: ['1st Law = Inertia', '2nd Law = F=ma', '3rd Law = Action-Reaction'] },
-    { title: 'Projectiles', points: ['Optimal Angle = 45°', 'Velocity = Key for Distance', 'Gravity = 9.8 m/s² down'] },
-    { title: 'Stability Rules', points: ['Low CG = Stable', 'Wide Base = Stable', 'High Mass = Stable'] },
-    { title: 'Friction Types', points: ['Static > Sliding > Rolling'] }
-  ]
+    {
+      title: 'Newton\'s Laws in Sports',
+      points: [
+        '1st (Inertia): Sprinter at starting blocks (Rest to Motion)',
+        '2nd (Acceleration): Shot Put (Heavy needs more Force) -> F=ma',
+        '3rd (Reaction): Swimming (Push water back -> Body moves forward)'
+      ]
+    },
+    {
+      title: 'Lever System Mnemonic: F-L-E',
+      points: [
+        '1st Class: Fulcrum in middle (Seesaw / Neck extension)',
+        '2nd Class: Load in middle (Wheelbarrow / Calf Raise)',
+        '3rd Class: Effort in middle (Bicep Curl / Bat swing)'
+      ]
+    },
+    {
+      title: 'Friction Hierarchy',
+      points: [
+        'Static (Hardest to start) > Sliding (Kinetic) > Rolling (Easiest)'
+      ]
+    },
+    {
+      title: 'Projectile Logic',
+      points: [
+        'Max Range Angle = 45° (When release/landing height same)',
+        'Key Factor = Initial Velocity (Speed is King)',
+        'Gravity = Constant downward pull (9.8 m/s²)'
+      ]
+    },
+    {
+      title: 'Stability Rules',
+      points: [
+        'Lower Center of Gravity (CG) = Higher Stability',
+        'Wider Base = Higher Stability',
+        'C.G. must fall inside Base of Support'
+      ]
+    },
+    {
+      title: 'Planes & Axes (Pairings)',
+      points: [
+        'Sagittal Plane + Frontal Axis (Running / Somersault)',
+        'Frontal Plane + Sagittal Axis (Cartwheel / Jumping Jack)',
+        'Transverse Plane + Vertical Axis (Spin / Twist)'
+      ]
+    }
+  ],
 };

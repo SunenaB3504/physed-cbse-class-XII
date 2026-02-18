@@ -314,9 +314,46 @@ export const unit6: Chapter = {
     ]
   },
   cheatSheet: [
-    { title: 'The Formulas', points: ['Fitness Index Long = (Duration x 100) / (2 x Pulse Sum)', 'Fitness Index Short = (Duration x 100) / (5.5 x Pulse 1)'] },
-    { title: 'Senior Weights', points: ['Arm Curl: Men 8lbs, Women 5lbs'] },
-    { title: 'Barrow Items', points: ['Jump (Legs)', 'Zig-Zag (Agility)', 'Ball Put (Arms)'] },
-    { title: 'Khelo India (5-8)', points: ['Flamingo (Balance)', 'Plate Tap (Coordination)', 'BMI'] }
-  ]
+    {
+      title: 'Sports Authority of India (SAI) Khelo India Battery',
+      points: [
+        'Age 5-8 (Class 1-3): BMI (Body Mass Index) + Flamingo (Balance) + Plate Tapping (Coordination)',
+        'Age 9-18 (Class 4-12): 50m (Speed) + 600m (Endurance) + Sit & Reach (Flex)',
+        'Strength (9-18): Partial Curl Up (Abs) + Push Ups (Upper Body)'
+      ]
+    },
+    {
+      title: 'Rikli & Jones (Seniors)',
+      points: [
+        'Chair Stand -> Lower Body Strength',
+        'Arm Curl -> Upper Body Strength (Men 8lb, Women 5lb)',
+        'Back Scratch -> Upper Flex | Sit & Reach -> Lower Flex',
+        '8-ft Up & Go -> Agility | 6-Min Walk -> Aerobic Endurance'
+      ]
+    },
+    {
+      title: 'The Math (Formulas)',
+      points: [
+        'Body Mass Index (BMI) = Weight(kg) / Height(m)²',
+        'Fitness Index (Long) = (Duration × 100) / (2 × Sum of 3 Pulses)',
+        'Fitness Index (Short) = (Duration × 100) / (5.5 × Pulse 1)'
+      ]
+    },
+    {
+      title: 'Barrow Motor Ability (3 Items)',
+      points: [
+        '1. Standing Broad Jump (Leg Power)',
+        '2. Zig-Zag Run (Agility/Speed)',
+        '3. Medicine Ball Put (Arm Strength)'
+      ]
+    },
+    {
+      title: 'Golden Keywords',
+      points: [
+        'Purpose: "Talent Identification", "Functional Ability (Seniors)"',
+        'Cardio: "VO2 Max", "Aerobic Capacity", "Recovery Rate"',
+        'Motor: "Explosive Power", "Static Balance"'
+      ]
+    }
+  ],
 };

@@ -393,37 +393,57 @@ export const unit2: Chapter = {
   },
   cheatSheet: [
     {
-      title: 'Balanced Diet & BMI',
+      title: 'Quick Mnemonics',
       points: [
-        'Balanced Diet: Contains Carbohydrates, Proteins, Fats, Vitamins, Minerals, Water, Roughage.',
-        'BMI Formula: Weight (kg) / Height (m)^2',
-        'BMI Categories: <18.5 Underweight, 18.5-24.9 Normal, 25-29.9 Overweight, >30 Obese.'
+        'Fat Soluble Vitamins: K.E.D.A (Vitamin K, E, D, A -> Stored in Fat, Toxic in excess)',
+        'Water Soluble: Vitamin B & C (Needs daily replenishment)',
+        'Macro Minerals: C.P.S (Calcium, Potassium, Sodium, Phosphorus, Magnesium)'
       ]
     },
     {
-      title: 'Nutrients',
+      title: 'Golden Keywords',
       points: [
-        'Carbohydrates (4 kcal/g): Energy Source.',
-        'Proteins (4 kcal/g): Growth & Repair.',
-        'Fats (9 kcal/g): Energy Storage & Insulation.',
-        'Water: Transport, Temperature Regulation.',
-        'Roughage: Digestion (No nutritional value).'
+        'Balanced Diet: "Correct Proportion", "Essential Nutrients"',
+        'Protein: "Building Block", "Tissue Repair", "Antibodies"',
+        'Non-Nutritive: "Fiber/Roughage", "Digestion", "No Calories"'
       ]
     },
     {
-      title: 'Vitamin Deficiencies',
-      points: ['A: Night Blindness', 'B1: Beri Beri', 'C: Scurvy', 'D: Rickets', 'K: Blood clotting issues']
-    },
-    {
-      title: 'Mineral Functions',
-      points: ['Calcium: Bone/Teeth strength', 'Iron: Hemoglobin formation', 'Iodine: Thyroid health', 'Sodium: Water balance']
-    },
-    {
-      title: 'Food Myths',
+      title: 'Key Formulas (100% Coverage)',
       points: [
-        'Potatoes cause fat? No, excess calories do.',
-        'Water with meals bad? No, aids digestion.',
-        'Skipping meals helps weight loss? No, lowers metabolism.'
+        'Body Mass Index (BMI) = Weight (kg) / Height (m)²',
+        'Waist-to-Hip Ratio (WHR) = Waist (cm) / Hip (cm) [>1.0 Men / >0.85 Women = Risk]',
+        'Caloric Rule (4-4-9): Carbs (4kcal), Protein (4kcal), Fat (9kcal)'
+      ]
+    },
+    {
+      title: 'Versus: Nutritive vs Non-Nutritive',
+      points: [
+        'Nutritive: Provides Calories/Energy (Carbs, Fats, Proteins)',
+        'Non-Nutritive: No Energy, Regulatory/Digestive function (Water, Fiber, Colors)'
+      ]
+    },
+    {
+      title: 'Deficiency Quick-List',
+      points: [
+        'Vit A (Night Blindness), B1 (Beri-Beri), C (Scurvy), D (Rickets)',
+        'Iron (Anemia), Calcium (Bone Density), Iodine (Goiter)'
+      ]
+    },
+    {
+      title: 'Pitfalls of Dieting (Must Know)',
+      points: [
+        'Starvation Mode: Body slows metabolism to conserve fat (Reaction to extreme low calories).',
+        'Skipping Meals: Causes blood sugar drop -> Craving -> Overeating later.',
+        'Fluid Calories: Ignoring calories in juices/sodas leads to weight gain.'
+      ]
+    },
+    {
+      title: 'Food Myths Debunked',
+      points: [
+        'Potatoes are Fattening? False (Only excess calories are)',
+        'Skipping Meals helps? False (Slows metabolism -> Weight gain)',
+        'Drinking Water with meals? True (Aids digestion)'
       ]
     }
   ],

@@ -443,11 +443,53 @@ export const unit4: Chapter = {
     ]
   },
   cheatSheet: [
-    { title: 'Skill Classifications', points: ['Locomotor: Moving A to B (Run, Jump).', 'Manipulative: Object Control (Throw, Kick).', 'Stability: Balance/Twist (Static/Dynamic).'] },
-    { title: 'Equipment Modification Rules', points: ['Weight: Lighter = Easier.', 'Size: Larger Target = Easier.', 'Speed: Slower Ball = Easier.', 'Color: High Contrast (Bright) = Easier.'] },
-    { title: 'Org Quick Facts', points: ['Special Olympics = Intellectual Disabilities (Oath: Let me win...)', 'Paralympics = Physical/Visual Impairment (IPC)', 'Deaflympics = Hearing Loss (55dB+), Visual Signals'] },
-    { title: 'Disorders Key Words', points: ['ODD = Angry, Defiant, Vindictive', 'OCD = Obsessions (Thoughts) + Compulsions (Actions)', 'ADHD = Inattention + Hyperactivity', 'SPD = Sensory issues'] },
-    { title: 'Etiquette Gold Rules', points: ['People First Language ("Person with blindness")', 'Wheelchair = Personal Space (Don\'t lean)', 'Speak Directly to person (Not interpreter)'] },
-    { title: 'Adaptation Pillars', points: ['Space: Disturbance free, Ramps', 'Equipment: Audio balls, Velcro, Lighter bats', 'Rules: Extra chances, smaller court'] }
-  ]
+    {
+      title: 'Disorder Mnemonics',
+      points: [
+        'ODD (Oppositional Defiant Disorder): A.D.V (Angry Mood, Defiant Behavior, Vindictiveness)',
+        'OCD (Obsessive Compulsive Disorder): O -> A -> C -> R (Obsession -> Anxiety -> Compulsion -> Relief)',
+        'ADHD (Attention Deficit Hyperactivity Disorder): "Hyper-Focus" paradox (Can foster creativity)'
+      ]
+    },
+    {
+      title: 'Organization Showdown (Vs)',
+      points: [
+        'Special Olympics: Intellectual Disability | Oath: "Let me win..."',
+        'Paralympics: Physical/Visual Impairment | Motto: "Spirit in Motion"',
+        'Deaflympics: Hearing Impairment (>55dB) | Sign: Visual cues (Lights)'
+      ]
+    },
+    {
+      title: 'Etiquette Rulebook',
+      points: [
+        'Rule #1: "Person First Language" ("Person with autism" NOT "Autistic")',
+        'Wheelchair: "It is personal space" (Don\'t lean/touch)',
+        'Blindness: "Identify yourself first" (Say name when entering)'
+      ]
+    },
+    {
+      title: 'Golden Keywords',
+      points: [
+        'Inclusion: "Mainstreaming", "Diverse Needs", "Empathy"',
+        'Strategies: "Modified Equipment", "Barrier-Free", "Multi-Sensory"',
+        'Goal: "Holistic Development", "Social Integration"'
+      ]
+    },
+    {
+      title: 'Skill Classification',
+      points: [
+        'Locomotor: Body moves A to B (Run, Jump, Hop)',
+        'Manipulative: Equipment control (Throw, Kick, Strike)',
+        'Stability: Body control in place (Balance, Twist)'
+      ]
+    },
+    {
+      title: 'Equipment Modification Logic',
+      points: [
+        'Visual Issue -> Bright Colors, Bell Balls',
+        'Motor Issue -> Velcro Grips, Lighter Bats',
+        'Hearing Issue -> Whistle replaced by Flag/Light'
+      ]
+    }
+  ],
 };

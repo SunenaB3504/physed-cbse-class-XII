@@ -363,9 +363,47 @@ export const unit7: Chapter = {
     ]
   },
   cheatSheet: [
-    { title: 'The 3 S\'s', points: ['Strength = Muscle Size', 'Speed = CNS + Fast Fibers', 'Stamina = VO2 Max'] },
-    { title: 'Injury Terms', points: ['Sprain = Ligament', 'Strain = Tendon', 'Contusion = Bruise', 'Abrasion = Scrape'] },
-    { title: 'Fractures', points: ['Greenstick (Kids)', 'Comminuted (Shattered)', 'Compound (Open Skin)'] },
-    { title: 'Cardio Math', points: ['Cardiac Output = SV x HR', 'Minute Volume = TV x Rate'] }
-  ]
+    {
+      title: 'Short vs Long Term Effects',
+      points: [
+        'Short Term: Heart Rate (HR) ↑, Stroke Volume ↑, Body Temp ↑, Lactate Accumulation',
+        'Long Term: Hypertrophy (Muscle Size), Bradycardia (Resting HR ↓), Capillarization'
+      ]
+    },
+    {
+      title: 'First Aid: P.R.I.C.E.R',
+      points: [
+        'Protection (Splint/Crutches)',
+        'Rest (Stop Activity)',
+        'Ice (Cryotherapy - Vasoconstriction)',
+        'Compression (Bandage)',
+        'Elevation (Above Heart)',
+        'Referral (Doctor)'
+      ]
+    },
+    {
+      title: 'Injury Decoder',
+      points: [
+        'Sprain = Ligament (Bone to Bone) -> "Sprained Ankle"',
+        'Strain = Tendon/Muscle (Muscle to Bone) -> "Pulled Hamstring"',
+        'Fracture = Greenstick (Kids/Bend), Comminuted (Shatter), Compound (Open)'
+      ]
+    },
+    {
+      title: 'The Formulas',
+      points: [
+        'Cardiac Output = Stroke Volume × Heart Rate',
+        'Minute Volume = Tidal Volume × Resp. Rate',
+        'VO2 Max = Max Oxygen used per min'
+      ]
+    },
+    {
+      title: 'Golden Keywords',
+      points: [
+        'Definition: "Physiological Factors" (Strength/Speed Determinants)',
+        'Heart: "Hypertrophy" (Athlete Heart), "Bradycardia" (Efficient)',
+        'Skin: "Abrasion" (Scrape), "Laceration" (Cut), "Contusion" (Bruise)'
+      ]
+    }
+  ],
 };

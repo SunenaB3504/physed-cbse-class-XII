@@ -314,22 +314,47 @@ export const unit3: Chapter = {
   },
   cheatSheet: [
     {
-      title: 'Disease & Key Asanas',
+      title: 'The Asana Cure Matrix',
       points: [
-        'Obesity: Vajrasana (Digestion), Trikonasana (Fat Burn).',
-        'Diabetes: Bhujangasana (Pancreas), Paschimottanasana (Liver/Abdomen).',
-        'Asthma: Matsyasana (Lungs), Gomukhasana (Chest Expansion).',
-        'Hypertension: Shavasana (Relaxation), Tadasana (Flow).',
-        'Back Pain: Shalabhasana (Lower Back), Vakrasana (Spine Twist).'
+        'Obesity: Vajrasana (Digestion), Trikonasana (Side Fat), Hastasana (Waist)',
+        'Diabetes: Bhujangasana (Pancreas), Paschimottanasana (Abd. Compression)',
+        'Asthma: Matsyasana (Lungs), Gomukhasana (Chest Expansion), Chakrasana',
+        'Hypertension: Shavasana (Relax), Tadasana (Stretch), Vajrasana',
+        'Back Pain: Shalabhasana (Lumbar), Bhujangasana (Spine), Vakrasana'
       ]
     },
     {
-      title: 'Contraindications Rules',
+      title: 'Sanskrit Roots (Decoding Names)',
       points: [
-        'Forward Bends: Avoid if you have Back Pain / Slip Disc.',
-        'Backward Bends: Avoid if you have Hernia / Abdominal Surgery.',
-        'Inversions/Intense Bends: Avoid if you have High BP / Heart Issues.',
-        'Kneeling Poses: Avoid if you have Knee Injury (Osteoarthritis).'
+        'Bhujanga = Cobra | Matsya = Fish | Kurma = Tortoise',
+        'Vajra = Thunderbolt | Trikona = Triangle | Vriksha = Tree',
+        'Paschima = West/Back | Ardha = Half | Mukta = Release'
+      ]
+    },
+    {
+      title: 'Contraindication Logic',
+      points: [
+        'Forward Bends: STOP if Back Pain / Slip Disc / Sciatica',
+        'Backward Bends: STOP if Hernia / Abdominal Surgery',
+        'Inversions/Intense: STOP if High Blood Pressure (BP) / Heart Issues / Migraine',
+        'Kneeling: STOP if Knee Injury / Osteoarthritis'
+      ]
+    },
+    {
+      title: 'Golden Keywords',
+      points: [
+        'Definition: "Sthira Sukham Asanam" (Steady & Comfortable)',
+        'Benefits: "Cardiac Output", "Lung Capacity", "Neuromuscular Coordination"',
+        'Goal: "Preventive Measure", "Holistic Health"'
+      ]
+    },
+    {
+      title: 'Physiological Benefits (Mnemonics)',
+      points: [
+        'Bones: Increased Density (Weight bearing)',
+        'Lungs: Increased Vital Capacity (Pranayama effects)',
+        'Heart: Decreased Resting Heart Rate (Efficiency)',
+        'Mind: Reduced Cortisol (Stress hormone)'
       ]
     }
   ],

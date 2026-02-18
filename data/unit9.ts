@@ -368,11 +368,46 @@ export const unit9: Chapter = {
     ]
   },
   cheatSheet: [
-    { title: 'Sheldon’s Types', points: ['Endo (Fat) = Viscerotonic (Relaxed)', 'Meso (Muscle) = Somatotonic (Active)', 'Ecto (Thin) = Cerebrotonic (Introvert)'] },
-    { title: 'OCEAN Traits', points: ['O: Creative', 'C: Organized', 'E: Social', 'A: Helpful', 'N: Anxious'] },
-    { title: 'Jung Traits', points: ['Introvert: Inner-focused', 'Extrovert: Outer-focused', 'Ambivert: Balanced'] },
-    { title: 'Aggression', points: ['Hostile = Anger + Harm', 'Instrumental = Goal + Harm', 'Assertive = No Harm'] },
-    { title: 'Motivation Cycle', points: ['Need -> Drive -> Arousal -> Goal -> Reduction'] },
-    { title: 'Motivation', points: ['Intrinsic = Love', 'Extrinsic = Reward'] }
-  ]
+    {
+      title: 'Personality: O.C.E.A.N',
+      points: [
+        'Openness: Imagination / Curiosity (New experiences)',
+        'Conscientiousness: Discipline / Organization (Adherence)',
+        'Extraversion: Social / Energetic (Team Sports)',
+        'Agreeableness: Trust / Helpful (Coaching/Teamwork)',
+        'Neuroticism: Anxiety / Instability (Choking under pressure)'
+      ]
+    },
+    {
+      title: 'Aggression Decoder',
+      points: [
+        'Hostile: Anger based -> Intent to Harm (Punching)',
+        'Instrumental: Goal based -> Intent to Harm (Tactical Foul)',
+        'Assertive: Rule based -> No Intent to Harm (Hard Tackle)'
+      ]
+    },
+    {
+      title: 'Sheldon\'s Body-Mind Link',
+      points: [
+        'Endomorph (Round) -> Viscerotonic (Relaxed/Comfort-loving)',
+        'Mesomorph (Muscular) -> Somatotonic (Aggressive/Active)',
+        'Ectomorph (Thin) -> Cerebrotonic (Introverted/Thinker)'
+      ]
+    },
+    {
+      title: 'Motivation Cycle',
+      points: [
+        '1. Need (Lack) -> 2. Drive (Tension) -> 3. Arousal (Action)',
+        '4. Goal (Achievement) -> 5. Reduction of Drive (Relief)'
+      ]
+    },
+    {
+      title: 'Golden Keywords',
+      points: [
+        'Intrinsic: "Internal Joy", "Mastery", "Curiosity"',
+        'Extrinsic: "Medals", "Prize Money", "Praise"',
+        'Goal Setting: "SMART" (Specific, Measurable, Achievable, Relevant, Time-Bound)'
+      ]
+    }
+  ],
 };

@@ -583,68 +583,52 @@ export const unit1: Chapter = {
   },
   cheatSheet: [
     {
-      title: 'Planning Definition',
+      title: 'Quick Mnemonics',
       points: [
-        'Process of thinking about activities required to achieve a desired goal.',
-        'Deciding in advance: What, Who, How, When.',
-        'Objectives: Reduce Immediacy Pressure, Maintain Control, Coordination, Reduce Mistakes, Efficiency, Creativity, Enhance Performance.'
+        'Functions: P.O.S.D.C.R.B (Planning, Organizing, Staffing, Directing, Controlling, Reporting, Budgeting)',
+        'Objectives: P.E.C.C (Performance, Efficiency, Control, Coordination)',
+        'Specific Sports: H.R.S (Health Run, Run for Fun, Specific Cause)'
       ]
     },
     {
-      title: 'Committees',
+      title: 'Golden Keywords',
       points: [
-        'Pre-Event: Publicity, Finance, Purchase, Entries & Programmes, Reception.',
-        'During Event: Organization, Transport, Boarding/Lodging, Refreshment/Entertainment, Ceremony/Decoration, Technical/Officials, Announcement, First Aid.',
-        'Post-Event: Records, Finance (Settlement).'
+        'Planning: "Deciding in advance", "Immediacy", "Mistake Reduction"',
+        'Committees: "Decentralization", "Accountability", "Smooth Conduct"',
+        'Tournament: "Systematic Competition", "True Winner (League)"'
       ]
     },
     {
-      title: 'Knock-Out Tournament Formulas',
+      title: 'Key Formulas (100% Coverage)',
       points: [
-        'Total Matches = Number of Teams (N) - 1',
-        'Teams in Upper Half (when N is odd) = (N + 1) / 2',
-        'Teams in Lower Half (when N is odd) = (N - 1) / 2',
-        'Total Byes = Next Power of 2 - Total Teams',
-        'Byes in Upper Half = (Total Byes - 1) / 2',
-        'Byes in Lower Half = (Total Byes + 1) / 2',
-        'Number of Rounds = Power of 2 (e.g., if 32=2^5, then 5 rounds)'
+        'Total Matches (Knockout): N - 1 (Where N = Number of Teams)',
+        'Total Matches (League): N(N-1)/2 (Single) | N(N-1) (Double)',
+        'Upper Half (Odd N): (N+1)/2 | Lower Half: (N-1)/2',
+        'Total Byes: Next Power of 2 - N',
+        'Upper Byes: (NB-1)/2 | Lower Byes: (NB+1)/2 (Where NB = Number of Byes)'
       ]
     },
     {
-      title: 'League Tournament Formulas',
+      title: 'Fixture Logic Flow',
       points: [
-        'Single League Matches = N(N - 1) / 2',
-        'Double League Matches = N(N - 1)',
-        'Number of Rounds (Cyclic, N is odd) = N',
-        'Number of Rounds (Cyclic, N is even) = N - 1',
-        'British Method Points: Win=2, Draw=1, Loss=0',
-        'American Method Points: Games Won / Total Games Played'
+        'N -> Power of 2 Check -> Calc Byes -> Distribute Halves -> Seeding',
+        'Bye Order: 1.Bottom-Lower -> 2.Top-Upper -> 3.Top-Lower -> 4.Bottom-Upper',
+        'Cyclic Method: Even N (Team 1 Fixed), Odd N (Bye Fixed)'
       ]
     },
     {
-      title: 'Fixture Methods',
+      title: 'Versus: Intramural vs Extramural',
       points: [
-        'Knock-out: Byes, Seeding (Strong teams placed to avoid early clash), Special Seeding (Direct Quarter/Semi).',
-        'Bye Placement Order: 1st (Lower-Bottom), 2nd (Upper-Top), 3rd (Lower-Top), 4th (Upper-Bottom).',
-        'Cyclic League: Rotate teams clockwise. If N is even, Team 1 is fixed. If N is odd, "Bye" is fixed.',
-        'Staircase League: Matches arranged like steps. No byes needed.'
+        'Intramural: "Within Walls" (Inter-House) | Goal: Mass Participation, Fun',
+        'Extramural: "Outside Walls" (Inter-School) | Goal: High Performance, Standards'
       ]
     },
     {
-      title: 'Intramural vs Extramural',
+      title: 'Committee Roles (Simplified)',
       points: [
-        'Intramural: Within the walls (Inter-house/class). Mass participation, Recreation.',
-        'Extramural: Between institutions (Inter-school). High performance, Standardization.'
-      ]
-    },
-    {
-      title: 'Specific Sports Programs',
-      points: [
-        'Sports Day: Annual comprehensive sports display.',
-        'Health Run: Non-competitive, checking health/fitness parameters.',
-        'Run for Fun: Enjoyment and mass participation.',
-        'Run for Unity: National integration.',
-        'Run for Specific Cause: Charity/Awareness (Cancer, Environment).'
+        'Pre: Publicity (Dates), Finance (Budget), Entries (Fixtures)',
+        'During: Transport, Food, Officials (Scoring), First Aid',
+        'Post: Records (Results), Finance (Settlement)'
       ]
     }
   ],

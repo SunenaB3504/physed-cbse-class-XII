@@ -328,8 +328,48 @@ export const unit5: Chapter = {
     ]
   },
   cheatSheet: [
-    { title: 'Deformity vs Correction', points: ['Kyphosis (Round Back) -> Bhujangasana', 'Lordosis (Sway Back) -> Halasana', 'Scoliosis (C-Shape) -> Trikonasana', 'Knock Knee (Genu Valgum) -> Horse Riding', 'Bow Legs (Genu Varum) -> Inner Edge Walk', 'Flat Foot -> Tipty Toe Walking'] },
-    { title: 'The Triad Math', points: ['Low Calories + High Training = Low Energy Availability', 'Low Energy -> No Period (Amenorrhea)', 'No Period -> Low Estrogen -> Weak Bones (Osteoporosis)'] },
-    { title: 'WHO Guidelines', points: ['< 5 Years: 180 mins active play', '5-17 Years: 60 mins/day Moderate-Vigorous', 'Adults: 150 mins/week Moderate'] }
-  ]
+    {
+      title: 'Postural Deformity Map',
+      points: [
+        'Top Spine: Kyphosis (Hunchback) -> Rx: Bhujangasana',
+        'Bottom Spine: Lordosis (Swayback) -> Rx: Halasana',
+        'Sideways Spine: Scoliosis (S-Shape) -> Rx: Trikonasana',
+        'Knees: Genu Valgum (Knock) vs Genu Varum (Bow)',
+        'Feet: Flat Foot (No Arch) -> Rx: Toe Walking'
+      ]
+    },
+    {
+      title: 'The Female Athlete Triad',
+      points: [
+        'Triangle: Osteoporosis <-> Amenorrhea <-> Low Energy',
+        'Cause: Eating Disorder (Anorexia/Bulimia) -> Caloric Deficit',
+        'Result: Hormonal imbalance -> Bone loss -> Stress Fractures'
+      ]
+    },
+    {
+      title: 'Motor Development Rules',
+      points: [
+        'Gross Motor: Large Muscles (Running, Jumping) -> Early Childhood',
+        'Fine Motor: Small Muscles (Writing, Cutting) -> Pre-School/School',
+        'Factors: Genetics + Nutrition + Environment'
+      ]
+    },
+    {
+      title: 'WHO (World Health Organization) Activity Prescription',
+      points: [
+        'Children (5-17): 60 mins/day (Mod-Vigorous) + Bone Strength 3x/week',
+        'Adults (18-64): 150-300 mins/week (Moderate) OR 75-150 (Vigorous)',
+        'Seniors (65+): Focus on Balance & Fall Prevention'
+      ]
+    },
+    {
+      title: 'Golden Keywords',
+      points: [
+        'Menarche: "First Menstruation" (Puberty)',
+        'Amenorrhea: "Absence of Menses" (>3 months)',
+        'Osteoporosis: "Porous Bones" (Low Density)',
+        'Bulimia: "Binging and Purging"'
+      ]
+    }
+  ],
 };

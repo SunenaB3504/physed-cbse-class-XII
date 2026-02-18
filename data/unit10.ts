@@ -330,9 +330,54 @@ export const unit10: Chapter = {
     ]
   },
   cheatSheet: [
-    { title: 'Greek Roots', points: ['Iso=Same', 'Metric=Length', 'Tonic=Tone', 'Kinetic=Motion'] },
-    { title: 'Endurance Time', points: ['Speed: <45s', 'Short: 45s-2m', 'Med: 2m-11m', 'Long: >11m'] },
-    { title: 'Founders', points: ['Isometric: Hettinger', 'Isotonic: De Lorme', 'Fartlek: Gosta Holmer', 'Circuit: Morgan/Adamson'] },
-    { title: 'Coordination', points: ['Orientation', 'Coupling', 'Reaction', 'Balance', 'Rhythm', 'Adaptation', 'Differentiation'] }
-  ]
+    {
+      title: 'Training Cycles (Periodization)',
+      points: [
+        'Micro Cycle: 3-10 Days (Weekly Plan) -> Focus: Acute Load',
+        'Meso Cycle: 3-6 Weeks (Monthly Plan) -> Focus: Specific Component',
+        'Macro Cycle: 3-12 Months (Yearly Plan) -> Focus: Peak Performance'
+      ]
+    },
+    {
+      title: 'Strength Development (The 3 Isos)',
+      points: [
+        'Isometric: Static Force (Plank) -> Rehab/Core',
+        'Isotonic: Dynamic Movement (Weights) -> Hypertrophy',
+        'Isokinetic: Constant Speed (Cybex Machine) -> Water Sports/Rehab'
+      ]
+    },
+    {
+      title: 'Endurance Methods',
+      points: [
+        'Continuous: Long duration, low intensity (Aerobic base)',
+        'Interval: High intensity with incomplete rest (Speed endurance)',
+        'Fartlek: "Speed Play" in nature (Variable pace/terrain)'
+      ]
+    },
+    {
+      title: '7 Coordinative Abilities',
+      points: [
+        'Orientation (Space), Coupling (Linking), Reaction (Signal)',
+        'Balance (Stability), Rhythm (Timing), Adaptation (Change)',
+        'Differentiation (Precision/Economy)'
+      ]
+    },
+    {
+      title: 'Golden Keywords',
+      points: [
+        'Definition: "Systematic Process", "Scientific Principles"',
+        'Principles: "Overload", "Continuity", "Specificity"',
+        'Goal: "Peak Performance", "Skill Acquisition"',
+        'Method: "PNF" (Proprioceptive Neuromuscular Facilitation) for Flexibility'
+      ]
+    },
+    {
+      title: 'Circuit Training (Sample Flow)',
+      points: [
+        'Principle: Alternate Muscle Groups (Upper -> Lower -> Core -> Cardio)',
+        'Sample 6 Stations: 1.Jacks (Warmup) -> 2.Pushups (Upper) -> 3.Squats (Lower) -> 4.Crunches (Core) -> 5.Dips (Upper) -> 6.Rope Skip (Cardio)',
+        'Goal: General Fitness + High Density'
+      ]
+    }
+  ],
 };
