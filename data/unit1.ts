@@ -65,6 +65,18 @@ export const unit1: Chapter = {
       ],
       visualizations: [
         {
+          id: 'v2-hacker-fixture',
+          title: 'Fixture "Cheat Code" (Knock-out)',
+          type: 'grid',
+          hack: 'To solve any Knock-out calculation in <15s: Start with the "Nearest Power of 2" (2, 4, 8, 16, 32...). If N=13, your target is 16. If N=21, target is 32.',
+          formulaTitle: 'Matches & Byes',
+          formula: 'Matches = N - 1 | Byes = (Next Power of 2) - N',
+          data: [
+            { label: 'Example: 13 Teams', desc: 'Matches: 12 | Byes: 16 - 13 = 3' },
+            { label: 'Example: 21 Teams', desc: 'Matches: 20 | Byes: 32 - 21 = 11' }
+          ]
+        },
+        {
           id: 'v2-bye-order',
           title: 'Order of Bye Placement (Fixed Rules)',
           type: 'steps',

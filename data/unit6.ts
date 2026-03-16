@@ -102,14 +102,29 @@ export const unit6: Chapter = {
       title: 'Rikli & Jones Senior Citizen Test',
       description: 'Functional fitness test for ages 60-94.',
       content: [
-        '1. Chair Stand Test: Lower Body Strength (Sit-to-stand in 30s).',
-        '2. Arm Curl Test: Upper Body Strength (Bicep curls in 30s). Men: 8lbs, Women: 5lbs.',
-        '3. Chair Sit and Reach: Lower Body Flexibility (Distance usually negative if cant touch toes).',
-        '4. Back Scratch Test: Upper Body Flexibility (Distance between fingers behind back).',
-        '5. 8-Foot Up and Go: Agility/Dynamic Balance (Stand, walk 8ft, return).',
-        '6. 6-Minute Walk Test: Aerobic Endurance (Distance covered). Alternative: 2-Minute Step Test.'
+        '1. Chair Stand Test: [Purpose: Lower Body Strength] -> [Procedure: Sit-to-stand in 30s] -> [Scoring: Count].',
+        '2. Arm Curl Test: [Purpose: Upper Body Strength] -> [Procedure: Bicep curls in 30s (8lb M / 5lb F)] -> [Scoring: Count].',
+        '3. Chair Sit and Reach: [Purpose: Lower Body Flexibility] -> [Procedure: Reach toes from chair] -> [Scoring: Distance (+/-)].',
+        '4. Back Scratch Test: [Purpose: Upper Body Flexibility] -> [Procedure: Touch fingers behind back] -> [Scoring: Distance (+/-)].',
+        '5. 8-Foot Up and Go: [Purpose: Agility/Dynamic Balance] -> [Procedure: Stand, walk 8ft, return] -> [Scoring: Time (sec)].',
+        '6. 6-Minute Walk Test: [Purpose: Aerobic Endurance] -> [Procedure: Distance covered in 6 min] -> [Scoring: Yards/Meters].'
       ],
       visualizations: [
+        {
+          id: 'v4-triplet-hack',
+          title: 'Senior Citizen "Triplet Master"',
+          type: 'table',
+          hack: 'Hacker Hack: For any test question, you MUST write the Purpose, the exact Procedure (30s time limit usually), and the Scoring unit (Count or Time).',
+          data: {
+            headers: ['Test Item', 'Purpose', 'Procedure (Key)', 'Scoring'],
+            rows: [
+              ['Chair Stand', 'Lower Strength', 'Max stands in 30s', 'Total Count'],
+              ['Arm Curl', 'Upper Strength', 'Curls in 30s (8/5lb)', 'Total Count'],
+              ['Up & Go', 'Agility', '8ft distance + return', 'Seconds'],
+              ['6-Min Walk', 'Endurance', 'Max distance 6 mins', 'Meters/Yards']
+            ]
+          }
+        },
         {
           id: 'v4',
           title: 'Senior Test Battery',

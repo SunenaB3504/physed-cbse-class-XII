@@ -53,6 +53,16 @@ export const unit8: Chapter = {
       ],
       visualizations: [
         {
+          id: 'v8-newton-hack',
+          title: 'Newton’s "Sports-First" Hack',
+          type: 'grid',
+          hack: 'Physics-Lite Hack: Don\'t memorize definitions. Think of a Penalty Kick: Ball at rest (1st Law) -> Kicking it hard (2nd Law) -> Foot feels the impact (3rd Law).',
+          data: [
+            { label: 'Example: 100m Sprint', desc: '1st: Blocks. 2nd: Force from legs. 3rd: Ground pushes back.' },
+            { label: 'Example: Cricket Six', desc: '2nd Law: Timing + Force = Distance.' }
+          ]
+        },
+        {
           id: 'v1',
           title: 'Newton’s Laws in Action',
           type: 'table',

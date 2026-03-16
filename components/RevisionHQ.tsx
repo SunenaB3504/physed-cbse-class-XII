@@ -159,13 +159,18 @@ const SlidingFlashcards: React.FC<SlidingFlashcardsProps> = ({ chapter }) => {
 };
 
 export const RevisionHQ: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
-  const [activeTab, setActiveTab] = useState<'cards' | 'map' | 'cheat'>('cards');
+  const [activeTab, setActiveTab] = useState<'cards' | 'map' | 'cheat' | 'gallery'>('cards');
+
+  const allHacks = chapter.topics.flatMap(t => 
+    t.visualizations.filter(v => v.hack).map(v => ({ ...v, topicTitle: t.title }))
+  );
 
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-700">
       <div className="flex justify-center gap-4 mb-8 flex-wrap">
         {[
           { id: 'cards' as const, label: 'Flashcards', icon: Zap },
+          { id: 'gallery' as const, label: 'Swift Scan', icon: Star },
           { id: 'map' as const, label: 'Mind Map', icon: MapIcon },
           { id: 'cheat' as const, label: 'Cheat Sheet', icon: ClipboardCheck }
         ].map(tab => (
@@ -179,6 +184,39 @@ export const RevisionHQ: React.FC<{ chapter: Chapter }> = ({ chapter }) => {
           </button>
         ))}
       </div>
+
+      {activeTab === 'gallery' && (
+        <div className="grid gap-8">
+          <div className="bg-amber-100 p-6 rounded-3xl border-2 border-amber-200 text-center">
+            <h3 className="text-2xl font-black text-amber-900 mb-2">🚀 60-Second "Swift Scan"</h3>
+            <p className="text-amber-800 font-bold">All high-impact hacks for {chapter.name} in one place.</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {allHacks.length > 0 ? allHacks.map((hack, i) => (
+              <div key={i} className="bg-white rounded-3xl p-6 border-2 border-emerald-100 shadow-sm hover:shadow-xl transition-all hover:translate-y-[-4px]">
+                <div className="flex items-center gap-2 mb-4">
+                  <Zap className="w-5 h-5 text-amber-500 fill-amber-500" />
+                  <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">{hack.topicTitle}</span>
+                </div>
+                <h4 className="text-lg font-black text-emerald-900 mb-3 leading-tight">{hack.title}</h4>
+                <div className="p-4 bg-amber-50 rounded-2xl border border-amber-200 shadow-inner">
+                   <p className="text-amber-900 font-extrabold text-sm italic mb-1">Cheat Code:</p>
+                   <p className="text-gray-800 font-bold text-sm leading-relaxed">{hack.hack}</p>
+                </div>
+                {hack.formula && (
+                  <div className="mt-4 p-3 bg-emerald-900 text-white rounded-xl text-center">
+                    <code className="text-xs font-black font-mono">{hack.formula}</code>
+                  </div>
+                )}
+              </div>
+            )) : (
+              <div className="col-span-full p-12 text-center text-gray-400 font-bold">
+                No hacks available for this unit yet. Check others!
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {activeTab === 'cards' && (
         <div className="flex justify-center py-8">

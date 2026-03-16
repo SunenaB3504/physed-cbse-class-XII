@@ -72,7 +72,27 @@ export const unit5: Chapter = {
       ],
       visualizations: [
         {
-          id: 'v3',
+          id: 'v5-def-hack',
+          title: 'Silhouette "Pattern Hack"',
+          type: 'grid',
+          hack: 'Visual Recognition Hack: If knees TOUCH = Genu Valgum (Knock Knees). If knees ARE WIDE apart = Genu Varum (Bow Legs). Think "V" for Valgum (inward) and "O" for Varum (outward).',
+          data: [
+            { label: 'Knock Knees', desc: 'Walking pattern: Knees strike each other.' },
+            { label: 'Bow Legs', desc: 'Walking pattern: Knees wide apart.' }
+          ]
+        },
+        {
+          id: 'v5-ex-hack',
+          title: 'Exercise "Single-Fix" Solution',
+          type: 'grid',
+          hack: 'The "Horse-Rider" Hack: Padmasana & Horse Riding are MAPPED to Knock Knees. Walking on inner edge of feet is MAPPED to Bow Legs.',
+          data: [
+            { label: 'Knock Knees Fix', desc: 'Horse Riding, Padmasana, Pillow between knees.' },
+            { label: 'Bow Legs Fix', desc: 'Walking on inner edge, Ardhachakrasana.' }
+          ]
+        },
+        {
+          id: 'v5-3',
           title: 'Spine Deformities',
           type: 'flow',
           data: [

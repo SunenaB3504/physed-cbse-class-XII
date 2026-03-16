@@ -20,6 +20,18 @@ export const unit2: Chapter = {
       ],
       visualizations: [
         {
+          id: 'v2-nutrient-hack',
+          title: 'Nutrient "Function-to-Source" Hack',
+          type: 'grid',
+          hack: 'Reverse-Recall Hack: Look at the Function first. Blood -> Iron. Bones -> Calcium. Energy -> Carbs. Repair -> Protein.',
+          data: [
+            { label: 'Blood (Oxygen)', desc: 'Function: Hemoglobin | Source: Iron (Spinach, Meat)' },
+            { label: 'Bones (Strength)', desc: 'Function: Bone Density | Source: Calcium (Milk, Cheese)' },
+            { label: 'Energy (Instant)', desc: 'Function: 4 kcal/g | Source: Carbs (Rice, Potatoes)' },
+            { label: 'Muscle Repair', desc: 'Function: 4 kcal/g | Source: Protein (Eggs, Pulses)' }
+          ]
+        },
+        {
           id: 'v1',
           title: 'Macro vs Micro Nutrients',
           type: 'table',

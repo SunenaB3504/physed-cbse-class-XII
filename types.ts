@@ -12,6 +12,8 @@ export interface Visualization {
   type: VisualType;
   caption?: string;
   formula?: string;
+  formulaTitle?: string;
+  hack?: string;
   data: VisualData;
 }
 
@@ -21,6 +23,7 @@ export interface TheoryTopic {
   description: string;
   content: string[];
   visualizations: Visualization[];
+  dangerZones?: string[];
 }
 
 export interface Flashcard {

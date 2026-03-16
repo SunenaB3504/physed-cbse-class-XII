@@ -23,6 +23,15 @@ export const unit3: Chapter = {
       ],
       visualizations: [
         {
+          id: 'v3-0-hack',
+          title: 'Yoga "Core Essence"',
+          type: 'grid',
+          hack: '3-Keyword: "Control, Balance, Holistic"',
+          data: [
+            { label: 'Patanjali', desc: 'Sthira sukham asanam (Steady and Comfortable).' }
+          ]
+        },
+        {
           id: 'v3-0',
           title: 'Physiological Impact of Asanas',
           type: 'list',
@@ -42,13 +51,24 @@ export const unit3: Chapter = {
       description: 'Asanas to reduce excess body fat and improve metabolism.',
       content: [
         'Definition: A condition of excess body fat accumulation (BMI >= 30).',
-        'Recommended Asanas: Vajrasana, Hastasana, Trikonasana, Ardha Matsyendrasana.',
-        'Vajrasana (Thunderbolt Pose): Aids digestion, can be done after meals. Contraindication: Knee injury.',
-        'Hastasana (Hastottanasana): Stretches arms/abdomen, slims waist. Contraindication: Shoulder pain.',
-        'Trikonasana (Triangle Pose): Burns lateral fat. Contraindication: Severe back pain.',
-        'Ardha Matsyendrasana (Half Spinal Twist): Regulates bile/adrenaline, breaks down fats. Contraindication: Pregnancy/Slipped disc.'
+        'Recommended Asanas: Vajrasana, Hastasana, Trikonasana, Ardha Matsyendrasana.'
+      ],
+      dangerZones: [
+        'Vajrasana: Avoid If Knee Injury / Ligament Issue.',
+        'Hastasana: Avoid If Shoulder Pain / Vertigo.',
+        'Trikonasana: Avoid If Severe Back Pain / Migraine.',
+        'Ardha Matsyendrasana: Avoid If Pregnancy / Slipped Disc.'
       ],
       visualizations: [
+        {
+          id: 'v3-obesity-hack',
+          title: 'Obesity "Rapid Recall"',
+          type: 'grid',
+          hack: '3-Keyword: "Digestion, Metabolism, Slimming"',
+          data: [
+            { label: 'Key Move', desc: 'Vajrasana is the ONLY asana for after-meals.' }
+          ]
+        },
         {
           id: 'v3-1',
           title: 'Obesity Asana Protocol',
@@ -81,13 +101,24 @@ export const unit3: Chapter = {
       description: 'Asanas to stimulate the pancreas and regulate blood sugar.',
       content: [
         'Definition: Metabolic disorder characterized by high blood sugar (Insulin deficiency/resistance).',
-        'Recommended Asanas: Bhujangasana, Paschimottanasana, Pawanmuktasana, Ardha Matsyendrasana.',
-        'Bhujangasana (Cobra Pose): Compresses abdomen, stimulates pancreas. Contraindication: Hernia.',
-        'Paschimottanasana (Seated Forward Bend): Stimulates liver/pancreas. Contraindication: Back injury.',
-        'Pawanmuktasana (Wind Relieving Pose): Massages abdomen. Contraindication: Abdominal surgery.',
-        'Ardha Matsyendrasana (Half Spinal Twist): Concentrates on Pancreas (Beta-cells).'
+        'Recommended Asanas: Bhujangasana, Paschimottanasana, Pawanmuktasana, Ardha Matsyendrasana.'
+      ],
+      dangerZones: [
+        'Bhujangasana: Avoid If Hernia / Abdominal Surgery.',
+        'Paschimottanasana: Avoid If Slipped Disc / Sciatica.',
+        'Pawanmuktasana: Avoid If Recent Abdominal Surgery.',
+        'Ardha Matsyendrasana: Avoid If Severe Spinal Injury.'
       ],
       visualizations: [
+        {
+          id: 'v3-diabetes-hack',
+          title: 'Diabetes "Rapid Recall"',
+          type: 'grid',
+          hack: '3-Keyword: "Insulin, Pancreas, Compression"',
+          data: [
+            { label: 'Key Move', desc: 'Bhujangasana/Paschimottanasana squeeze the pancreas.' }
+          ]
+        },
         {
           id: 'v3-3',
           title: 'Asanas for Pancreas Stimulation',
@@ -106,13 +137,24 @@ export const unit3: Chapter = {
       description: 'Asanas to expand chest capacity and improve respiration.',
       content: [
         'Definition: Chronic inflammatory condition where airways narrow due to triggers (allergens, cold air).',
-        'Recommended Asanas: Sukhasana, Chakrasana, Gomukhasana, Parvatasana, Matsyasana, Paschimottanasana.',
-        'Sukhasana (Easy Pose): Meditative, facilitates pranayama. Contraindication: Knee injury.',
-        'Chakrasana (Wheel Pose): Expands chest, relieves congestion. Contraindication: High BP.',
-        'Matsyasana (Fish Pose): Restores spinal strength, stimulates lungs. Contraindication: Neck injury.',
-        'Paschimottanasana: Improves respiratory system by pressure on thorax.'
+        'Recommended Asanas: Sukhasana, Chakrasana, Gomukhasana, Parvatasana, Matsyasana, Paschimottanasana.'
+      ],
+      dangerZones: [
+        'Sukhasana: Avoid If Acute Knee Pain.',
+        'Chakrasana: Avoid If High Blood Pressure (Hypertension).',
+        'Matsyasana: Avoid If Neck Injury / Spondylitis.',
+        'Gomukhasana: Avoid If Shoulder/Neck Injury.'
       ],
       visualizations: [
+        {
+          id: 'v3-asthma-hack',
+          title: 'Asthma "Rapid Recall"',
+          type: 'grid',
+          hack: '3-Keyword: "Expansion, Congestion, Breathing"',
+          data: [
+            { label: 'Key Move', desc: 'Chakrasana & Matsyasana open the chest cavity.' }
+          ]
+        },
         {
           id: 'v3-4',
           title: 'Gomukhasana Procedure',
@@ -143,12 +185,23 @@ export const unit3: Chapter = {
       description: 'Asanas to induce relaxation and lower blood pressure.',
       content: [
         'Definition: Blood pressure above normal (systolic >140 mmHg, diastolic >90 mmHg).',
-        'Recommended Asanas: Tadasana, Vajrasana, Pawanmuktasana, Ardha Chakrasana, Bhujangasana, Shavasana.',
-        'Shavasana (Corpse Pose): Beneficial for cardiac diseases. No contraindications.',
-        'Tadasana (Palm Tree Pose): Overall stretch. Contraindication: Low BP.',
-        'Ardha Chakrasana (Half Wheel): Opens chest. Contraindication: Severe Hypertension (Do with care).'
+        'Recommended Asanas: Tadasana, Vajrasana, Pawanmuktasana, Ardha Chakrasana, Bhujangasana, Shavasana.'
+      ],
+      dangerZones: [
+        'Tadasana: Avoid If Low Blood Pressure / Vertigo.',
+        'Ardha Chakrasana: Avoid If Severe Hypertension / Vertigo.',
+        'Bhujangasana: Avoid If Hernia (Standard rule).'
       ],
       visualizations: [
+        {
+          id: 'v3-hyp-hack',
+          title: 'Hypertension "Rapid Recall"',
+          type: 'grid',
+          hack: '3-Keyword: "Relaxation, Calm, Circulation"',
+          data: [
+            { label: 'Key Move', desc: 'Shavasana is the king of relaxation.' }
+          ]
+        },
         {
           id: 'v3-6',
           title: 'Relaxation Asanas Protocol',
@@ -170,13 +223,23 @@ export const unit3: Chapter = {
       description: 'Asanas to strengthen the spine and relieve stiffness.',
       content: [
         'Definition: Pain in cervical, thoracic, or lumbar region.',
-        'Recommended Asanas: Vakrasana, Shalabhasana, Bhujangasana, Tadasana, Ardha Matsyendrasana.',
-        'Vakrasana (Twisted Pose): Realigns spine. Contraindication: Severe spinal injury.',
-        'Shalabhasana (Locust Pose): Strengthens lower back. Contraindication: Hernia.',
-        'Bhujangasana: Strengthens spine, relieves pain. Contraindication: Abdominal surgery.',
-        'Ardha Matsyendrasana: Increases spinal elasticity, tones nerves.'
+        'Recommended Asanas: Vakrasana, Shalabhasana, Bhujangasana, Tadasana, Ardha Matsyendrasana.'
+      ],
+      dangerZones: [
+        'Vakrasana: Avoid If Severe Spinal Injury / Recent Surgery.',
+        'Shalabhasana: Avoid If Hernia / Peptic Ulcers.',
+        'Bhujangasana: Avoid If Abdominal Surgery.'
       ],
       visualizations: [
+        {
+          id: 'v3-back-hack',
+          title: 'Back Pain "Rapid Recall"',
+          type: 'grid',
+          hack: '3-Keyword: "Strength, Flexibility, Alignment"',
+          data: [
+            { label: 'Key Move', desc: 'Bhujangasana realigns the thoracic spine.' }
+          ]
+        },
         {
           id: 'v3-7',
           title: 'Spinal Health Asanas',
